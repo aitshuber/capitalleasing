@@ -5,8 +5,8 @@ seo:
   description:
   keywords:
   image:
-name: 2014 Horse Trailer
-trailer_type: Custom Trailer
+name: 2024 Spa Threapy Trailer
+trailer_type: Spa Threapy Trailer
 gallery:
   - image: /assets/img/trailers/image-asset.jpg
 video:
