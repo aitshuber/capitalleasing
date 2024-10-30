@@ -28,7 +28,8 @@ assets:
 collections:
   products:
     output: true
-
+  trailers:
+    output: true
 defaults:
 -
   scope:

@@ -96,7 +96,7 @@ permalink: "/"
             </article>
           </div>
           <div class="col-lg-7 d-flex flex-column gap-4">
-
+          {% for item in site.trailers %}
             <!-- Item -->
             <article class="card hover-effect-scale overflow-hidden">
               <div class="row g-0">
@@ -123,7 +123,7 @@ permalink: "/"
                       </div>
                     </div>
                     <h3 class="h5 mb-2">
-                      <a class="hover-effect-underline stretched-link me-1" href="single-entry-cars.html">Volvo XC90 Sport 4WD</a>
+                      <a class="hover-effect-underline stretched-link me-1" href="{{item.url}}">Volvo XC90 Sport 4WD</a>
                       <span class="fs-sm fw-normal text-body-secondary">(2024)</span>
                     </h3>
                     <div class="h6 mb-0">$92,500</div>
@@ -151,7 +151,7 @@ permalink: "/"
                 </div>
               </div>
             </article>
-
+            {% endfor %}
             <!-- Item -->
             <article class="card hover-effect-scale overflow-hidden">
               <div class="row g-0">
