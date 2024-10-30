@@ -11,14 +11,14 @@ paths:
 collections_config:
   data:
     path: _data
-    output: false
+    output: true
     icon: notes
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
   data:
     path: _trailers
-    output: false
+    output: true
     icon: rv_hookup
     disable_add: false
     disable_add_folder: false
