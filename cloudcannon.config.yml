@@ -16,7 +16,7 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  data:
+  trailers:
     path: _trailers
     output: true
     icon: rv_hookup
