@@ -1,7 +1,7 @@
 ---
 timezone: America/Chicago
 url:
-include: ['_pages', '_data','login.html','login', '_plugins', '_trailers']
+include: ['_pages', '_data', '_plugins', '_trailers']
 sitename:
 relative_permalinks: false
 favicon:
@@ -17,15 +17,9 @@ social:
     -
 logo:
 locale: en_us
-location:
-snipcart_key: "YjgzYjc3YWEtYjUzOC00MTA3LTlhMmYtMzgwZDUwMDQyNjk2NjM3OTM4NzI1MTg4MjA1MjY4"
-snipcart_currency: "usd"
-assets:
-  cdn:
-    baseurl: true
-    url:
-  digest: true
 collections:
+  data:
+    output: true
   products:
     output: true
   trailers:

@@ -1,0 +1,8 @@
+- menu_name: Home
+  url: /
+- menu_name: About Us
+  url: /
+- menu_name: Trailers
+  url: /trailers
+- menu_name: Contact Us
+  url: /contact
