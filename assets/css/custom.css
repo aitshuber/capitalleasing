@@ -1,3 +1,13 @@
 .icon-size{
 	font-size: .75em
 }
+.object-cover{
+	object-fit: cover
+}
+.gallery-ratio{
+	--fn-aspect-ratio: calc(482 / 856 * 100%)
+}
+.gallery-ratio-thumb{
+	--fn-aspect-ratio: calc(115 / 156 * 100%)
+}
+

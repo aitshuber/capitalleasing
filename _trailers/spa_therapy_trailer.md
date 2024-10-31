@@ -19,15 +19,6 @@ features:
   <!-- Car details section -->
   <section class="container pt-4 pb-5 mb-xxl-3">
 
-	<!-- Breadcrumb -->
-	<nav class="pb-2" aria-label="breadcrumb">
-	  <ol class="breadcrumb">
-		<li class="breadcrumb-item"><a href="home-cars.html">Home</a></li>
-		<li class="breadcrumb-item"><a href="listings-grid-cars.html">Used cars</a></li>
-		<li class="breadcrumb-item active" aria-current="page">Mercedes-Benz A205 Cabriolet</li>
-	  </ol>
-	</nav>
-
 
 	<!-- Title + Share button -->
 	<div class="d-flex justify-content-between gap-3 position-relative z-2 mb-3 mb-lg-4">

@@ -7,7 +7,7 @@
    * @copyright Createx Studio
    * @version 2.0.0
    */
-  
+
 (function () {
   'use strict';
 
@@ -6345,17 +6345,17 @@
       return; // Stop further execution to prevent PWA setup when not specified
     }
 
-    // Settings
-    const SETTINGS = {
-      appName: 'Finder',
-      remindAfterHours: 24,
-      // Number of hours to wait before showing the prompt again
-      serviceWorkerFile: '/service-worker.js',
-      // Service worker file path and name
-      serviceWorkerScope: '/',
-      // Scope of the service worker
-      diagnostics: false // Set to true to enable diagnostic logs
-    };
+    // // Settings
+    // const SETTINGS = {
+    //   appName: 'Finder',
+    //   remindAfterHours: 24,
+    //   // Number of hours to wait before showing the prompt again
+    //   serviceWorkerFile: '/service-worker.js',
+    //   // Service worker file path and name
+    //   serviceWorkerScope: '/',
+    //   // Scope of the service worker
+    //   diagnostics: false // Set to true to enable diagnostic logs
+    // };
 
     /**
      * Helper function for logging messages to the console based on the message type.
@@ -6385,24 +6385,24 @@
       return 'Unknown';
     };
 
-    // Register service worker
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register(SETTINGS.serviceWorkerFile, {
-          scope: SETTINGS.serviceWorkerScope
-        }).then(registration => {
-          // Registration was successful
-          logMessage('Service Worker registration successful with scope: ' + registration.scope);
-        }).catch(err => {
-        });
-      });
-    }
-
-    // Store variables for future use across application
-    const promptId = 'installPWAPrompt';
-    const timeoutKey = `${SETTINGS.appName}-Prompt-Timeout`;
-    const foreverKey = `${SETTINGS.appName}-Prompt-Dismiss-Forever`;
-    const installedKey = `${SETTINGS.appName}-App-Installed`;
+//     // Register service worker
+//     if ('serviceWorker' in navigator) {
+//       window.addEventListener('load', () => {
+//         navigator.serviceWorker.register(SETTINGS.serviceWorkerFile, {
+//           scope: SETTINGS.serviceWorkerScope
+//         }).then(registration => {
+//           // Registration was successful
+//           logMessage('Service Worker registration successful with scope: ' + registration.scope);
+//         }).catch(err => {
+//         });
+//       });
+//     }
+//
+//     // Store variables for future use across application
+//     const promptId = 'installPWAPrompt';
+//     const timeoutKey = `${SETTINGS.appName}-Prompt-Timeout`;
+//     const foreverKey = `${SETTINGS.appName}-Prompt-Dismiss-Forever`;
+//     const installedKey = `${SETTINGS.appName}-App-Installed`;
 
     // Initialize deferredPrompt for use later to show the install prompt
     let deferredPrompt;
@@ -8356,4 +8356,4 @@
   })();
 
 })();
-//# sourceMappingURL=theme.js.map
+

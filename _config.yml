@@ -1,83 +1,82 @@
 ---
 timezone: America/Chicago
-url:
-include: ['_pages', '_data', '_plugins', '_trailers']
-sitename:
+url: null
+include:
+  - _pages
+  - _data
+  - _plugins
+  - _trailers
+sitename: null
 relative_permalinks: false
-favicon:
+favicon: null
 lang: en
-author:
-# Your disqus shortname, entering this will enable commenting on posts
-disqus:
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+author: null
+disqus: null
+google_analytics: null
 social:
   name: Capital Leasing
   links:
-    -
-logo:
+    - null
+logo: null
 locale: en_us
 collections:
-  data:
-    output: true
   products:
     output: true
   trailers:
     output: true
 defaults:
--
-  scope:
-    path: ""
-  values:
-    layout: default
-    _options:
-      content: &content_defaults
-        uploads_dir: "uploads/:title"
-        format: p h1 h2 h3 h4 h5 h6 div
-        styles: /assets/css/theme.css
-        undo: true
-        redo: true
-        left: text-left
-        center: text-center
-        right: text-right
-        justify: justify-content-center
-        bold: true
-        italic: true
-        underline: true
-        strike: true
-        subscript: false
-        superscript: false
-        blockquote: true
-        table: true
-        copyformatting: true
-        removeformat: true
-        numberedlist: true
-        bulletedlist: true
-        outdent: false
-        indent: false
-        image: true
-        link: true
-        embed: true
--
-          scope:
-            path: ""
-            type: "products"
-          values:
-            layout: "product"
--
-  scope:
-    type: pages
-    path: _pages/index.html
-  values:
-    permalink:
--
-  scope:
-    type: posts
-  values:
-    layout: bloglayout
-
-# Permalinks
-permalink: "/:title/"
+  - scope:
+      path: ""
+    values:
+      layout: default
+      _options:
+        content:
+          uploads_dir: uploads/:title
+          format: p h1 h2 h3 h4 h5 h6 div
+          styles: /assets/css/theme.css
+          undo: true
+          redo: true
+          left: text-left
+          center: text-center
+          right: text-right
+          justify: justify-content-center
+          bold: true
+          italic: true
+          underline: true
+          strike: true
+          subscript: false
+          superscript: false
+          blockquote: true
+          table: true
+          copyformatting: true
+          removeformat: true
+          numberedlist: true
+          bulletedlist: true
+          outdent: false
+          indent: false
+          image: true
+          link: true
+          embed: true
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: product
+  - scope:
+      type: pages
+      path: _pages/index.html
+    values:
+      permalink: null
+  - scope:
+      type: data
+      path: data
+    values:
+      permalink: null
+  - scope:
+      type: posts
+    values:
+      layout: bloglayout
+permalink: /:title/
 plugins:
   - jekyll-sitemap
   - jekyll-feed
@@ -85,12 +84,12 @@ plugins:
   - jekyll-archives
   - jekyll-assets
 exclude:
-    - .jekyll-cache/
-    - gemfiles/
-    - Gemfile
-    - Gemfile.lock
-    - vendor/bundle/
-    - vendor/cache/
-    - vendor/gems/
-    - vendor/ruby/
-    - _site
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _site
