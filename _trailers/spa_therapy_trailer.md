@@ -8,11 +8,13 @@ seo:
 name: 2024 Spa Threapy Trailer
 trailer_type: Spa Threapy Trailer
 gallery:
-  - image: /assets/img/trailers/image-asset.jpg
+  - image: /assets/img/trailers/image-asset.png
 video:
-price: $192,500
+price: $103,500
 features:
-
+  - item: 45' LENGTH
+  - item: Custom Options
+  - item: Gooseneck
 ---
   <!-- Car details section -->
   <section class="container pt-4 pb-5 mb-xxl-3">

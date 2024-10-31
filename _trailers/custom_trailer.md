@@ -12,24 +12,15 @@ gallery:
 video:
 price: $192,500
 features:
-
+  - item: 45' LENGTH
+  - item: Custom Options
+  - item: Gooseneck
 ---
   <!-- Car details section -->
   <section class="container pt-4 pb-5 mb-xxl-3">
-
-	<!-- Breadcrumb -->
-	<nav class="pb-2" aria-label="breadcrumb">
-	  <ol class="breadcrumb">
-		<li class="breadcrumb-item"><a href="home-cars.html">Home</a></li>
-		<li class="breadcrumb-item"><a href="listings-grid-cars.html">Used cars</a></li>
-		<li class="breadcrumb-item active" aria-current="page">Mercedes-Benz A205 Cabriolet</li>
-	  </ol>
-	</nav>
-
-
 	<!-- Title + Share button -->
 	<div class="d-flex justify-content-between gap-3 position-relative z-2 mb-3 mb-lg-4">
-	  <h1 class="mb-0">Mercedes-Benz A205 Cabriolet&nbsp;&nbsp;<span class="fs-xl fw-normal text-body-secondary align-middle">(2021)</span></h1>
+	  <h1 class="mb-0">{{page.name}}</h1>
 	  <div class="d-flex gap-2">
 		<div class="dropdown" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" title="Share">
 		  <button type="button" class="btn btn-icon btn-ghost btn-secondary animate-scale rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Share">
@@ -56,16 +47,12 @@ features:
 			</li>
 		  </ul>
 		</div>
-		<button type="button" class="btn btn-icon btn-secondary animate-pulse rounded-circle" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" title="Wishlist" aria-label="Wishlist">
-		  <i class="fi-heart animate-target fs-base"></i>
-		</button>
 	  </div>
 	</div>
-
 	<!-- Listing meta visible on screens < 992px wide (lg breakpoint) -->
 	<div class="d-lg-none mb-4">
 	  <div class="d-flex align-items-center justify-content-between gap-3 pb-1 mb-2">
-		<div class="h2 mb-0">$41 900</div>
+		<div class="h2 mb-0">{{page.price}}</div>
 		<div class="d-flex gap-2 mb-3">
 		  <span class="badge text-bg-info d-inline-flex align-items-center">
 			Verified
@@ -93,12 +80,9 @@ features:
 		</div>
 	  </div>
 	</div>
-
 	<div class="row">
-
 	  <!-- Gallery (slider) + Description -->
 	  <div class="col-lg-8 pb-3 pb-sm-0 mb-4 mb-sm-5 mb-lg-0">
-
 		<!-- Main slider -->
 		<div class="swiper hover-effect-opacity" data-swiper='{
 		  "spaceBetween": 16,
@@ -112,48 +96,14 @@ features:
 		  }
 		}'>
 		  <div class="swiper-wrapper">
+			  {% for item in page.gallery %}
 			<div class="swiper-slide">
 			  <div class="ratio bg-body-tertiary rounded overflow-hidden" style="--fn-aspect-ratio: calc(482 / 856 * 100%)">
-				<img src="assets/img/listings/cars/single/gallery/01.jpg" alt="Image">
+				<img src="{{item.image}}" alt="Image">
 			  </div>
 			</div>
-			<div class="swiper-slide">
-			  <div class="ratio bg-body-tertiary rounded overflow-hidden" style="--fn-aspect-ratio: calc(482 / 856 * 100%)">
-				<img src="assets/img/listings/cars/single/gallery/02.jpg" alt="Image">
-			  </div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="ratio bg-body-tertiary rounded overflow-hidden" style="--fn-aspect-ratio: calc(482 / 856 * 100%)">
-				<img src="assets/img/listings/cars/single/gallery/03.jpg" alt="Image">
-			  </div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="ratio bg-body-tertiary rounded overflow-hidden" style="--fn-aspect-ratio: calc(482 / 856 * 100%)">
-				<img src="assets/img/listings/cars/single/gallery/04.jpg" alt="Image">
-			  </div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="ratio bg-body-tertiary rounded overflow-hidden" style="--fn-aspect-ratio: calc(482 / 856 * 100%)">
-				<img src="assets/img/listings/cars/single/gallery/05.jpg" alt="Image">
-			  </div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="ratio bg-body-tertiary rounded overflow-hidden" style="--fn-aspect-ratio: calc(482 / 856 * 100%)">
-				<img src="assets/img/listings/cars/single/gallery/06.jpg" alt="Image">
-			  </div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="ratio bg-body-tertiary rounded overflow-hidden" style="--fn-aspect-ratio: calc(482 / 856 * 100%)">
-				<img src="assets/img/listings/cars/single/gallery/07.jpg" alt="Image">
-			  </div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="ratio bg-body-tertiary rounded overflow-hidden" style="--fn-aspect-ratio: calc(482 / 856 * 100%)">
-				<img src="assets/img/listings/cars/single/gallery/08.jpg" alt="Image">
-			  </div>
-			</div>
+			{% endfor %}
 		  </div>
-
 		  <!-- Prev / next buttons -->
 		  <div class="position-absolute top-50 start-0 z-2 translate-middle-y ms-3 ms-sm-4 hover-effect-target opacity-0">
 			<button type="button" class="btn btn-prev btn-icon btn-secondary bg-body border-0 rounded-circle animate-slide-start" aria-label="Prev" data-bs-theme="light">
@@ -166,7 +116,6 @@ features:
 			</button>
 		  </div>
 		</div>
-
 		<!-- Thumbnails slider -->
 		<div class="swiper swiper-load swiper-thumbs pt-2 mt-1" id="thumbs" data-swiper='{
 		  "loop": true,
@@ -237,7 +186,6 @@ features:
 			</div>
 		  </div>
 		</div>
-
 		<!-- Specifications -->
 		<h2 class="h3 pt-5 mt-sm-2 my-lg-4">Specifications</h2>
 		<div class="row row-cols-1 row-cols-sm-2 gy-2">
@@ -300,7 +248,6 @@ features:
 			</ul>
 		  </div>
 		</div>
-
 		<!-- Features (Icon boxes) -->
 		<div class="pt-5 mt-sm-2">
 		  <div class="row row-cols-2 row-cols-md-4 g-3 gx-xl-4">
@@ -338,7 +285,6 @@ features:
 			</div>
 		  </div>
 		</div>
-
 		<!-- Fetures (Accordion) -->
 		<h2 class="h3 pt-5 mt-sm-2 mb-2 mb-lg-3">Features</h2>
 		<div class="accordion accordion-alt-icon" id="features">
@@ -460,7 +406,6 @@ features:
 			</div>
 		  </div>
 		</div>
-
 		<!-- Seller's description -->
 		<h2 class="h3 pt-5 mt-sm-2">Seller's description</h2>
 		<p>This stunning convertible blends luxury with performance, featuring a sleek design, advanced technology, and a powerful engine. Enjoy open-air driving with premium comfort and the unmistakable elegance of Mercedes-Benz. Impeccably maintained and ready to provide an exhilarating driving experience. Don't miss out on this exceptional vehicle.</p>
@@ -474,7 +419,6 @@ features:
 			<i class="collapse-toggle-icon fi-chevron-down fs-base mt-1 ms-1"></i>
 		  </a>
 		</div>
-
 		<div class="d-flex fs-sm text-body-secondary border-top pt-4 mt-4 mt-md-5">
 		  <div>Published: <span class="text-dark-emphasis">Jul 15, 2024</span></div>
 		  <hr class="vr my-1 mx-3">
@@ -483,21 +427,12 @@ features:
 		  <div>Views: <span class="text-dark-emphasis">48</span></div>
 		</div>
 	  </div>
-
 	  <!-- Sidebar with car detail and seller info -->
 	  <aside class="col-lg-4" style="margin-top: -110px">
 		<div class="position-sticky top-0" style="padding-top: 110px">
-
 		  <!-- Listing meta visible on screens > 991px (lg breakpoint) -->
 		  <div class="d-none d-lg-block">
-			<div class="d-flex gap-2 pb-1 mb-2">
-			  <span class="badge text-bg-info d-inline-flex align-items-center">
-				Verified
-				<i class="fi-shield ms-1"></i>
-			  </span>
-			  <span class="badge text-bg-warning">Used</span>
-			</div>
-			<div class="h2 pb-1 mb-2">$41 900</div>
+			<div class="h2 pb-1 mb-2">{{page.price}}</div>
 			<div class="d-flex flex-wrap justify-content-lg-between gap-2 fs-sm text-nowrap mb-4">
 			  <div class="d-flex align-items-center gap-2 me-2">
 				<i class="fi-map-pin"></i>

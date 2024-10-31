@@ -19,10 +19,10 @@ permalink: "/"
 </div>
 
 
-      <!-- Top offers -->
+      <!-- Trailers -->
       <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
         <div class="d-flex align-items-start justify-content-between gap-4 pb-3 mb-2 mb-sm-3">
-          <h2 class="mb-0">Top offers</h2>
+          <h2 class="mb-0">Trailers</h2>
           <div class="nav">
             <a class="nav-link position-relative fs-base text-nowrap py-1 px-0" href="/trailers">
               <span class="hover-effect-underline stretched-link me-1">View all</span>
@@ -55,22 +55,13 @@ permalink: "/"
                   </div>
                   <div class="card-footer bg-transparent border-0 pt-0 pb-4">
                     <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
+                      {% for list in item.features limit: 3 %}
                       <div class="d-flex align-items-center gap-2">
-                        <i class="fi-map-pin"></i>
-                        Los Angeles
+                        <i class="fal fa-chevron-right icon-size"></i>
+                       {{list.item}}
                       </div>
-                      <div class="d-flex align-items-center gap-2">
-                        <i class="fi-tachometer"></i>
-                        69K mi
-                      </div>
-                      <div class="d-flex align-items-center gap-2">
-                        <i class="fi-gas-pump"></i>
-                        Gasoline
-                      </div>
-                      <div class="d-flex align-items-center gap-2">
-                        <i class="fi-gearbox"></i>
-                        Automatic
-                      </div>
+                      {% endfor %}
+
                     </div>
                   </div>
                 </div>
@@ -85,12 +76,10 @@ permalink: "/"
             <article class="card hover-effect-scale overflow-hidden">
               <div class="row g-0">
                 <div class="col-sm-5 position-relative bg-body-tertiary overflow-hidden" style="min-height: 220px">
-
                   <img src="{{item.gallery[0].image}}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
                 </div>
                 <div class="col-sm-7 py-md-2">
                   <div class="card-body pb-3 pb-md-4">
-
                     <h3 class="h5 mb-2">
                       <a class="hover-effect-underline stretched-link me-1" href="{{item.url}}">{{item.name}}</a>
                     </h3>
@@ -99,19 +88,12 @@ permalink: "/"
                   </div>
                   <div class="card-footer bg-transparent border-0 pt-0 pb-4">
                     <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
+                      {% for list in item.features limit: 3 %}
                       <div class="d-flex align-items-center justify-content-between gap-2">
-                        <i class="fa-light fa-horse"></i>
-                        1-12 Horses
+                       <i class="fal fa-chevron-right icon-size"></i>
+                        {{list.item}}
                       </div>
-                      <div class="d-flex align-items-center gap-2">
-                       <i class="fa-light fa-list-ul"></i>
-                       Custom Options
-                      </div>
-                      <div class="d-flex align-items-center gap-2">
-                        <i class="fa-light fa-trailer"></i>
-                        Gooseneck
-                      </div>
-
+                      {% endfor %}
                     </div>
                   </div>
                 </div>
