@@ -8,20 +8,57 @@ seo:
 name: 2014 Horse Trailer
 trailer_type: Custom Trailer
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+specifications:
+  - name: Manufacturing year
+    feature: 2021
+  - name: Mileage
+    feature: 60K miles
+  - name: Body type
+    feature: Convertible
+  - name: Drive type
+    feature: 2 wheel drive - rear
+  - name: Engine
+    feature: 6-Cylinder Turbo
+  - name: Transmission
+    feature: 7-Speed Shiftable Automatic
+  - name: Fuel type
+    feature: Gasoline
+  - name: City MPG
+    feature: 20
+  - name: Highway MPG
+    feature: 28
+  - name: Exterior color
+    feature: Red
+  - name: Interior color
+    feature: Charcoal
+  - name: VIN
+    feature: 2VW821AU9JM754284
 exterior:
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
 interior:
-  - Adjustable Steering Wheel
-  - Auto-Dimming Rearview Mirror
-  - Driver Adjustable Lumbar
-  - Driver Illuminated Vanity Mirror
-  - Universal Garage Door Opener
-  - Steering Wheel Audio Controls
-  - Heated Front Seats
-  - Leather Seats
-  - Leather Steering Wheel
-  - Pass-Through Rear Seat
-  - Passenger Adjustable Lumbar
-  - Passenger Illuminated Visor Mirror
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
 gallery:
   - image: /assets/img/trailers/image-asset.jpg
   - image: /assets/img/trailers/custom/2017-10-19+11.27.46.jpg
@@ -154,63 +191,26 @@ features:
 		</div>
 		<!-- Specifications -->
 		<h2 class="h3 pt-5 mt-sm-2 my-lg-4">Specifications</h2>
+		{% assign spec_half_size = page.specifications.size | divided_by: 2 %}
 		<div class="row row-cols-1 row-cols-sm-2 gy-2">
 		  <div class="col">
 			<ul class="list-unstyled text-body-secondary mt-n1 mb-0">
+			  {% for item in page.specifications limit: spec_half_size %}
 			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Manufacturing year:</span>
-				2021
+				<span class="fw-medium text-dark-emphasis me-1">{{item.name}}:</span>
+				{{item.feature}}
 			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Mileage:</span>
-				60K miles
-			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Body type:</span>
-				Convertible
-			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Drive type:</span>
-				2 wheel drive - rear
-			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Engine:</span>
-				6-Cylinder Turbo
-			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Transmission:</span>
-				7-Speed Shiftable Automatic
-			  </li>
+			  {% endfor %}
 			</ul>
 		  </div>
 		  <div class="col">
 			<ul class="list-unstyled text-body-secondary mt-n1 mb-0">
+			{% for item in page.specifications offset: spec_half_size %}
 			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Fuel type:</span>
-				2021
+				<span class="fw-medium text-dark-emphasis me-1">{{item.name}}:</span>
+				{{item.feature}}
 			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">City MPG:</span>
-				60K miles
-				<i class="fi-alert-circle fs-lg text-primary align-middle ms-2" data-bs-toggle="tooltip" title="Verified by seller"></i>
-			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Highway MPG:</span>
-				Convertible
-				<i class="fi-alert-circle fs-lg text-primary align-middle ms-2" data-bs-toggle="tooltip" title="Verified by seller"></i>
-			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Exterior color:</span>
-				2 wheel drive - rear
-			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">Interior color:</span>
-				Charcoal
-			  </li>
-			  <li class="mt-1">
-				<span class="fw-medium text-dark-emphasis me-1">VIN:</span>
-				2VW821AU9JM754284
-			  </li>
+			  {% endfor %}
 			</ul>
 		  </div>
 		</div>
@@ -220,26 +220,35 @@ features:
 		  <div class="accordion-item">
 			<h3 class="accordion-header" id="headingExterior">
 			  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#exterior" aria-expanded="false" aria-controls="exterior">
-				<span class="hover-effect-underline stretched-link me-2">Exterior</span>
+				<span class="stretched-link me-2">Exterior</span>
 			  </button>
 			</h3>
 			<div class="accordion-collapse collapse" id="exterior" aria-labelledby="headingExterior" data-bs-parent="#features">
 			  <div class="accordion-body fs-base">
-				<ul class="mt-n1 mb-0">
-				  <li class="mt-1">Alloy Wheels</li>
-				  <li class="mt-1">Sunroof / Moonroof</li>
-				  <li class="mt-1">Tinged glass</li>
-				  <li class="mt-1">LED Headlights</li>
-				  <li class="mt-1">Foldable Roof</li>
-				  <li class="mt-1">Tow Hitch</li>
-				</ul>
+				<div class="row row-cols-1 row-cols-sm-2 gy-2">
+					{% assign exterior_half_size = page.exterior.size | divided_by: 2 %}
+				  <div class="col">
+					<ul class="mt-n1 mb-0">
+					 {% for exterior_half_size_1 in page.exterior limit: exterior_half_size %}
+						 <li class="mt-1">{{ exterior_half_size_1 }}</li>
+					   {% endfor %}
+					</ul>
+				  </div>
+				  <div class="col">
+					<ul class="mt-n1 mb-0">
+					 {% for exterior_half_size_2 in page.exterior offset: exterior_half_size %}
+						 <li class="mt-1">{{ exterior_half_size_2 }}</li>
+					   {% endfor %}
+					</ul>
+				  </div>
+				</div>
 			  </div>
-			</div>
+		  </div>
 		  </div>
 		  <div class="accordion-item">
 			<h3 class="accordion-header" id="headingInterior">
 			  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#interior" aria-expanded="true" aria-controls="interior">
-				<span class="hover-effect-underline stretched-link me-2">Interior</span>
+				<span class="stretched-link me-2">Interior</span>
 			  </button>
 			</h3>
 			<div class="accordion-collapse collapse" id="interior" aria-labelledby="headingInterior" data-bs-parent="#features">
