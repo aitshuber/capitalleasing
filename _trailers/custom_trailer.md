@@ -319,6 +319,7 @@ features:
 			  </div>
 			</div>
 		  </div>
+		  {% comment %}
 		  <!-- Subscribe -->
 		  <div class="card p-sm-2 p-lg-0 p-xl-2">
 			<div class="card-body">
@@ -332,6 +333,7 @@ features:
 			  </form>
 			</div>
 		  </div>
+		  {% endcomment %}
 		</div>
 	  </aside>
 	</div>
