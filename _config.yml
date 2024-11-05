@@ -6,7 +6,7 @@ include:
   - _data
   - _plugins
   - _trailers
-sitename: null
+sitename: Capital Leasing
 relative_permalinks: false
 favicon: null
 lang: en
