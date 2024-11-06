@@ -7,7 +7,25 @@ seo:
   image:
 name: 2014 Horse Trailer
 trailer_type: Custom Trailer
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+  in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+  amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+  officia deserunt mollit anim id est laborum.
 specifications:
   - name: Manufacturing year
     feature: 2021
@@ -68,12 +86,13 @@ gallery:
 video:
 price: $192,500
 features:
-  - item: 45' LENGTH
+  - item: 65' LENGTH
   - item: Custom Options
   - item: Gooseneck
 ---
-  <!-- Car details section -->
-  <section class="container pt-4 pb-5 mb-xxl-3">
+<!-- Car details section -->
+
+<section class="container pt-4 pb-5 mb-xxl-3">
 	<!-- Title + Share button -->
 	<div class="d-flex justify-content-between gap-3 position-relative z-2 mb-3 mb-lg-4">
 	  <h1 class="mb-0">{{page.name}}</h1>
@@ -120,17 +139,17 @@ features:
 	  <!-- Gallery (slider) + Description -->
 	  <div class="col-lg-8 pb-3 pb-sm-0 mb-4 mb-sm-5 mb-lg-0">
 		<!-- Main slider -->
-		<div class="swiper hover-effect-opacity" data-swiper='{
-		  "spaceBetween": 16,
-		  "loop": true,
-		  "navigation": {
-			"prevEl": ".btn-prev",
-			"nextEl": ".btn-next"
+		<div class="swiper hover-effect-opacity" data-swiper="{
+		  &quot;spaceBetween&quot;: 16,
+		  &quot;loop&quot;: true,
+		  &quot;navigation&quot;: {
+			&quot;prevEl&quot;: &quot;.btn-prev&quot;,
+			&quot;nextEl&quot;: &quot;.btn-next&quot;
 		  },
-		  "thumbs": {
-			"swiper": "#thumbs"
+		  &quot;thumbs&quot;: {
+			&quot;swiper&quot;: &quot;#thumbs&quot;
 		  }
-		}'>
+		}">
 		  <div class="swiper-wrapper">
 			  {% for item in page.gallery %}
 			<div class="swiper-slide">
@@ -153,32 +172,32 @@ features:
 		  </div>
 		</div>
 		<!-- Thumbnails slider -->
-		<div class="swiper swiper-load swiper-thumbs pt-2 mt-1" id="thumbs" data-swiper='{
-		  "loop": true,
-		  "spaceBetween": 16,
-		  "slidesPerView": 3,
-		  "watchSlidesProgress": true,
-		  "breakpoints": {
-			"340": {
-			  "slidesPerView": 4
+		<div class="swiper swiper-load swiper-thumbs pt-2 mt-1" id="thumbs" data-swiper="{
+		  &quot;loop&quot;: true,
+		  &quot;spaceBetween&quot;: 16,
+		  &quot;slidesPerView&quot;: 3,
+		  &quot;watchSlidesProgress&quot;: true,
+		  &quot;breakpoints&quot;: {
+			&quot;340&quot;: {
+			  &quot;slidesPerView&quot;: 4
 			},
-			"500": {
-			  "slidesPerView": 5
+			&quot;500&quot;: {
+			  &quot;slidesPerView&quot;: 5
 			},
-			"600": {
-			  "slidesPerView": 6
+			&quot;600&quot;: {
+			  &quot;slidesPerView&quot;: 6
 			},
-			"768": {
-			  "slidesPerView": 4
+			&quot;768&quot;: {
+			  &quot;slidesPerView&quot;: 4
 			},
-			"992": {
-			  "slidesPerView": 5
+			&quot;992&quot;: {
+			  &quot;slidesPerView&quot;: 5
 			},
-			"1200": {
-			  "slidesPerView": 5
+			&quot;1200&quot;: {
+			  &quot;slidesPerView&quot;: 5
 			}
 		  }
-		}'>
+		}">
 		  <div class="swiper-wrapper">
 			{% for item in page.gallery %}
 			<div class="swiper-slide swiper-thumb overflow-hidden">
@@ -310,8 +329,8 @@ features:
 		  <div class="card bg-body-tertiary border-0 p-sm-2 p-lg-0 p-xl-2 mb-4">
 			<div class="card-body">
 			  <div class="d-flex align-items-center position-relative mb-3">
-				<div class="">
-				  <img src="/assets/img/logo.svg" class="w-75" alt="Avatar">
+				<div>
+				  <img src="/assets/img/logo.svg" class="w-75" alt="Avatar" />
 				</div>
 			  </div>
 			  <div class="d-flex flex-wrap gap-3">
@@ -323,10 +342,10 @@ features:
 		  <div class="card p-sm-2 p-lg-0 p-xl-2">
 			<div class="card-body">
 			  <h4 class="h6">Email me price drops and new listings for these search results:</h4>
-			  <div prefill="trailer={{page.name}}&listing={{site.url}}{{page.url}}" data-paperform-id="gjbn3fxy"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
+			  &lt;div prefill="trailer={{page.name}}&amp;listing={{site.url}}{{page.url}}" data-paperform-id="gjbn3fxy"&gt;</div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
 			</div>
 		  </div>
-		</div>
+		&lt;/div&gt;
 	  </aside>
 	</div>
   </section>
