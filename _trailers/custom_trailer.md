@@ -319,21 +319,13 @@ features:
 			  </div>
 			</div>
 		  </div>
-		  {% comment %}
 		  <!-- Subscribe -->
 		  <div class="card p-sm-2 p-lg-0 p-xl-2">
 			<div class="card-body">
 			  <h4 class="h6">Email me price drops and new listings for these search results:</h4>
-			  <form class="needs-validation d-flex flex-column flex-sm-row flex-lg-column flex-xl-row gap-2 gap-sm-3 gap-lg-2 gap-xl-3 mb-3" novalidate>
-				<div class="position-relative">
-				  <i class="fi-mail position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-				  <input type="email" class="form-control form-icon-start" placeholder="Your email" required>
-				</div>
-				<button type="submit" class="btn btn-secondary">Subscribe</button>
-			  </form>
+			  <div prefill="trailer={{page.name}}&listing={{site.url}}{{page.url}}" data-paperform-id="gjbn3fxy"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
 			</div>
 		  </div>
-		  {% endcomment %}
 		</div>
 	  </aside>
 	</div>
