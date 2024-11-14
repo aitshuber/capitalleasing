@@ -28,6 +28,18 @@ collections_config_override: true
 collection_groups: null
 _enabled_editors: null
 _inputs:
+  layout:
+    hidden: true
+  trailer_type:
+    type: multiselect
+    options:
+      values:
+        - Custom Trailers
+        - Select Series
+        - Stock
+        - Equipment to Haul
+        - Spa Therapy
+        - Cargo
   categories:
     type: multiselect
     options:

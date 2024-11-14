@@ -1,26 +1,12 @@
-email: info@scoutrec.com
-phone: (337) 443-0880
+email: email.com
+phone: (337) 123-4567
 Addresses:
   - address: 905 Jefferson St.
-    address2: Suite 504
-    city-state-zip: Lafayette, LA 70501
-  - address: P.O. Box 51125
     address2:
-    city-state-zip: Lafayette, LA 70505
-logo_image: /uploads/scout-gray-sign-logo-rev.png
+    city-state-zip: Lafayette, LA 70501
+logo_image: /assets/img/logo.svg
 social:
   - name: Instagram
-    link: https://instagram.com/scoutrealestateco
+    link: https://instagram.com
     icon: instagram
-  - name: Facebook
-    link: https://facebook.com/scoutrealestateco
-    icon: facebook
-  - name: Youtube
-    link: https://www.youtube.com/channel/UCnEJTuCvF082zAAjpeasQIA
-    icon: youtube
-  - name: LinkedIn
-    link: https://www.linkedin.com/company/scout-real-estate-co/
-    icon: linkedin
-  - name: Scoout Directory
-    link: /directory
-    icon: person-rolodex
+
