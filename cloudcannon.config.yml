@@ -31,7 +31,7 @@ _inputs:
   layout:
     hidden: true
   trailer_type:
-    type: multiselect
+    type: select
     options:
       values:
         - Custom Trailers
