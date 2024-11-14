@@ -78,12 +78,14 @@ interior:
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
 gallery:
-  - image: /assets/img/trailers/image-asset.jpg
-  - image: /assets/img/trailers/custom/2017-10-19+11.27.46.jpg
-  - image: /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
-  - image: /assets/img/trailers/custom/2017-10-19+11.44.41.jpg
-  - image: /assets/img/trailers/custom/2017-10-19+11.45.38.jpg
+  - item: /assets/img/trailers/image-asset.jpg
+  - item: /assets/img/trailers/custom/2017-10-19+11.27.46.jpg
+  - item: /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
+  - item: /assets/img/trailers/custom/2017-10-19+11.44.41.jpg
+  - item: /assets/img/trailers/custom/2017-10-19+11.45.38.jpg
 video:
+  - item: https://www.youtube.com/watch?v=Z1xX1Kt9NkU
+    thumb: /assets/img/blog/v1/02.jpg
 price: $192,500
 features:
   - item: 65' LENGTH
@@ -151,10 +153,10 @@ features:
 		  }
 		}">
 		  <div class="swiper-wrapper">
-			  {% for item in page.gallery %}
+			  {% for image in page.gallery %}
 			<div class="swiper-slide">
 			  <div class="ratio bg-body-tertiary rounded overflow-hidden gallery-ratio">
-				<img src="{{item.image}}" class="object-cover" alt="Image">
+				<img src="{{image.item}}" class="object-cover" alt="Image">
 			  </div>
 			</div>
 			{% endfor %}
@@ -199,10 +201,10 @@ features:
 		  }
 		}">
 		  <div class="swiper-wrapper">
-			{% for item in page.gallery %}
+			{% for image in page.gallery %}
 			<div class="swiper-slide swiper-thumb overflow-hidden">
 			  <div class="ratio bg-body-tertiary gallery-ratio-thumb" >
-				<img src="{{item.image}}" class="swiper-thumb-img object-cover" alt="Thumbnail">
+				<img src="{{image.item}}" class="swiper-thumb-img object-cover" alt="Thumbnail">
 			  </div>
 			</div>
 			{% endfor %}
@@ -236,6 +238,34 @@ features:
 		<!-- Fetures (Accordion) -->
 		<h2 class="h3 pt-5 mt-sm-2 mb-2 mb-lg-3">Features</h2>
 		<div class="accordion accordion-alt-icon" id="features">
+			<div class="accordion-item">
+				<h3 class="accordion-header" id="headingvideos">
+				  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#videos" aria-expanded="false" aria-controls="videos">
+					<span class="stretched-link me-2">Videos</span>
+				  </button>
+				</h3>
+				<div class="accordion-collapse collapse" id="videos" aria-labelledby="headingvideos" data-bs-parent="#videos">
+				  <div class="accordion-body fs-base">
+					<div class="row row-cols-1 row-cols-sm-2 gy-2">
+						{% for video in page.video %}
+					  <div class="col">
+						<!-- YouTube video lightbox (gallery) -->
+						<!-- Wrap the image with a "ratio" element to avoid content shifts on page load. Formula: imageHeight / imageWidth * 100% -->
+						<a class="hover-effect-opacity ratio d-flex bg-body-tertiary rounded-4 overflow-hidden" href="{{video.item}}" style="--fn-aspect-ratio: calc(346 / 480 * 100%)" data-glightbox data-gallery="video">
+						  <div class="position-absolute d-flex flex-column align-items-center top-0 start-0 w-100 h-100 z-2 text-white p-4">
+							<span class="btn btn-icon btn-lg position-absolute top-50 translate-middle-y bg-white text-dark rounded-circle">
+							  <i class="fi-play-filled"></i>
+							</span>
+						  </div>
+						  <span class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25 opacity-0 z-1"></span>
+						  <img src="{{video.thumb}}" alt="Image">
+						</a>
+					  </div>
+					  {% endfor %}
+					</div>
+				  </div>
+			  </div>
+			  </div>
 		  <div class="accordion-item">
 			<h3 class="accordion-header" id="headingExterior">
 			  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#exterior" aria-expanded="false" aria-controls="exterior">
@@ -342,10 +372,9 @@ features:
 		  <div class="card p-sm-2 p-lg-0 p-xl-2">
 			<div class="card-body">
 			  <h4 class="h6">Email me price drops and new listings for these search results:</h4>
-			  &lt;div prefill="trailer={{page.name}}&amp;listing={{site.url}}{{page.url}}" data-paperform-id="gjbn3fxy"&gt;</div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
+			  <div prefill="trailer={{page.name}}&amp;listing={{site.url}}{{page.url}}" data-paperform-id="gjbn3fxy"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
 			</div>
 		  </div>
-		&lt;/div&gt;
 	  </aside>
 	</div>
   </section>
