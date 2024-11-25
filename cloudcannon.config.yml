@@ -49,6 +49,8 @@ _inputs:
       type: image
       options:
       allow_create: true
+  thumb:
+    type: image
   tags:
     type: multiselect
     options:
