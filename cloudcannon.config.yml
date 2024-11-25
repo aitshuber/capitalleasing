@@ -1,57 +1,43 @@
-_schema: _schema
+source: ''
 paths:
-  uploads: uploads
-  uploads_use_relative_path: false
   static: ''
+  uploads: uploads
+  data: _data
+  includes: _includes
+  layouts: _layouts
+  uploads_use_relative_path: false
   dam_uploads: ''
   dam_static: ''
   collections: ''
-  data: _data
-  layouts: _layouts
-  includes: _includes
 collections_config:
   data:
     path: _data
-    icon: notes
     output: true
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
+    auto_discovered: true
   pages:
     path: ''
-    icon: notes
     output: true
     filter: strict
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
+    auto_discovered: true
   trailers:
-    path: _trailers
-    icon: rv_hookup
-    output: true
     _enabled_editors:
       - data
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
+    icon: rv_hookup
+    output: true
+    auto_discovered: true
+    path: _trailers
     schemas:
       default:
         path: .cloudcannon/schemas/trailers.md
-        reorder_inputs: true
-        hide_extra_inputs: false
-        remove_empty_inputs: false
-        remove_extra_inputs: true
-        icon: notes
 collections_config_override: true
+collection_groups: null
+_enabled_editors: null
 _inputs:
   layout:
-    type: auto
     hidden: true
-    cascade: true
   trailer_type:
     type: select
     options:
-      allow_empty: true
       values:
         - Custom Trailers
         - Select Series
@@ -59,53 +45,41 @@ _inputs:
         - Equipment to Haul
         - Spa Therapy
         - Cargo
-    cascade: true
   condition:
     type: select
     options:
-      allow_empty: true
       values:
         - New
         - Used
-    label: Condition
-    cascade: true
   hitch_type:
     type: select
     options:
-      allow_empty: true
       values:
         - Gooseneck
         - Bumper pull
-    label: Hitch Type
-    cascade: true
   categories:
     type: multiselect
     options:
       allow_create: true
-      empty_type: array
-    cascade: true
   gallery:
     type: image
-    cascade: true
+    options:
     allow_create: true
   video:
     type: url
-    cascade: true
+    options:
     allow_create: true
   thumb:
     type: image
-    cascade: true
   tags:
     type: multiselect
     options:
       allow_create: true
-      empty_type: array
-    cascade: true
 _select_data:
   social:
     name: Capital Leasing
     links:
-      -
+      - null
   jekyll-archives:
     layout: archive
     enabled: []
@@ -116,6 +90,9 @@ _select_data:
       tag: /tag/:name/
       category: /category/:name/
   archives: []
+_structures: {}
+_editables: {}
+commit_templates: []
 _snippets:
   _cc_jekyll_unknown_paired_tag:
     hidden: true
@@ -130,33 +107,19 @@ _snippets:
       icon: question_mark
     _inputs:
       name:
-        type: auto
         hidden: true
-        cascade: true
       args:
-        type: auto
         hidden: true
-        cascade: true
       content:
-        type: auto
         hidden: true
-        cascade: true
       trim_top_left:
-        type: auto
         hidden: true
-        cascade: true
       trim_top_right:
-        type: auto
         hidden: true
-        cascade: true
       trim_bottom_left:
-        type: auto
         hidden: true
-        cascade: true
       trim_bottom_right:
-        type: auto
         hidden: true
-        cascade: true
     params:
       content:
         parser: content
@@ -248,21 +211,13 @@ _snippets:
       icon: question_mark
     _inputs:
       name:
-        type: auto
         hidden: true
-        cascade: true
       args:
-        type: auto
         hidden: true
-        cascade: true
       trim_left:
-        type: auto
         hidden: true
-        cascade: true
       trim_right:
-        type: auto
         hidden: true
-        cascade: true
     params:
       name:
         parser: argument
@@ -334,7 +289,6 @@ _snippets:
     _inputs:
       content:
         type: code
-        cascade: true
       language:
         type: select
         options:
@@ -625,7 +579,6 @@ _snippets:
               name: Xojo
             - value: yaml
               name: Yaml
-        cascade: true
   _cc_jekyll_template:
     hidden: true
     snippet: '{{[[trim_left]][[template]][[trim_right]]}}'
@@ -636,17 +589,11 @@ _snippets:
       icon: code
     _inputs:
       template:
-        type: auto
         hidden: true
-        cascade: true
       trim_left:
-        type: auto
         hidden: true
-        cascade: true
       trim_right:
-        type: auto
         hidden: true
-        cascade: true
     params:
       template:
         parser: content
@@ -767,7 +714,6 @@ _snippets:
     _inputs:
       content:
         type: code
-        cascade: true
   jekyll_link:
     template: jekyll_tag_positional_args
     definitions:
@@ -784,10 +730,9 @@ _snippets:
       view: inline
     _inputs:
       path:
-        type: url
-        comment: Enter the URL or path to link to.
-        cascade: true
         text: Link
+        comment: Enter the URL or path to link to.
+        type: url
   jekyll_post_url:
     template: jekyll_tag_positional_args
     definitions:
@@ -804,8 +749,11 @@ _snippets:
       view: inline
     _inputs:
       post:
-        type: url
-        comment: Enter the post name or path.
-        cascade: true
         text: Post
+        comment: Enter the post name or path.
+        type: url
+base_url: ''
+data_config: {}
+editor: null
+source_editor: null
 timezone: America/Chicago

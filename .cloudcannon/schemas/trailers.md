@@ -7,7 +7,7 @@ seo:
   image:
 trailer_title:
 trailer_type:
-description: >-
+description:
 price:
 specifications:
   - spec_title:
