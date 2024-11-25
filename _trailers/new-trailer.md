@@ -1,4 +1,5 @@
 ---
+_schema: default
 layout: trailers
 seo:
   title:
@@ -20,7 +21,7 @@ exterior:
 interior:
   -
 gallery:
-  - image: /uploads/img-4826.jpeg
+  - image: /uploads/img-4826.jpg
   - image: /uploads/img-5051.jpeg
   - image: ''
 video:
