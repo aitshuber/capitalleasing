@@ -19,13 +19,13 @@ permalink: "trailers"
 
 		<!-- Grid of items -->
 		<div class="vstack gap-4">
-		{% for item in site.trailers %}
+		{% for image in site.trailers %}
 		  <!-- Listing -->
 		  <article class="card hover-effect-scale bg-body-tertiary border-0 overflow-hidden">
 			<div class="row g-0">
 			  <div class="col-sm-5 position-relative bg-body-secondary overflow-hidden" style="min-height: 220px">
 
-				<img src="{{item.gallery[0].image}}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+				<img src="{{image.gallery[0].item}}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
 			  </div>
 			  <div class="col-sm-7 py-md-2">
 				<div class="card-body pb-3 pb-md-4">

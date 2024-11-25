@@ -44,6 +44,11 @@ _inputs:
     type: multiselect
     options:
       allow_create: true
+  gallery:
+    item:
+      type: image
+      options:
+      allow_create: true
   tags:
     type: multiselect
     options:
