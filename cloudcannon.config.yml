@@ -49,7 +49,7 @@ _inputs:
     options:
     allow_create: true
   video:
-    type: link
+    type: url
     options:
     allow_create: true
   thumb:
