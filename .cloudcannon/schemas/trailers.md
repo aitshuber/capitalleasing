@@ -7,16 +7,18 @@ seo:
   image:
 trailer_title:
 trailer_type:
-description:
+description: >-
 price:
-features:
-  - item:
 specifications:
-  - name:
-    feature:
-exterior:
+  - spec_title:
+    spec:
+condition:
+hitch_type:
+highlighted_features:
   -
-interior:
+trailer:
+  -
+living_quarters:
   -
 gallery:
   - image:
