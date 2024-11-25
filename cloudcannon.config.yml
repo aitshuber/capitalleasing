@@ -45,7 +45,7 @@ _inputs:
     options:
       allow_create: true
   gallery:
-    item:
+    - item:
       type: image
       options:
       allow_create: true
