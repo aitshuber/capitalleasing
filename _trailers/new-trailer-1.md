@@ -1,0 +1,78 @@
+---
+layout: default
+seo:
+  title: 6 Horse Trainer Trailer
+  description: Ready to go
+  keywords:
+  image: /uploads/10-6h-trainer-trailer-web.jpg
+trailer_title: '2024  6-Horse Trainer Trailer '
+trailer_type: Custom Trailers
+description: |
+  White Skin
+  Rubber Mats Full Length
+  (12) Custom Face Cages
+  (12) Window Screens
+  (9) Saddle Racks
+  (24) Tie Hooks
+  (40) Bridle Hooks
+  (10) Manger Hooks
+  Line & Insulate Walls Full Length
+  Line & Insulate Ceiling Full Length
+  Finish All Tacks & Dressing Room
+  (Line, Insulate, Carpet, & Mats)
+  Carpet Manger Doors
+  Rumber (Kick Plate) in Horse Area
+  Custom Adjustable Saddle Racks
+  Stair Step Tack Wall
+  Code Locks
+  2 Stud Dividers with High Top Flow Divider
+  2 Brush tray
+  Boot Box
+  Spare Tire
+  Clothes Rod
+  2- Pinned 4 tier blanket Racks
+  Single electric\Hydraulic Jack
+  Quick Coupler
+price: Lease this trailer for $2000 Month
+features:
+  - item: Gooseneck
+specifications:
+  - name: Manufacturing year
+    feature: 2021
+  - name: Mileage
+    feature: 60K miles
+  - name: Body type
+    feature: Convertible
+  - name: Drive type
+    feature: 2 wheel drive - rear
+  - name: Engine
+    feature: 6-Cylinder Turbo
+  - name: Transmission
+    feature: 7-Speed Shiftable Automatic
+  - name: Fuel type
+    feature: Gasoline
+  - name: City MPG
+    feature: 20
+  - name: Highway MPG
+    feature: 28
+  - name: Exterior color
+    feature: Red
+  - name: Interior color
+    feature: Charcoal
+  - name: VIN
+    feature: 2VW821AU9JM754284
+exterior:
+  - Lorem ipsum dolor sit amet
+interior:
+  - Carpet in Dressing\Tack room
+gallery:
+  - image: "/assets/img/trailers/custom/2017-10-19+11.29.20.jpg"
+  - image: "/assets/img/trailers/custom/2017-10-19+11.29.20.jpg"
+  - image: "/assets/img/trailers/custom/2017-10-19+11.29.20.jpg"
+  - image: "/assets/img/trailers/custom/2017-10-19+11.44.41.jpg"
+video:
+  - video: https://www.youtube.com/watch?v=Z1xX1Kt9NkU
+    thumb: /assets/img/blog/v1/02.jpg
+  - video: https://youtu.be/EltDIewEkkA
+    thumb: https://youtu.be/EltDIewEkkA
+---
