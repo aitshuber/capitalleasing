@@ -8,6 +8,9 @@ seo:
 trailer_title:
 trailer_type:
 description:
+price:
+features:
+  - item:
 specifications:
   - name:
     feature:
@@ -20,7 +23,4 @@ gallery:
 video:
   - item:
     thumb:
-price:
-features:
-  - item:
 ---
