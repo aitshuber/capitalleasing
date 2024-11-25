@@ -39,8 +39,8 @@ hitch_type: Gooseneck
 helighted_features:
   - location: Decatur
     addtional:
-    - item: Custom Options
-    - item: Gooseneck
+      - item: Custom Options
+      - item: Gooseneck
 specifications:
   - spec_title: Manufacturing year
     spec: 2021
