@@ -10,7 +10,7 @@ trailer_type:
 description:
 specifications:
   - name:
-	  feature:
+    feature:
 exterior:
   -
 interior:
@@ -19,7 +19,7 @@ gallery:
   - image:
 video:
   - item:
-	  thumb:
+    thumb:
 price:
 features:
   - item:
