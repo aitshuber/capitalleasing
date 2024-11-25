@@ -61,7 +61,7 @@ _inputs:
         - Spa Therapy
         - Cargo
     label: Trailer Type
-    cascade: false
+    cascade: true
   condition:
     type: select
     options:
@@ -77,6 +77,7 @@ _inputs:
       values:
         - Gooseneck
         - Bumper pull
+    label: Hitch Type
     cascade: true
   categories:
     type: multiselect
@@ -808,4 +809,8 @@ _snippets:
         comment: Enter the post name or path.
         cascade: true
         text: Post
+source_editor:
+  tab_size: 2
+  theme: monokai
+  show_gutter: true
 timezone: America/Chicago
