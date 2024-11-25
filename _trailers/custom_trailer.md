@@ -34,14 +34,14 @@ description: >-
   Single electric\Hydraulic Jack
   Quick Coupler
 price: Lease this trailer for $2000 Month
+specifications:
+  - spec_title: Manufacturing year
+    spec: 2021
 condition: New
 hitch_type: Gooseneck
 highlighted_features:
   - Custom Options
   - Gooseneck
-specifications:
-  - spec_title: Manufacturing year
-    spec: 2021
 trailer:
   - Lorem ipsum dolor sit amet
 living_quarters:
