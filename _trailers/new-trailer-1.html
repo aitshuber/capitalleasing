@@ -89,8 +89,6 @@ gallery:
   - item: /assets/img/trailers/custom/3 6H Trainer Trailer.jpg
   - item: /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
   - item: /assets/img/trailers/custom/2017-10-19+11.44.41.jpg
-  - item: ''
-  - item: ''
 video:
   - item: https://www.youtube.com/watch?v=Z1xX1Kt9NkU
     thumb: /assets/img/blog/v1/02.jpg
@@ -100,7 +98,6 @@ price: Lease this trailer for $2000 Month
 features:
   - item: Gooseneck
 ---
-
 <section class="container pt-4 pb-5 mb-xxl-3">
 	<!-- Title + Share button -->
 	<div class="d-flex justify-content-between gap-3 position-relative z-2 mb-3 mb-lg-4">
@@ -163,7 +160,7 @@ features:
 			  {% for image in page.gallery %}
 			<div class="swiper-slide">
 			  <div class="ratio bg-body-tertiary rounded overflow-hidden gallery-ratio">
-				<img src="{{image.item}}" class="object-cover" alt="Image">
+				<img src="{{image.item}}" class="object-cover" alt="Image" />
 			  </div>
 			</div>
 			{% endfor %}
@@ -210,8 +207,8 @@ features:
 		  <div class="swiper-wrapper">
 			{% for image in page.gallery %}
 			<div class="swiper-slide swiper-thumb overflow-hidden">
-			  <div class="ratio bg-body-tertiary gallery-ratio-thumb" >
-				<img src="{{image.item}}" class="swiper-thumb-img object-cover" alt="Thumbnail">
+			  <div class="ratio bg-body-tertiary gallery-ratio-thumb">
+				<img src="{{image.item}}" class="swiper-thumb-img object-cover" alt="Thumbnail" />
 			  </div>
 			</div>
 			{% endfor %}
@@ -265,7 +262,7 @@ features:
 							</span>
 						  </div>
 						  <span class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25 opacity-0 z-1"></span>
-						  <img src="{{video.thumb}}" alt="Image">
+						  <img src="{{video.thumb}}" alt="Image" />
 						</a>
 					  </div>
 					  {% endfor %}
@@ -382,6 +379,6 @@ features:
 			  <div prefill="trailer={{page.name}}&amp;listing={{site.url}}{{page.url}}" data-paperform-id="gjbn3fxy"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
 			</div>
 		  </div>
-	  </aside>
+	  </div></aside>
 	</div>
   </section>
