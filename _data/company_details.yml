@@ -1,5 +1,5 @@
 email: email.com
-phone: (337) 123-4567
+phone:
 Addresses:
   - address: 905 Jefferson St.
     address2:
@@ -9,4 +9,3 @@ social:
   - name: Instagram
     link: https://instagram.com
     icon: instagram
-
