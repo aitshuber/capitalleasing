@@ -12,7 +12,9 @@ specifications:
   - name:
 	  feature:
 exterior:
+  -
 interior:
+  -
 gallery:
   - image:
 video:
