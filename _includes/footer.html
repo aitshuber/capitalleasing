@@ -6,15 +6,12 @@
 	<!-- Copyright + Social links -->
 	<div class="d-flex flex-column flex-sm-row align-items-center justify-content-between pb-4 pt-3 pt-sm-2 pt-md-3 pt-lg-4">
 	  <div class="d-flex justify-content-center mb-3 mb-md-0 order-sm-2">
-		<a class="btn btn-icon fs-base btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip" data-bs-template='<div class="tooltip fs-xs mb-n2" role="tooltip"><div class="tooltip-inner bg-transparent text-white opacity-75 p-0"></div></div>' title="Instagram" aria-label="Follow us on Instagram">
-		  <i class="fi-instagram"></i>
+		 {% for social in site.data.company_details.social %}
+		<a class="btn btn-icon fs-base btn-outline-secondary border-0" href="{{social.link}}" target="_blank" data-bs-toggle="tooltip" data-bs-template='<div class="tooltip fs-xs mb-n2" role="tooltip"><div class="tooltip-inner bg-transparent text-white opacity-75 p-0"></div></div>' title="{{social.name}}" aria-label="Follow us on {{social.name}}">
+		  <i class="fi-{{social.icon | downcase}}"></i>
 		</a>
-		<a class="btn btn-icon fs-base btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip" data-bs-template='<div class="tooltip fs-xs mb-n2" role="tooltip"><div class="tooltip-inner bg-transparent text-white opacity-75 p-0"></div></div>' title="Facebook" aria-label="Follow us on Facebook">
-		  <i class="fi-facebook"></i>
-		</a>
-		<a class="btn btn-icon fs-base btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip" data-bs-template='<div class="tooltip fs-xs mb-n2" role="tooltip"><div class="tooltip-inner bg-transparent text-white opacity-75 p-0"></div></div>' title="X (Twitter)" aria-label="Follow us on X (Twitter)">
-		  <i class="fi-x"></i>
-		</a>
+		{% endfor %}
+
 	  </div>
 	  <p class="text-body-secondary fs-sm text-center mb-0 order-sm-1">&copy; All rights reserved. Made by Capital Leasing </p>
 	</div>
