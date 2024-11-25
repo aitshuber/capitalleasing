@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: trailers
 seo:
   title: 6 Horse Trainer Trailer
   description: Ready to go

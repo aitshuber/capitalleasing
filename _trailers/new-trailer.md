@@ -1,6 +1,5 @@
 ---
-_schema: default
-layout: default
+layout: trailers
 seo:
   title:
   description:
