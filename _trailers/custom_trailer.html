@@ -5,7 +5,7 @@ seo:
   description:
   keywords:
   image:
-name: 2014 Horse Trailer
+trailer_title: 2014 Horse Trailer
 trailer_type: Custom Trailer
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -78,11 +78,11 @@ interior:
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
 gallery:
-  - item: /assets/img/trailers/image-asset.jpg
-  - item: /assets/img/trailers/custom/2017-10-19+11.27.46.jpg
-  - item: /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
-  - item: /assets/img/trailers/custom/2017-10-19+11.44.41.jpg
-  - item: /assets/img/trailers/custom/2017-10-19+11.45.38.jpg
+  - image: /assets/img/trailers/image-asset.jpg
+  - image: /assets/img/trailers/custom/2017-10-19+11.27.46.jpg
+  - image: /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
+  - image: /assets/img/trailers/custom/2017-10-19+11.44.41.jpg
+  - image: /assets/img/trailers/custom/2017-10-19+11.45.38.jpg
 video:
   - item: https://www.youtube.com/watch?v=Z1xX1Kt9NkU
     thumb: /assets/img/blog/v1/02.jpg
@@ -93,11 +93,10 @@ features:
   - item: Gooseneck
 ---
 <!-- Car details section -->
-
 <section class="container pt-4 pb-5 mb-xxl-3">
 	<!-- Title + Share button -->
 	<div class="d-flex justify-content-between gap-3 position-relative z-2 mb-3 mb-lg-4">
-	  <h1 class="mb-0">{{page.name}}</h1>
+	  <h1 class="mb-0">{{page.trailer_title}}</h1>
 	  <div class="d-flex gap-2">
 		<div class="dropdown" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" title="Share">
 		  <button type="button" class="btn btn-icon btn-ghost btn-secondary animate-scale rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Share">
@@ -153,10 +152,10 @@ features:
 		  }
 		}">
 		  <div class="swiper-wrapper">
-			  {% for image in page.gallery %}
+			  {% for item in page.gallery %}
 			<div class="swiper-slide">
 			  <div class="ratio bg-body-tertiary rounded overflow-hidden gallery-ratio">
-				<img src="{{image.item}}" class="object-cover" alt="Image">
+				<img src="{{item.image}}" class="object-cover" alt="Image" />
 			  </div>
 			</div>
 			{% endfor %}
@@ -201,10 +200,10 @@ features:
 		  }
 		}">
 		  <div class="swiper-wrapper">
-			{% for image in page.gallery %}
+			{% for item in page.gallery %}
 			<div class="swiper-slide swiper-thumb overflow-hidden">
-			  <div class="ratio bg-body-tertiary gallery-ratio-thumb" >
-				<img src="{{image.item}}" class="swiper-thumb-img object-cover" alt="Thumbnail">
+			  <div class="ratio bg-body-tertiary gallery-ratio-thumb">
+				<img src="{{item.image}}" class="swiper-thumb-img object-cover" alt="Thumbnail" />
 			  </div>
 			</div>
 			{% endfor %}
@@ -258,7 +257,7 @@ features:
 							</span>
 						  </div>
 						  <span class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25 opacity-0 z-1"></span>
-						  <img src="{{video.thumb}}" alt="Image">
+						  <img src="{{video.thumb}}" alt="Image" />
 						</a>
 					  </div>
 					  {% endfor %}
@@ -372,9 +371,9 @@ features:
 		  <div class="card p-sm-2 p-lg-0 p-xl-2">
 			<div class="card-body">
 			  <h4 class="h6">Email me price drops and new listings for these search results:</h4>
-			  <div prefill="trailer={{page.name}}&amp;listing={{site.url}}{{page.url}}" data-paperform-id="gjbn3fxy"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
+			  <div prefill="trailer={{page.trailer_title}}&amp;listing={{site.url}}{{page.url}}" data-paperform-id="gjbn3fxy"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
 			</div>
 		  </div>
-	  </aside>
+	  </div></aside>
 	</div>
   </section>

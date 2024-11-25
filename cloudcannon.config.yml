@@ -20,10 +20,15 @@ collections_config:
     filter: strict
     auto_discovered: true
   trailers:
+    _enabled_editors:
+      - data
     icon: rv_hookup
     output: true
     auto_discovered: true
     path: _trailers
+    schemas:
+      default:
+        path: .cloudcannon/schemas/trailers.md
 collections_config_override: true
 collection_groups: null
 _enabled_editors: null
