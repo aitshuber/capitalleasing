@@ -45,6 +45,18 @@ _inputs:
         - Equipment to Haul
         - Spa Therapy
         - Cargo
+  condition:
+    type: select
+    options:
+      values:
+        - New
+        - Used
+  hitch_type:
+    type: select
+    options:
+      values:
+        - Gooseneck
+        - Bumper pull
   categories:
     type: multiselect
     options:

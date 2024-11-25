@@ -147,13 +147,38 @@
 					</div>
 					{% endfor %}
 				  </div>
+				 {% if page.video %} {% for video in page.video %} <div class="col-md-3 mt-3">
+					  <!-- YouTube video lightbox (gallery) -->
+					  <!-- Wrap the image with a "ratio" element to avoid content shifts on page load. Formula: imageHeight / imageWidth * 100% -->
+					  <a class="hover-effect-opacity ratio d-flex bg-body-tertiary rounded-4 overflow-hidden" href="{{video.item}}" style="--fn-aspect-ratio: calc(346 / 480 * 100%)" data-glightbox data-gallery="video">
+						<div class="position-absolute d-flex flex-column align-items-center top-0 start-0 w-100 h-100 z-2 text-white p-4">
+						  <span class="btn btn-icon btn-lg position-absolute top-50 translate-middle-y bg-white text-dark rounded-circle">
+							<i class="fi-play-filled"></i>
+						  </span>
+						</div>
+						<span class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25 opacity-0 z-1"></span>
+						<img src="{{video.thumb}}" class="ratio gallery-ratio" alt="Image" />
+					  </a>
+					</div>{% endfor %}{% endif %}
 				</div>
 				<!-- Specifications -->
 				<h2 class="h3 pt-5 mt-sm-2 my-lg-4">Specifications</h2>
 				{% assign spec_half_size = page.specifications.size | divided_by: 2 %}
 				<div class="row row-cols-1 row-cols-sm-2 gy-2">
+					{% if spec_half_size < 2 %}
+					<div class="col">
+						<ul class="list-unstyled text-body-secondary mt-n1 mb-0 text-start">
+						  {% for item in page.specifications %}
+						  <li class="mt-1">
+							<span class="fw-medium text-dark-emphasis me-1">{{item.spec_title}}:</span>
+							{{item.spec}}
+						  </li>
+						  {% endfor %}
+						</ul>
+					  </div>
+					  {% else %}
 				  <div class="col">
-					<ul class="list-unstyled text-body-secondary mt-n1 mb-0">
+					<ul class="list-unstyled text-body-secondary mt-n1 mb-0 text-start">
 					  {% for item in page.specifications limit: spec_half_size %}
 					  <li class="mt-1">
 						<span class="fw-medium text-dark-emphasis me-1">{{item.name}}:</span>
@@ -172,11 +197,28 @@
 					  {% endfor %}
 					</ul>
 				  </div>
+				  {% endif %}
 				</div>
-				<!-- Fetures (Accordion) -->
+				<!-- Seller's description -->
+				<h2 class="h3 pt-5 mt-sm-2">Description</h2>
+				{% assign first_half = page.description | truncatewords: 50 | remove: '...' %}
+				{% assign words = page.description | split: ' ' %}
+				{% assign first_half = words | slice: 0, 50 | join: ' ' %}
+				{% assign second_half = words | slice: 50, words.size | join: ' ' %}
+				<p>{{ first_half }}</p>
+				<div class="collapse" id="moreDescription">
+				  <p>{{ second_half }}</p>
+				</div>
+				<div class="nav">
+				  <a class="nav-link position-relative px-0 collapsed" href="#moreDescription" data-bs-toggle="collapse" aria-expanded="false" aria-controls="moreDescription" aria-label="Show / hide services">
+					<span class="hover-effect-underline stretched-link" data-label-collapsed="Show more" data-label-expanded="Show less"></span>
+					<i class="collapse-toggle-icon fi-chevron-down fs-base mt-1 ms-1"></i>
+				  </a>
+				</div>
+				<!-- Features (Accordion) -->
 				<h2 class="h3 pt-5 mt-sm-2 mb-2 mb-lg-3">Features</h2>
 				<div class="accordion accordion-alt-icon" id="features">
-					<div class="accordion-item">
+				  <div class="accordion-item">
 						<h3 class="accordion-header" id="headingvideos">
 						  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#videos" aria-expanded="false" aria-controls="videos">
 							<span class="stretched-link me-2">Videos</span>
@@ -204,79 +246,85 @@
 						  </div>
 					  </div>
 					  </div>
+
 				  <div class="accordion-item">
-					<h3 class="accordion-header" id="headingExterior">
-					  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#exterior" aria-expanded="false" aria-controls="exterior">
-						<span class="stretched-link me-2">Exterior</span>
+					<h3 class="accordion-header" id="headingtrailer">
+					  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#trailer" aria-expanded="false" aria-controls="trailer">
+						<span class="stretched-link me-2">Trailer</span>
 					  </button>
 					</h3>
-					<div class="accordion-collapse collapse" id="exterior" aria-labelledby="headingExterior" data-bs-parent="#features">
+					<div class="accordion-collapse collapse" id="trailer" aria-labelledby="headingtrailer" data-bs-parent="#features">
 					  <div class="accordion-body fs-base">
 						<div class="row row-cols-1 row-cols-sm-2 gy-2">
-							{% assign exterior_half_size = page.exterior.size | divided_by: 2 %}
+							{% assign trailer_half_size = page.trailer.size | divided_by: 2 %}
+							{% if trailer_half_size < 2 %}
+							<div class="col">
+								<ul class="mt-n1 mb-0">
+								 {% for trailer_half_size_1 in page.trailer %}
+									 <li class="mt-1">{{ trailer_half_size_1 }}</li>
+								   {% endfor %}
+								</ul>
+							  </div>
+							  {% else %}
 						  <div class="col">
 							<ul class="mt-n1 mb-0">
-							 {% for exterior_half_size_1 in page.exterior limit: exterior_half_size %}
-								 <li class="mt-1">{{ exterior_half_size_1 }}</li>
+							 {% for trailer_half_size_1 in page.trailer limit: trailer_half_size %}
+								 <li class="mt-1">{{ trailer_half_size_1 }}</li>
 							   {% endfor %}
 							</ul>
 						  </div>
 						  <div class="col">
 							<ul class="mt-n1 mb-0">
-							 {% for exterior_half_size_2 in page.exterior offset: exterior_half_size %}
-								 <li class="mt-1">{{ exterior_half_size_2 }}</li>
+							 {% for trailer_half_size_2 in page.trailer offset: trailer_half_size %}
+								 <li class="mt-1">{{ trailer_half_size_2 }}</li>
 							   {% endfor %}
 							</ul>
 						  </div>
+						  {% endif %}
 						</div>
 					  </div>
 				  </div>
 				  </div>
 				  <div class="accordion-item">
-					<h3 class="accordion-header" id="headingInterior">
-					  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#interior" aria-expanded="true" aria-controls="interior">
-						<span class="stretched-link me-2">Interior</span>
+					<h3 class="accordion-header" id="headingliving_quarters">
+					  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#living_quarters" aria-expanded="true" aria-controls="living_quarters">
+						<span class="stretched-link me-2">Living Quarters</span>
 					  </button>
 					</h3>
-					<div class="accordion-collapse collapse" id="interior" aria-labelledby="headingInterior" data-bs-parent="#features">
+					<div class="accordion-collapse collapse" id="living_quarters" aria-labelledby="headingliving_quarters" data-bs-parent="#features">
 					  <div class="accordion-body fs-base">
 						<div class="row row-cols-1 row-cols-sm-2 gy-2">
-							{% assign half_size = page.interior.size | divided_by: 2 %}
+							{% assign half_size = page.living_quarters.size | divided_by: 2 %}
+							{% if half_size < 2 %}
+							<div class="col">
+								<ul class="mt-n1 mb-0">
+								 {% for feature in page.living_quarters %}
+									 <li class="mt-1">{{ feature }}</li>
+								   {% endfor %}
+								</ul>
+							  </div>
+							  {% else %}
 						  <div class="col">
 							<ul class="mt-n1 mb-0">
-							 {% for feature in page.interior limit: half_size %}
+							 {% for feature in page.living_quarters limit: half_size %}
 								 <li class="mt-1">{{ feature }}</li>
 							   {% endfor %}
 							</ul>
 						  </div>
 						  <div class="col">
 							<ul class="mt-n1 mb-0">
-							 {% for feature in page.interior offset: half_size %}
+							 {% for feature in page.living_quarters offset: half_size %}
 								 <li class="mt-1">{{ feature }}</li>
 							   {% endfor %}
 							</ul>
 						  </div>
+						  {% endif %}
 						</div>
 					  </div>
 					</div>
 				  </div>
 				</div>
-				<!-- Seller's description -->
-				<h2 class="h3 pt-5 mt-sm-2">Description</h2>
-				{% assign first_half = page.description | truncatewords: 50 | remove: '...' %}
-				{% assign words = page.description | split: ' ' %}
-				{% assign first_half = words | slice: 0, 50 | join: ' ' %}
-				{% assign second_half = words | slice: 50, words.size | join: ' ' %}
-				<p>{{ first_half }}</p>
-				<div class="collapse" id="moreDescription">
-				  <p>{{ second_half }}</p>
-				</div>
-				<div class="nav">
-				  <a class="nav-link position-relative px-0 collapsed" href="#moreDescription" data-bs-toggle="collapse" aria-expanded="false" aria-controls="moreDescription" aria-label="Show / hide services">
-					<span class="hover-effect-underline stretched-link" data-label-collapsed="Show more" data-label-expanded="Show less"></span>
-					<i class="collapse-toggle-icon fi-chevron-down fs-base mt-1 ms-1"></i>
-				  </a>
-				</div>
+
 			  </div>
 			  <!-- Sidebar with car detail and seller info -->
 			  <aside class="col-lg-4" style="margin-top: -110px">
@@ -316,7 +364,6 @@
 			  </div></aside>
 			</div>
 		  </section>
-
 	</main>
 	{% include footer.html %}
 	{% include scripts.html %}

@@ -5,20 +5,23 @@ seo:
   description:
   keywords:
   image:
+banner:
+  - title: Haul Today, Pay Later
+    text: Flexible Leasing for Your Perfect Twister Trailer!
+    image: /assets/img/trailers/trailer.jpg
 permalink: "/"
 ---
-
 <!-- Hero / page title -->
+{% for item in page.banner %}
 <div class="position-relative py-5">
   <div class="container position-relative z-2 py-sm-2 py-md-4 py-lg-5 my-lg-3 my-xl-5">
-    <h1 class="display-4 text-white mb-0 my-xxl-3">Haul Today, Pay Later</h1>
-    <p class="lead text-white">Flexible Leasing for Your Perfect Twister Trailer!</p>
+    <h1 class="display-4 text-white mb-0 my-xxl-3">{{item.title}}</h1>
+    <p class="lead text-white">{{item.text}}</p>
   </div>
-  <img src="/assets/img/trailers/trailer.jpg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rtl-flip" alt="Background image">
+  <img src="{{item.image}}" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rtl-flip" alt="Background image">
   <span class="position-absolute top-0 start-0 w-100 h-100 z-1 rtl-flip" style="background: linear-gradient(-270deg, rgba(0, 71, 102, .80) 100%, rgba(0, 71, 102, 0) 100%)"></span>
 </div>
-
-
+{% endfor %}
       <!-- Trailers -->
       <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
         <div class="d-flex align-items-start justify-content-between gap-4 pb-3 mb-2 mb-sm-3">
