@@ -85,14 +85,14 @@ interior:
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
 gallery:
-  - item: /assets/img/trailers/custom/3 6H Trainer Trailer.jpg
-  - item: /assets/img/trailers/custom/3 6H Trainer Trailer.jpg
-  - item: /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
-  - item: /assets/img/trailers/custom/2017-10-19+11.44.41.jpg
+  - /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
+  - /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
+  - /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
+  - /assets/img/trailers/custom/2017-10-19+11.44.41.jpg
 video:
-  - item: https://www.youtube.com/watch?v=Z1xX1Kt9NkU
+  - video: https://www.youtube.com/watch?v=Z1xX1Kt9NkU
     thumb: /assets/img/blog/v1/02.jpg
-  - item: https://youtu.be/EltDIewEkkA
+  - video: https://youtu.be/EltDIewEkkA
     thumb: https://youtu.be/EltDIewEkkA
 price: Lease this trailer for $2000 Month
 features:
@@ -157,10 +157,10 @@ features:
 		  }
 		}">
 		  <div class="swiper-wrapper">
-			  {% for image in page.gallery %}
+			  {% for item in page.gallery %}
 			<div class="swiper-slide">
 			  <div class="ratio bg-body-tertiary rounded overflow-hidden gallery-ratio">
-				<img src="{{image.item}}" class="object-cover" alt="Image" />
+				<img src="{{item}}" class="object-cover" alt="Image" />
 			  </div>
 			</div>
 			{% endfor %}

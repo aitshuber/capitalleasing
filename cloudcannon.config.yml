@@ -45,10 +45,13 @@ _inputs:
     options:
       allow_create: true
   gallery:
-    - item:
-      type: image
-      options:
-      allow_create: true
+    type: image
+    options:
+    allow_create: true
+  video:
+    type: link
+    options:
+    allow_create: true
   thumb:
     type: image
   tags:
