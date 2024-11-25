@@ -36,9 +36,9 @@ description: >-
 price: Lease this trailer for $2000 Month
 condition: New
 hitch_type: Gooseneck
-helighted_features:
-  - item: Custom Options
-  - item: Gooseneck
+highlighted_features:
+  - Custom Options
+  - Gooseneck
 specifications:
   - spec_title: Manufacturing year
     spec: 2021
