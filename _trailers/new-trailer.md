@@ -23,7 +23,7 @@ interior:
 gallery:
   - image: /uploads/img-4826.jpg
   - image: /uploads/img-5051.jpeg
-  - image: ''
+  - image: /uploads/4-6h-trainer-trailer.jpg
 video:
   - item:
     thumb:
