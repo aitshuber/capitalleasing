@@ -2,7 +2,7 @@
 _schema: default
 layout: trailers
 seo:
-  title:
+  title: 8 Horse Trainer Trailer
   description:
   keywords:
   image: /uploads/10-6h-trainer-trailer-web.jpg
