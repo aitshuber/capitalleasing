@@ -90,6 +90,9 @@ _inputs:
     type: image
     cascade: true
     allow_create: true
+  trailer:
+    type: text
+    cascade: true
   video:
     type: url
     cascade: true
