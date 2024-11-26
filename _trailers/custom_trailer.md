@@ -39,6 +39,6 @@ gallery:
   - image: /uploads/38-6h-trainer-trailer.jpg
   - image: /uploads/30-6h-trainer-trailer.jpg
 video:
-  - item: https://www.youtube.com/watch?v=Z1xX1Kt9NkU
+  - item:
     thumb: /assets/img/blog/v1/02.jpg
 ---
