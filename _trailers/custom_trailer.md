@@ -33,10 +33,11 @@ living_quarters:
   - Lorem ipsum dolor sit amet
 gallery:
   - image: /uploads/10-6h-trainer-trailer-web.jpg
-  - image: /assets/img/trailers/custom/2017-10-19+11.27.46.jpg
-  - image: /assets/img/trailers/custom/2017-10-19+11.29.20.jpg
-  - image: /assets/img/trailers/custom/2017-10-19+11.44.41.jpg
-  - image: /assets/img/trailers/custom/2017-10-19+11.45.38.jpg
+  - image: /uploads/4-6h-trainer-trailer-1.jpg
+  - image: /uploads/15-6h-trainer-trailer.jpg
+  - image: /uploads/18-6h-trainer-trailer.jpg
+  - image: /uploads/38-6h-trainer-trailer.jpg
+  - image: /uploads/30-6h-trainer-trailer.jpg
 video:
   - item: https://www.youtube.com/watch?v=Z1xX1Kt9NkU
     thumb: /assets/img/blog/v1/02.jpg
