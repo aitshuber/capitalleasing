@@ -92,6 +92,10 @@ _inputs:
     allow_create: true
   trailer:
     type: text
+    options:
+      empty_type:
+    label: Trailer Features
+    comment: List of individual trailer features
     cascade: true
   video:
     type: url
