@@ -93,7 +93,7 @@ _inputs:
   trailer:
     type: text
     options:
-      empty_type:
+      empty_type: 'null'
     label: Trailer Features
     comment: List of individual trailer features
     cascade: true

@@ -22,15 +22,13 @@ price: Lease this trailer for 36 months at just $1,640.43 a Month!
 specifications:
   year: 2024
   make: Twister
-  condition: New
-  hitch_type: Gooseneck
   model: 6 Horse Trainer
   vin: 123456
-  color: Silver
+  color: '#c0c0c0'
   length: 12
   width: 24
   height: 19
-  living_quarters: yes
+  living_quarters: 'yes'
   number_of_horses: 6
   load_type: Side Load
 additional_specs:
