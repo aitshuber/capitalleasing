@@ -101,6 +101,7 @@ _inputs:
   vin:
     type: text
     label: VIN Number
+    cascade: true
   color:
     type: text
     label: Trailer Color
