@@ -147,10 +147,10 @@
 					</div>
 					{% endfor %}
 				  </div>
-				 {% if page.video %} {% for video in page.video %} <div class="col-md-3 mt-3">
+				 {% if page.video.url %} {% for video in page.video %} <div class="col-md-3 mt-3">
 					  <!-- YouTube video lightbox (gallery) -->
 					  <!-- Wrap the image with a "ratio" element to avoid content shifts on page load. Formula: imageHeight / imageWidth * 100% -->
-					  <a class="hover-effect-opacity ratio d-flex bg-body-tertiary rounded-4 overflow-hidden" href="{{video.item}}" style="--fn-aspect-ratio: calc(346 / 480 * 100%)" data-glightbox data-gallery="video">
+					  <a class="hover-effect-opacity ratio d-flex bg-body-tertiary rounded-4 overflow-hidden" href="{{video.url}}" style="--fn-aspect-ratio: calc(346 / 480 * 100%)" data-glightbox data-gallery="video">
 						<div class="position-absolute d-flex flex-column align-items-center top-0 start-0 w-100 h-100 z-2 text-white p-4">
 						  <span class="btn btn-icon btn-lg position-absolute top-50 translate-middle-y bg-white text-dark rounded-circle">
 							<i class="fi-play-filled"></i>
@@ -163,42 +163,56 @@
 				</div>
 				<!-- Specifications -->
 				<h2 class="h3 pt-5 mt-sm-2 my-lg-4">Specifications</h2>
-				{% assign spec_half_size = page.specifications.size | divided_by: 2 %}
-				<div class="row row-cols-1 row-cols-sm-2 gy-2">
-					{% if spec_half_size < 2 %}
-					<div class="col">
-						<ul class="list-unstyled text-body-secondary mt-n1 mb-0 text-start">
-						  {% for item in page.specifications %}
-						  <li class="mt-1">
-							<span class="fw-medium text-dark-emphasis me-1">{{item.spec_title}}:</span>
-							{{item.spec}}
-						  </li>
-						  {% endfor %}
-						</ul>
-					  </div>
-					  {% else %}
-				  <div class="col">
-					<ul class="list-unstyled text-body-secondary mt-n1 mb-0 text-start">
-					  {% for item in page.specifications limit: spec_half_size %}
+
+			<div class="row row-cols-1 row-cols-sm-2 gy-2">
+			  {% assign all_specs = "" %}
+
+			  <!-- Process specifications (key-value pairs) -->
+			  {% for spec in page.specifications %}
+				{% assign key = spec[0] %}
+				{% assign value = spec[1] %}
+				{% assign all_specs = all_specs | append: key | append: "::" | append: value | append: "||" %}
+			  {% endfor %}
+
+			  <!-- Process additional_specs (array) -->
+			  {% for attr in page.additional_specs %}
+				{% assign all_specs = all_specs | append: attr.spec_item | append: "::" | append: attr.spec | append: "||" %}
+			  {% endfor %}
+
+			  <!-- Convert all_specs into an array -->
+			  {% assign all_specs = all_specs | split: "||" %}
+			  {% assign spec_half_size = all_specs.size | divided_by: 2 %}
+
+			  <!-- Render the first column -->
+			  <div class="col">
+				<ul class="list-unstyled text-body-secondary mt-n1 mb-0 text-start">
+				  {% for spec in all_specs limit: spec_half_size %}
+					{% assign parts = spec | split: "::" %}
+					{% if parts[0] and parts[1] %}
 					  <li class="mt-1">
-						<span class="fw-medium text-dark-emphasis me-1">{{item.name}}:</span>
-						{{item.feature}}
+						<span class="fw-medium text-dark-emphasis me-1 spec_title">{{ parts[0] | replace: "_", " " | capitalize | capitalize_words }}:</span>
+						{{ parts[1] }}
 					  </li>
-					  {% endfor %}
-					</ul>
-				  </div>
-				  <div class="col">
-					<ul class="list-unstyled text-body-secondary mt-n1 mb-0">
-					{% for item in page.specifications offset: spec_half_size %}
+					{% endif %}
+				  {% endfor %}
+				</ul>
+			  </div>
+
+			  <!-- Render the second column -->
+			  <div class="col">
+				<ul class="list-unstyled text-body-secondary mt-n1 mb-0 text-start">
+				  {% for spec in all_specs offset: spec_half_size %}
+					{% assign parts = spec | split: "::" %}
+					{% if parts[0] and parts[1] %}
 					  <li class="mt-1">
-						<span class="fw-medium text-dark-emphasis me-1">{{item.name}}:</span>
-						{{item.feature}}
+						<span class="fw-medium text-dark-emphasis me-1 spec_title">{{ parts[0] | replace: "_", " " | capitalize | capitalize_words }}:</span>
+						{{ parts[1] }}
 					  </li>
-					  {% endfor %}
-					</ul>
-				  </div>
-				  {% endif %}
-				</div>
+					{% endif %}
+				  {% endfor %}
+				</ul>
+			  </div>
+			</div>
 				<!-- Seller's description -->
 				<h2 class="h3 pt-5 mt-sm-2">Description</h2>
 				{% assign first_half = page.description | truncatewords: 50 | remove: '...' %}
@@ -216,8 +230,19 @@
 				  </a>
 				</div>
 				<!-- Features (Accordion) -->
+				{% assign has_trailer = false %}
+				{% assign has_living_quarters = false %}
+				{% if page.trailer and page.trailer.size > 0 %}
+				  {% assign has_trailer = true %}
+				{% endif %}
+				{{has_trailer}}
+				<!-- Check if living quarters exist and is not empty -->
+				{% if page.living_quarters and page.living_quarters.size > 0 %}
+				  {% assign has_living_quarters = true %}
+				{% endif %}
 				<h2 class="h3 pt-5 mt-sm-2 mb-2 mb-lg-3">Features</h2>
 				<div class="accordion accordion-alt-icon" id="features">
+
 				  <div class="accordion-item">
 					<h3 class="accordion-header" id="headingtrailer">
 					  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#trailer" aria-expanded="false" aria-controls="trailer">

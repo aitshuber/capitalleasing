@@ -10,7 +10,19 @@ trailer_type:
 description:
 price:
 specifications:
-  - spec_title:
+  year:
+  make:
+  model:
+  vin:
+  color:
+  length:
+  width:
+  height:
+  living_quarters:
+  number_of_horses:
+  load_type:
+additional_specs:
+  - spec_item:
     spec:
 condition:
 hitch_type:

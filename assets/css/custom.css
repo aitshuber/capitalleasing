@@ -10,4 +10,4 @@
 .gallery-ratio-thumb{
 	--fn-aspect-ratio: calc(115 / 156 * 100%)
 }
-
+.spec_title{text-transform: capitalize}
