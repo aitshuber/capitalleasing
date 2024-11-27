@@ -232,12 +232,14 @@
 				<!-- Features (Accordion) -->
 				{% assign has_trailer = false %}
 				{% assign has_living_quarters = false %}
-				{% if page.trailer and page.trailer.size > 0 %}
+				{% if page.trailer == '' %}
+				{% assign has_trailer = false %}
+				{% else %}
 				  {% assign has_trailer = true %}
 				{% endif %}
 				{{has_trailer}}
 				<!-- Check if living quarters exist and is not empty -->
-				{% if page.living_quarters and page.living_quarters.size > 0 %}
+				{% if page.living_quarters %}
 				  {% assign has_living_quarters = true %}
 				{% endif %}
 				<h2 class="h3 pt-5 mt-sm-2 mb-2 mb-lg-3">Features</h2>

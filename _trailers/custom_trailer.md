@@ -38,7 +38,9 @@ highlighted_features:
   - Custom Options
   - Gooseneck
 trailer:
+  -
 living_quarters:
+  -
 gallery:
   - image: /uploads/10-6h-trainer-trailer-web.jpg
   - image: /uploads/4-6h-trainer-trailer-1.jpg

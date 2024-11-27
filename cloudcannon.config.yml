@@ -92,10 +92,19 @@ _inputs:
     allow_create: true
   trailer:
     type: text
+    allow_create: true
     options:
       empty_type: 'null'
     label: Trailer Features
     comment: List of individual trailer features
+    cascade: true
+  living_quarters:
+    type: text
+    allow_create: true
+    options:
+      empty_type:
+    label: Trailer Features
+    comment: List of individual living quarter features
     cascade: true
   video:
     type: url
