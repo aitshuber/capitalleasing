@@ -88,6 +88,8 @@ _inputs:
     cascade: true
   gallery:
     type: image
+    label: Images
+    comment: Trailer images
     cascade: true
     allow_create: true
   trailer:
