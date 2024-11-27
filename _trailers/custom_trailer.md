@@ -23,8 +23,8 @@ specifications:
   year: 2024
   make: Twister
   model: 6 Horse Trainer Trailer
-  vin: "573"
-  color: '#fbf5f5'
+  vin: '573'
+  color: Silver
   length: 30
   width: 8
   height: 7.5
