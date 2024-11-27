@@ -23,17 +23,17 @@ specifications:
   year: 2024
   make: Twister
   model: 6 Horse Trainer Trailer
-  vin: '573'
-  color: Silver
+  vin: S573
+  color: White
   length: 30
   width: 8
-  height: 7.5
-  living_quarters: 'yes'
-  number_of_horses: 6
+  height: 6.5
+  living_quarters:
+  number_of_horses: 3
   load_type: Rear Load
 additional_specs:
   - spec_item: C Comp
-    spec: Alum
+    spec:
 condition: New
 hitch_type: Gooseneck
 highlighted_features:
