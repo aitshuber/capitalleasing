@@ -3,7 +3,7 @@ _schema: default
 layout: trailers
 seo:
   title: 6 Horse Trainer Trailer
-  description:
+  description: '6 Horse Trainer trailer with '
   keywords:
   image: /uploads/10-6h-trainer-trailer-web.jpg
 trailer_title: 2024  6-Horse Trainer Trailer
@@ -22,18 +22,20 @@ price: Lease this trailer for 36 months at just $1,640.43 a Month!
 specifications:
   year: 2024
   make: Twister
-  model: 6 Horse Trainer
-  vin: 123456
-  color: '#c0c0c0'
-  length: 12
-  width: 24
-  height: 19
+  model: 6 Horse Trainer Trailer
+  vin: 573
+  color: '#fbf5f5'
+  length: 30
+  width: 8
+  height: 7.5
   living_quarters: 'yes'
   number_of_horses: 6
-  load_type: Side Load
+  load_type: Rear Load
 additional_specs:
   - spec_item: C Comp
     spec: Alum
+condition: New
+hitch_type: Gooseneck
 highlighted_features:
   - Custom Options
   - Gooseneck
