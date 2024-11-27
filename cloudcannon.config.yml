@@ -120,7 +120,7 @@ _inputs:
     type: text
     options:
       empty_type: array
-    label: Trailer Features
+    label: Living Quarter Features
     comment: List of individual living quarter features
     cascade: true
     allow_create: true
