@@ -10,7 +10,7 @@ trailer_title: 2024  6-Horse Trainer Trailer
 trailer_type: Custom Trailer
 description: >2-
    Trainer Trailer, 8K Tandom Axles, 19.5" Alum Wheels,
-  16 Ply Tires, White Skin, Rubber Mats Full Length (12) Custom Face Cages (12)
+  16 Ply Tires, White Skin, Rubber Mats Full Length (6) Custom Face Cages (12)
   Window Screens (9) Saddle Racks (24) Tie Hooks (40) Bridle Hooks (10) Manger
   Hooks Line & Insulate Walls Full Length Line & Insulate Ceiling Full Length
   Finish All Tacks & Dressing Room (Line, Insulate, Carpet, & Mats) Carpet
@@ -37,8 +37,11 @@ additional_specs:
 condition: New
 hitch_type: Gooseneck
 highlighted_features:
-  - Custom Options
   - Gooseneck
+  - 8000' Axles
+  - 17 1/2" Alcoa Rims with 16 ply tires
+  - 6 Custom Face Cages with Drops
+  - 9 Custom saddle racks, adjustable
 trailer:
 living_quarters:
 gallery:
