@@ -98,11 +98,25 @@ _inputs:
     label: Trailer Features
     comment: List of individual trailer features
     cascade: true
+  vin:
+    type: text
+    label: VIN Number
+  color:
+    type: text
+    label: Trailer Color
+  highlighted_features:
+    type: text
+    allow_create: true
+    options:
+      empty_type: array
+    label: Highligted Features
+    comment: List of main features to highlight
+    cascade: true
   living_quarters:
     type: text
     allow_create: true
     options:
-      empty_type:
+      empty_type: array
     label: Trailer Features
     comment: List of individual living quarter features
     cascade: true

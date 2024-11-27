@@ -232,19 +232,13 @@
 				<!-- Features (Accordion) -->
 				{% assign has_trailer = false %}
 				{% assign has_living_quarters = false %}
-				{% if page.trailer == '' %}
-				{% assign has_trailer = false %}
-				{% else %}
-				  {% assign has_trailer = true %}
-				{% endif %}
-				{{has_trailer}}
+				{% if page.trailer and page.trailer.size > 0 %}{% assign has_trailer = true %}{% endif %}
 				<!-- Check if living quarters exist and is not empty -->
-				{% if page.living_quarters %}
-				  {% assign has_living_quarters = true %}
-				{% endif %}
+				{% if page.living_quarters and page.living_quarters.size > 0 %}{% assign has_living_quarters = true %}{% endif %}
+			{% if has_trailer or has_living_quarters %}
 				<h2 class="h3 pt-5 mt-sm-2 mb-2 mb-lg-3">Features</h2>
 				<div class="accordion accordion-alt-icon" id="features">
-
+				{% if has_trailer %}
 				  <div class="accordion-item">
 					<h3 class="accordion-header" id="headingtrailer">
 					  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#trailer" aria-expanded="false" aria-controls="trailer">
@@ -283,6 +277,8 @@
 					  </div>
 				  </div>
 				  </div>
+				  {% endif %}
+				{% if has_living_quarters %}
 				  <div class="accordion-item">
 					<h3 class="accordion-header" id="headingliving_quarters">
 					  <button type="button" class="accordion-button fs-5 collapsed" data-bs-toggle="collapse" data-bs-target="#living_quarters" aria-expanded="true" aria-controls="living_quarters">
@@ -321,8 +317,9 @@
 					  </div>
 					</div>
 				  </div>
+				  {% endif %}
 				</div>
-
+				{% endif %}
 			  </div>
 			  <!-- Sidebar with car detail and seller info -->
 			  <aside class="col-lg-4" style="margin-top: -110px">
