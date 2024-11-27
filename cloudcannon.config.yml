@@ -92,35 +92,38 @@ _inputs:
     allow_create: true
   trailer:
     type: text
-    allow_create: true
     options:
       empty_type: 'null'
     label: Trailer Features
     comment: List of individual trailer features
     cascade: true
+    allow_create: true
   vin:
     type: text
+    options:
+      empty_type: string
     label: VIN Number
     cascade: true
   color:
     type: text
     label: Trailer Color
+    cascade: true
   highlighted_features:
     type: text
-    allow_create: true
     options:
       empty_type: array
     label: Highligted Features
     comment: List of main features to highlight
     cascade: true
+    allow_create: true
   living_quarters:
     type: text
-    allow_create: true
     options:
       empty_type: array
     label: Trailer Features
     comment: List of individual living quarter features
     cascade: true
+    allow_create: true
   video:
     type: url
     cascade: true
