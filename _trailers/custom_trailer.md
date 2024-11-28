@@ -28,7 +28,6 @@ specifications:
   length: "30"
   width: "8"
   height: "6.5"
-  living_quarter: no
   number_of_horses: 3
   load_type: Rear Load
 additional_specs:
