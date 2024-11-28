@@ -138,7 +138,7 @@ _inputs:
       empty_type: array
     label: Living Quarter Features
     comment: List of individual living quarter features
-    cascade: true
+    cascade: false
     allow_create: true
   video:
     type: url
