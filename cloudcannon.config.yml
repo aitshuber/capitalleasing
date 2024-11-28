@@ -69,6 +69,14 @@ _inputs:
         - Cargo
     label: Trailer Type
     cascade: false
+  living_quarter:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - yes
+        - no
+    cascade: false
   condition:
     type: select
     options:
