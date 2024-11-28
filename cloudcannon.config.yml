@@ -50,6 +50,12 @@ _inputs:
     type: auto
     hidden: true
     cascade: true
+  height:
+    type: text
+  width:
+    type: text
+  length:
+    type: text
   trailer_type:
     type: select
     options:
