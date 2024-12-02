@@ -33,7 +33,9 @@ highlighted_features:
   - "6 Custom Face Cages with Drops"
   - "9 Custom saddle racks, adjustable"
 trailer:
-living_quarters: ""
+  - ""
+living_quarters:
+  - ""
 gallery:
   - image: "/uploads/10-6h-trainer-trailer-web.jpg"
   - image: "/uploads/4-6h-trainer-trailer-1.jpg"

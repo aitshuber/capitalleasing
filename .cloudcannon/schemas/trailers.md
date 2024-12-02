@@ -27,7 +27,9 @@ hitch_type: ""
 highlighted_features:
   - ""
 trailer:
-living_quarters: ""
+  - ""
+living_quarters:
+  - ""
 gallery:
   - image: ""
 video:
