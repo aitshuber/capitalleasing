@@ -29,13 +29,9 @@ hitch_type: "Gooseneck"
 highlighted_features:
   - "Gooseneck"
   - "8000' Axles"
-  - "17 1/2\" Alcoa Rims with 16 ply tires"
+  - '17 1/2" Alcoa Rims with 16 ply tires'
   - "6 Custom Face Cages with Drops"
   - "9 Custom saddle racks, adjustable"
-trailer:
-  - ""
-living_quarters:
-  - ""
 gallery:
   - image: "/uploads/10-6h-trainer-trailer-web.jpg"
   - image: "/uploads/4-6h-trainer-trailer-1.jpg"
