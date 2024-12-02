@@ -52,10 +52,13 @@ _inputs:
     cascade: true
   height:
     type: text
+    cascade: true
   width:
     type: text
+    cascade: true
   length:
     type: text
+    cascade: true
   trailer_type:
     type: select
     options:
@@ -117,6 +120,9 @@ _inputs:
     options:
       empty_type: string
     label: Additional Specifications
+    comment: >-
+      Add additional Specifications here. You must include specification title
+      and the corresponding specification.
     cascade: true
     allow_create: true
   color:
@@ -859,8 +865,16 @@ _snippets:
         comment: Enter the post name or path.
         cascade: true
         text: Post
+file_config:
+  - glob:
+    _inputs:
+    _structures:
+    _select_data:
 source_editor:
   tab_size: 2
   theme: monokai
   show_gutter: true
 timezone: America/Chicago
+markdown:
+  engine:
+  options:
