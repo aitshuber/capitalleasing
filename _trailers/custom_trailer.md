@@ -1,8 +1,8 @@
 ---
 layout: "trailers"
 seo:
-  title: ""
-  description: ""
+  title: "Title"
+  description: " seo description"
   keywords: ""
   image: ""
 trailer_type: "Custom Trailer"
