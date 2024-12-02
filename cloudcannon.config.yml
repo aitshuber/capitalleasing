@@ -121,8 +121,8 @@ _inputs:
       empty_type: string
     label: Additional Specifications
     comment: >-
-      Add additional Specifications here. You must include specification title
-      and the corresponding specification.
+      "Add additional Specifications here. You must include specification title
+      and the corresponding specification."
     cascade: true
     allow_create: true
   color:
