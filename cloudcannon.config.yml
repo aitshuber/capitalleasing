@@ -52,10 +52,13 @@ _inputs:
     cascade: true
   height:
     type: text
+    cascade: true
   width:
     type: text
+    cascade: true
   length:
     type: text
+    cascade: true
   trailer_type:
     type: select
     options:
@@ -116,6 +119,11 @@ _inputs:
   additional_specs:
     type: text
     label: Additional Specifications
+    comment: >-
+      Additional specification will need both a title and a corresponding
+      specification. This is to give you the freedom to create both label and
+      item for additional specifications.
+    cascade: true
   color:
     type: text
     label: Trailer Color
