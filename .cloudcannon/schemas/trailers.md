@@ -1,3 +1,4 @@
+---
 layout: "trailers"
 seo:
   title: ""
@@ -35,4 +36,4 @@ gallery:
 video:
   - url: ""
     thumb: ""
-
+---
