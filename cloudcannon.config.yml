@@ -112,6 +112,13 @@ _inputs:
       empty_type: string
     label: VIN Number
     cascade: true
+  additional_specs:
+    type: text
+    options:
+      empty_type: string
+    label: Additional Specifications
+    cascade: true
+    allow_create: true
   color:
     type: text
     label: Trailer Color

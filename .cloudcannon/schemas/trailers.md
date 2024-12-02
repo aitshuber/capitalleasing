@@ -1,30 +1,36 @@
----
-trailer_type: Custom Trailer
-description:
-price:
+layout: "trailers"
+seo:
+  title: ""
+  description: ""
+  keywords: ""
+  image: ""
+trailer_type: ""
+description: >
+  ""
+price: ""
 specifications:
-  year:
-  make:
-  model:
-  vin:
-  color:
+  year: ""
+  make: ""
+  model: ""
+  vin: ""
+  color: ""
   length: ""
   width: ""
   height: ""
-  number_of_horses:
-  load_type:
+  number_of_horses: ""
+  load_type: ""
 additional_specs:
-  - spec_item:
-    spec:
-condition:
-hitch_type:
+  - spec_title: ""
+    spec: ""
+condition: ""
+hitch_type: ""
 highlighted_features:
-  -
+  - ""
 trailer:
-living_quarters:
+living_quarters: ""
 gallery:
-  - image:
+  - image: ""
 video:
-  - url:
-    thumb:
----
+  - url: ""
+    thumb: ""
+

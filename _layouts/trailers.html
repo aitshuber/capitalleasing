@@ -130,7 +130,10 @@
 					</div>
 					{% endfor %}
 				  </div>
-				 {% if page.video.url %} {% for video in page.video %} <div class="col-md-3 mt-3">
+				 {% if page.video %}
+				 <div class="row">
+				  {% for video in page.video %}
+				  <div class="col-md-3 mt-3">
 					  <!-- YouTube video lightbox (gallery) -->
 					  <!-- Wrap the image with a "ratio" element to avoid content shifts on page load. Formula: imageHeight / imageWidth * 100% -->
 					  <a class="hover-effect-opacity ratio d-flex bg-body-tertiary rounded-4 overflow-hidden" href="{{video.url}}" style="--fn-aspect-ratio: calc(346 / 480 * 100%)" data-glightbox data-gallery="video">
@@ -142,7 +145,9 @@
 						<span class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25 opacity-0 z-1"></span>
 						<img src="{{video.thumb}}" class="ratio gallery-ratio" alt="Image" />
 					  </a>
-					</div>{% endfor %}{% endif %}
+					</div>{% endfor %}
+				 </div>
+				  {% endif %}
 				</div>
 				<!-- Specifications -->
 				<h2 class="h3 pt-5 mt-sm-2 my-lg-4">Specifications</h2>
@@ -159,7 +164,7 @@
 
 			  <!-- Process additional_specs (array) -->
 			  {% for attr in page.additional_specs %}
-				{% assign all_specs = all_specs | append: attr.spec_item | append: "::" | append: attr.spec | append: "||" %}
+				{% assign all_specs = all_specs | append: attr.spec_title | append: "::" | append: attr.spec | append: "||" %}
 			  {% endfor %}
 
 			  <!-- Convert all_specs into an array -->
