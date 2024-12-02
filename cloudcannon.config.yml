@@ -61,8 +61,9 @@ _inputs:
     options:
       allow_empty: true
       values:
-        - Custom Trailers
         - Select Series
+        - Custom Trailers
+        - Stock Combo
         - Stock
         - Equipment to Haul
         - Spa Therapy
