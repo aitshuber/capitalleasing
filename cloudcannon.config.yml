@@ -114,8 +114,6 @@ _inputs:
     cascade: true
   additional_specs:
     type: text
-    options:
-      empty_type: string
     label: Additional Specifications
   color:
     type: text
