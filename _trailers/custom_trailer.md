@@ -52,8 +52,6 @@ gallery:
   - image: /uploads/38-6h-trainer-trailer.jpg
   - image: /uploads/30-6h-trainer-trailer.jpg
 video:
-  - url: https://youtu.be/n_D8U_LuNPc
-    thumb: /uploads/capture.jpg
-  - url: https://youtu.be/n_D8U_LuNPc
-    thumb: /uploads/capture2.jpg
+  - url: https://youtu.be/IRKV-KX8iEs
+    thumb: /uploads/thumbnail-s573.jpg
 ---
