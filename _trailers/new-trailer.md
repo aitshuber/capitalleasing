@@ -8,7 +8,7 @@ seo:
   image: /uploads/s549-title-pic.jpg
 trailer_type: Stock Combo
 description:
-price: ''
+price: Lease this trailer for 36 months at just $1686.83 a Month!
 specifications:
   year: '2025'
   make: Twister
@@ -75,7 +75,6 @@ gallery:
   - image: /uploads/s549-pic-7.jpg
   - image: /uploads/s549-pic-8.jpg
   - image: /uploads/s549-pic-9.jpg
-  - image: ''
 video:
   - url: ''
     thumb: ''
