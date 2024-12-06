@@ -17,7 +17,7 @@ description: >
   Tack Wall Code Locks 2 Stud Dividers with High Top Flow Divider 2 Brush tray
   Boot Box Spare Tire Clothes Rod 2- Pinned 4 tier blanket Racks Single
   electric/Hydraulic Jack Quick Coupler"
-price: Lease this trailer for 36 months at just $1,640.43 a Month!
+price: Lease this trailer for 36 months at just $1,960.97  a Month!
 specifications:
   year: '2024'
   make: Twister
