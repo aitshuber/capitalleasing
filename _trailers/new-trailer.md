@@ -6,6 +6,7 @@ seo:
   description: 'S549 '
   keywords: ''
   image: /uploads/s549-title-pic.jpg
+trailer_title: 6H 28'5" Stock Combo
 trailer_type: Stock Combo
 description:
 price: Lease this trailer for 36 months at just $1686.83 a Month!

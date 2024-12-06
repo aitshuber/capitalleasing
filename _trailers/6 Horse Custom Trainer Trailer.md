@@ -6,6 +6,7 @@ seo:
   description: ' seo description'
   keywords: ''
   image: /uploads/10-6h-trainer-trailer-web.jpg
+trailer_title: 6 Horse Custom Trainer Trailer
 trailer_type: Cargo
 description: >
   "Trainer Trailer, 8K Tandom Axles, 19.5\" Alum Wheels, 16 Ply Tires, White

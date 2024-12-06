@@ -52,7 +52,7 @@ permalink: /
                 <div class="col-sm-7 col-lg-12 d-lg-flex flex-column flex-fill py-md-2">
                   <div class="card-body pb-3 pb-md-4">
                    <a class="text-decoration-none me-1" href="{{item.url}}"> <h3 class="h5 mb-2">
-                     {{item.trailer_title}}
+                    {% if item.trailer_title %}{{item.trailer_title}}{% else %}{{page.seo.title}}{% endif %}
                     </h3></a>
                     <small>{{item.trailer_type}}</small>
                     <div class="h6 mt-4 mb-0">{{item.price}}</div>
@@ -79,12 +79,12 @@ permalink: /
             <article class="card hover-effect-scale overflow-hidden">
               <div class="row g-0">
                 <div class="col-sm-5 position-relative bg-body-tertiary overflow-hidden" style="min-height: 220px">
-                  <img src="{{item.gallery[0].image}}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" />
+                 <a class="text-decoration-none me-1" href="{{item.url}}"> <img src="{{item.gallery[0].image}}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" /></a>
                 </div>
                 <div class="col-sm-7 py-md-2">
                   <div class="card-body pb-3 pb-md-4">
                    <a class="text-decoration-none me-1" href="{{item.url}}"> <h3 class="h5 mb-2">
-                      {{item.trailer_title}}
+                    {% if item.trailer_title %}{{item.trailer_title}}{% else %}{{item.seo.title}}{% endif %}
                     </h3></a>
                     <small>{{item.trailer_type}}</small>
                     <div class="h6 mt-4 mb-0">{{item.price}}</div>

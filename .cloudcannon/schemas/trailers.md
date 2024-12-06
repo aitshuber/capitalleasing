@@ -5,6 +5,7 @@ seo:
   description: ""
   keywords: ""
   image: ""
+trailer_title: ""
 trailer_type: ""
 description: >
   ""
