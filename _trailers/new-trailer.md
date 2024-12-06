@@ -1,13 +1,14 @@
 ---
+_schema: default
 layout: trailers
 seo:
-  title: ''
-  description: ''
+  title: 6H 28'5" Stock Combo
+  description: 'S549 '
   keywords: ''
   image: ''
-trailer_type: ''
-description: |
-  ""
+trailer_type: Stock Combo
+description: |+
+
 price: ''
 specifications:
   year: ''
@@ -36,5 +37,4 @@ gallery:
 video:
   - url: ''
     thumb: ''
-_schema: default
 ---
