@@ -5,7 +5,7 @@ seo:
   title: 6H 28'5" Stock Combo
   description: 'S549 '
   keywords: ''
-  image: ''
+  image: /uploads/s549-title-pic.jpg
 trailer_type: Stock Combo
 description:
 price: ''
@@ -59,9 +59,22 @@ trailer:
 living_quarters:
   - ''
 gallery:
-  - image: ''
-  - image: ''
-  - image: ''
+  - image: /uploads/s549-title-pic-1.jpg
+  - image: /uploads/s549-pic-10.jpg
+  - image: /uploads/s549-pic-11.jpg
+  - image: /uploads/s549-pic-15.jpg
+  - image: /uploads/s549-pic-14.jpg
+  - image: /uploads/s549-pic-13.jpg
+  - image: /uploads/s549-pic-12.jpg
+  - image: /uploads/s549-pic-1.jpg
+  - image: /uploads/s549-pic-2.jpg
+  - image: /uploads/s549-pic-3.jpg
+  - image: /uploads/s549-pic-4.jpg
+  - image: /uploads/s549-pic-5.jpg
+  - image: /uploads/s549-pic-6.jpg
+  - image: /uploads/s549-pic-7.jpg
+  - image: /uploads/s549-pic-8.jpg
+  - image: /uploads/s549-pic-9.jpg
   - image: ''
 video:
   - url: ''
