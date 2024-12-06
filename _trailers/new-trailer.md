@@ -60,6 +60,9 @@ living_quarters:
   - ''
 gallery:
   - image: ''
+  - image: ''
+  - image: ''
+  - image: ''
 video:
   - url: ''
     thumb: ''
