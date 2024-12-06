@@ -37,7 +37,25 @@ trailer:
   - White Skin
   - Raise Nose 5”
   - 35 Bridle Hooks
-  - ''
+  - 5 Manger Hooks
+  - Adjustable Custom Saddle Racks
+  - Finished Front & Driver Rear Tack Rooms (Line, Insulate, Carpet & Mats)
+  - 6 Select Face Cages
+  - Rubber Matts Full Length Of Trailer
+  - 24 Tie Hooks - (5)SS, (7)CS, (12)Horse Head Area
+  - 1 Feed Bag At Escape Door
+  - Quick Coupler
+  - Code Lock On Tack Doors
+  - Hay Rack W/ Standard Ladder
+  - 'Stud Divider/High Top Air Flow Divider '
+  - 90” CS Double Tack Door
+  - 39” SS Rear Tack Door
+  - 32” SS Front Tack Door W/ Window
+  - 5’ Clothes Rod
+  - 4’ Boot Box
+  - Dual 3 Tier Saddle Rack
+  - Dual 4 Tier Blanket Racks
+  - 'Dual Brush Trays '
 living_quarters:
   - ''
 gallery:
