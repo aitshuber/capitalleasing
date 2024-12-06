@@ -5,7 +5,7 @@ seo:
   title: Title
   description: ' seo description'
   keywords: ''
-  image: ''
+  image: /uploads/10-6h-trainer-trailer-web.jpg
 trailer_type: Custom Trailer
 description: >
   "Trainer Trailer, 8K Tandom Axles, 19.5\" Alum Wheels, 16 Ply Tires, White
