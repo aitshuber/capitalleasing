@@ -8,8 +8,9 @@ seo:
   image: /uploads/s570-4h-tb-104.jpg
 trailer_title: 4 Horse 15'6" SW Side Load Custom - Trail Boss LQ
 trailer_type: Living Quarters
-description: |+
-
+description: >-
+  This trailer is a 4 Horse 15'6" SW Side Load Custom Trail Boss LQ with an 7'
+  Electric slideout. 
 featured: true
 price: Lease this Twister trailer for  $3,448.89 a month for 36 months!
 specifications:
@@ -61,7 +62,7 @@ gallery:
   - image: /uploads/s570-4h-tb-55.jpg
   - image: /uploads/s570-4h-tb-52.jpg
   - image: /uploads/s570-4h-tb-51.jpg
-  - image: ''
+  - image: /uploads/s570-4h-tb-49.jpg
   - image: /uploads/s570-4h-tb-48.jpg
   - image: /uploads/s570-4h-tb-11.jpg
   - image: /uploads/snip-concept.jpg
