@@ -7,7 +7,7 @@ seo:
   keywords: ''
   image: /uploads/10-6h-trainer-trailer-web.jpg
 trailer_title: 6 Horse Custom Trainer Trailer
-trailer_type:
+trailer_type: Living Quarters
 description: >
   "Trainer Trailer, 8K Tandom Axles, 19.5\" Alum Wheels, 16 Ply Tires, White
   Skin, Rubber Mats Full Length (6) Custom Face Cages (12) Window Screens (9)
@@ -18,7 +18,7 @@ description: >
   Tack Wall Code Locks 2 Stud Dividers with High Top Flow Divider 2 Brush tray
   Boot Box Spare Tire Clothes Rod 2- Pinned 4 tier blanket Racks Single
   electric/Hydraulic Jack Quick Coupler"
-featured: yes
+featured: 'yes'
 price: Lease this trailer for 36 months at just $1,960.97  a Month!
 specifications:
   year: '2024'
