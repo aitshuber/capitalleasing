@@ -44,6 +44,7 @@ collections_config:
     singular_key:
     _editables:
     _enabled_editors:
+      - data
     _inputs:
     _select_data:
     _structures:
