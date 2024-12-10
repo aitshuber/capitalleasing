@@ -6,6 +6,7 @@ include:
   - _data
   - _plugins
   - _trailers
+  - _trailer_type
 sitename: Capital Leasing
 relative_permalinks: false
 favicon: null
@@ -23,6 +24,8 @@ collections:
   products:
     output: true
   trailers:
+    output: true
+  trailer_type:
     output: true
 defaults:
   - scope:

@@ -64,14 +64,19 @@ _inputs:
     options:
       allow_empty: true
       values:
-        - Select Series
-        - Custom Trailers
-        - Stock Combo
-        - Stock
-        - Equipment to Haul
-        - Spa Therapy
-        - Cargo
+        - Living Quarters
+        - Non-Living Quarters
+        - Other & Specality
     label: Trailer Type
+    cascade: false
+  featured:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - yes
+        - No
+    label: Featured
     cascade: false
   condition:
     type: select

@@ -22,10 +22,58 @@ permalink: /
   <span class="position-absolute top-0 start-0 w-100 h-100 z-1 rtl-flip" {% comment %} style="background: linear-gradient(-270deg, rgba(0, 71, 102, .80) 100%, rgba(0, 71, 102, 0) 100%)" {% endcomment %}></span>
 </div>
 {% endfor %}
+
+<!-- Popular categories -->
+<section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
+  <h2 class="text-center pb-2 pb-sm-3 pb-lg-4 mb-xl-4">Trailer Types</h2>
+
+  <!-- Row of items that turns into carousel on screens < 992px wide (lg breakpoint) -->
+  <div class="swiper" data-swiper='{
+    "slidesPerView": 2,
+    "spaceBetween": 24,
+    "pagination": {
+      "el": ".swiper-pagination",
+      "clickable": true
+    },
+    "breakpoints": {
+      "500": {
+        "slidesPerView": 3
+      },
+      "768": {
+        "slidesPerView": 4
+      },
+      "992": {
+        "slidesPerView": 6
+      }
+    }
+  }'>
+    <div class="swiper-wrapper mx-auto justify-content-center">
+      <!-- Category -->
+      {% for item in site.trailer_type %}
+      <div class="swiper-slide">
+        <article class="hover-effect-scale position-relative text-center">
+         <a class="" href="{{item.url}}">
+          <div class="bg-body-tertiary rounded-circle overflow-hidden mx-auto" style="width: 132px">
+            <div class="ratio ratio-1x1 hover-effect-target">
+              <img src="{{item.image}}" alt="{{item.type}}" />
+            </div>
+          </div>
+         </a>
+          <h3 class="h6 pt-3 mb-0">
+            <a class="" href="{{item.url}}">{{item.type}}</a>
+          </h3>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- Pagination (Bullets) -->
+    <div class="swiper-pagination position-static mt-3"></div>
+  </div>
+</section>
       <!-- Trailers -->
       <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
         <div class="d-flex align-items-start justify-content-between gap-4 pb-3 mb-2 mb-sm-3">
-          <h2 class="mb-0">Trailers</h2>
+          <h2 class="mb-0">Featured Trailers</h2>
           <div class="nav">
             <a class="nav-link position-relative fs-base text-nowrap py-1 px-0" href="/trailers">
               <span class="hover-effect-underline stretched-link me-1">View all</span>
@@ -36,33 +84,72 @@ permalink: /
 
         <!-- Listings grid -->
         <div class="row">
-          {% for item in site.trailers %}
-          {% if forloop.first %}
-          <div class="col-lg-5 mb-4 mb-lg-0">
-            <!-- Item -->
-            <article class="card h-100 hover-effect-scale overflow-hidden">
-              <div class="row flex-lg-column h-100 g-0">
-                <div class="col-sm-5 col-lg-12 position-relative bg-body-tertiary overflow-hidden">
-                  <div class="d-lg-none" style="min-height: 220px"></div>
-                  <div class="d-none d-lg-block" style="min-height: 260px"></div>
-                  <a class="text-decoration-none me-1" href="{{item.url}}">
-                  <img src="{{item.gallery[0].image}}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" />
+          {% for item in site.trailers limit: 3 %}
+            {% if item.featured == true %}
+            {% if forloop.first %}
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <!-- First Featured Item -->
+              <article class="card h-100 hover-effect-scale overflow-hidden">
+                <div class="row flex-lg-column h-100 g-0">
+                  <div class="col-sm-5 col-lg-12 position-relative bg-body-tertiary overflow-hidden">
+                    <div class="d-lg-none" style="min-height: 220px"></div>
+                    <div class="d-none d-lg-block" style="min-height: 260px"></div>
+                    <a class="text-decoration-none me-1" href="{{ item.url }}">
+                      <img src="{{ item.gallery[0].image }}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" />
+                    </a>
+                  </div>
+                  <div class="col-sm-7 col-lg-12 d-lg-flex flex-column flex-fill py-md-2">
+                    <div class="card-body pb-3 pb-md-4">
+                      <a class="text-decoration-none me-1" href="{{ item.url }}">
+                        <h3 class="h5 mb-2">
+                          {% if item.trailer_title %}{{ item.trailer_title }}{% else %}{{ page.seo.title }}{% endif %}
+                        </h3>
+                      </a>
+                      <small>{{ item.trailer_type }}</small>
+                      <div class="h6 mt-4 mb-0">{{ item.price }}</div>
+                    </div>
+                    {% if item.features %}
+                    <div class="card-footer bg-transparent border-0 pt-0 pb-4">
+                      <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
+                        {% for list in item.features limit: 3 %}
+                        <div class="d-flex align-items-center gap-2">
+                          <i class="fal fa-chevron-right icon-size"></i>
+                          {{ list.item }}
+                        </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
+                </div>
+              </article>
+            </div>
+            {% else %}
+          <div class="col-lg-7 d-flex flex-column gap-4">
+            <!-- Remaining Featured Items -->
+            <article class="card hover-effect-scale overflow-hidden">
+              <div class="row g-0">
+                <div class="col-sm-5 position-relative bg-body-tertiary overflow-hidden" style="min-height: 220px">
+                  <a class="text-decoration-none me-1" href="{{ item.url }}">
+                    <img src="{{ item.gallery[0].image }}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" />
                   </a>
                 </div>
-                <div class="col-sm-7 col-lg-12 d-lg-flex flex-column flex-fill py-md-2">
+                <div class="col-sm-7 py-md-2">
                   <div class="card-body pb-3 pb-md-4">
-                   <a class="text-decoration-none me-1" href="{{item.url}}"> <h3 class="h5 mb-2">
-                    {% if item.trailer_title %}{{item.trailer_title}}{% else %}{{page.seo.title}}{% endif %}
-                    </h3></a>
-                    <small>{{item.trailer_type}}</small>
-                    <div class="h6 mt-4 mb-0">{{item.price}}</div>
+                    <a class="text-decoration-none me-1" href="{{ item.url }}">
+                      <h3 class="h5 mb-2">
+                        {% if item.trailer_title %}{{ item.trailer_title }}{% else %}{{ item.seo.title }}{% endif %}
+                      </h3>
+                    </a>
+                    <small>{{ item.trailer_type }}</small>
+                    <div class="h6 mt-4 mb-0">{{ item.price }}</div>
                   </div>
                   <div class="card-footer bg-transparent border-0 pt-0 pb-4">
                     <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
                       {% for list in item.features limit: 3 %}
-                      <div class="d-flex align-items-center gap-2">
+                      <div class="d-flex align-items-center justify-content-between gap-2">
                         <i class="fal fa-chevron-right icon-size"></i>
-                       {{list.item}}
+                        {{ list.item }}
                       </div>
                       {% endfor %}
                     </div>
@@ -72,159 +159,10 @@ permalink: /
             </article>
           </div>
           {% endif %}
-          {% endfor %}
-          <div class="col-lg-7 d-flex flex-column gap-4">
-          {% for item in site.trailers offset: 1 %}
-            <!-- Item -->
-            <article class="card hover-effect-scale overflow-hidden">
-              <div class="row g-0">
-                <div class="col-sm-5 position-relative bg-body-tertiary overflow-hidden" style="min-height: 220px">
-                 <a class="text-decoration-none me-1" href="{{item.url}}"> <img src="{{item.gallery[0].image}}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" /></a>
-                </div>
-                <div class="col-sm-7 py-md-2">
-                  <div class="card-body pb-3 pb-md-4">
-                   <a class="text-decoration-none me-1" href="{{item.url}}"> <h3 class="h5 mb-2">
-                    {% if item.trailer_title %}{{item.trailer_title}}{% else %}{{item.seo.title}}{% endif %}
-                    </h3></a>
-                    <small>{{item.trailer_type}}</small>
-                    <div class="h6 mt-4 mb-0">{{item.price}}</div>
-                  </div>
-                  <div class="card-footer bg-transparent border-0 pt-0 pb-4">
-                    <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
-                      {% for list in item.features limit: 3 %}
-                      <div class="d-flex align-items-center justify-content-between gap-2">
-                       <i class="fal fa-chevron-right icon-size"></i>
-                        {{list.item}}
-                      </div>
-                      {% endfor %}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
+            {% endif %}
             {% endfor %}
-            <!-- Item -->
-
           </div>
-        </div>
       </section>
-
-
-      <!-- Popular categories -->
-      <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
-        <h2 class="text-center pb-2 pb-sm-3 pb-lg-4 mb-xl-4">Trailers</h2>
-
-        <!-- Row of items that turns into carousel on screens < 992px wide (lg breakpoint) -->
-        <div class="swiper" data-swiper='{
-          "slidesPerView": 2,
-          "spaceBetween": 24,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "500": {
-              "slidesPerView": 3
-            },
-            "768": {
-              "slidesPerView": 4
-            },
-            "992": {
-              "slidesPerView": 6
-            }
-          }
-        }'>
-          <div class="swiper-wrapper">
-
-            <!-- Category -->
-            <div class="swiper-slide">
-              <article class="hover-effect-scale position-relative text-center">
-                <div class="bg-body-tertiary rounded-circle overflow-hidden mx-auto" style="width: 132px">
-                  <div class="ratio ratio-1x1 hover-effect-target">
-                    <img src="assets/img/trailers/custom.jpg" alt="Image" />
-                  </div>
-                </div>
-                <h3 class="h6 pt-3 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="#">Custom Trailers</a>
-                </h3>
-              </article>
-            </div>
-
-            <!-- Category -->
-            <div class="swiper-slide">
-              <article class="hover-effect-scale position-relative text-center">
-                <div class="bg-body-tertiary rounded-circle overflow-hidden mx-auto" style="width: 132px">
-                  <div class="ratio ratio-1x1 hover-effect-target">
-                    <img src="assets/img/trailers/select-series.png" alt="Image" />
-                  </div>
-                </div>
-                <h3 class="h6 pt-3 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="#">Select Series Trailers</a>
-                </h3>
-              </article>
-            </div>
-
-            <!-- Category -->
-            <div class="swiper-slide">
-              <article class="hover-effect-scale position-relative text-center">
-                <div class="bg-body-tertiary rounded-circle overflow-hidden mx-auto" style="width: 132px">
-                  <div class="ratio ratio-1x1 hover-effect-target">
-                    <img src="assets/img/trailers/stock.png" alt="Image" />
-                  </div>
-                </div>
-                <h3 class="h6 pt-3 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="#">Stock Trailers</a>
-                </h3>
-              </article>
-            </div>
-
-            <!-- Category -->
-            <div class="swiper-slide">
-              <article class="hover-effect-scale position-relative text-center">
-                <div class="bg-body-tertiary rounded-circle overflow-hidden mx-auto" style="width: 132px">
-                  <div class="ratio ratio-1x1 hover-effect-target">
-                    <img src="assets/img/trailers/equipment.jpg" alt="Image" />
-                  </div>
-                </div>
-                <h3 class="h6 pt-3 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="#">Equipment to Haul Series</a>
-                </h3>
-              </article>
-            </div>
-
-            <!-- Category -->
-            <div class="swiper-slide">
-              <article class="hover-effect-scale position-relative text-center">
-                <div class="bg-body-tertiary rounded-circle overflow-hidden mx-auto" style="width: 132px">
-                  <div class="ratio ratio-1x1 hover-effect-target">
-                    <img src="assets/img/trailers/spa.png" alt="Image" />
-                  </div>
-                </div>
-                <h3 class="h6 pt-3 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="#">Spa Therapy Trailers</a>
-                </h3>
-              </article>
-            </div>
-            <!-- Category -->
-            <div class="swiper-slide">
-              <article class="hover-effect-scale position-relative text-center">
-                <div class="bg-body-tertiary rounded-circle overflow-hidden mx-auto" style="width: 132px">
-                  <div class="ratio ratio-1x1 hover-effect-target">
-                    <img src="assets/img/trailers/cargo.jpg" alt="Image" />
-                  </div>
-                </div>
-                <h3 class="h6 pt-3 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="#">Cargo Trailers</a>
-                </h3>
-              </article>
-            </div>
-          </div>
-
-          <!-- Pagination (Bullets) -->
-          <div class="swiper-pagination position-static mt-3"></div>
-        </div>
-      </section>
-
       <!-- Platform features -->
       <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
         <h2 class="pb-2 pb-sm-3 editable">Why Lease?</h2>
