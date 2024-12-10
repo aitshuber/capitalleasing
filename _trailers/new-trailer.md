@@ -9,7 +9,7 @@ seo:
 trailer_title: 6H 28'5" Stock Combo
 trailer_type: Non-Living Quarters
 description:
-featured: 'yes'
+featured: true
 price: Lease this trailer for 36 months at just $1,686.83 a Month!
 specifications:
   year: '2025'
