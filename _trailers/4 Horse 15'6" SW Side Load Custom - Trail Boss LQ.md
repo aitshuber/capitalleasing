@@ -46,7 +46,6 @@ gallery:
   - image: /uploads/s570-4h-tb-102.jpg
   - image: /uploads/s570-4h-tb-101.jpg
   - image: /uploads/s570-4h-tb-99.jpg
-  - image: /uploads/s570-4h-tb-98.jpg
   - image: /uploads/s570-4h-tb-94.jpg
   - image: /uploads/s570-4h-tb-92.jpg
   - image: /uploads/s570-4h-tb-90.jpg
