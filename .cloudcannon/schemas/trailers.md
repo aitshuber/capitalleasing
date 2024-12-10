@@ -9,7 +9,7 @@ trailer_title: ""
 trailer_type: ""
 description: >
   ""
-featured: ""
+featured:
 price: ""
 specifications:
   year: ""
