@@ -108,8 +108,23 @@ _inputs:
       values:
         - 'yes'
         - 'no'
+      picker_preview:
+        text:
+        subtext:
+        icon:
+        icon_color:
+        image:
+        metadata:
+        gallery:
+      view: text
+      picker_view: text
     label: Featured
-    cascade: false
+    context:
+      title:
+      icon:
+      content:
+      open:
+    cascade: true
   condition:
     type: select
     options:
