@@ -49,6 +49,10 @@ collections_config:
     _inputs:
     _select_data:
     _structures:
+      featured:
+        - label: Featured on the home page
+          _inputs:
+            type: switch
     add_options:
     create:
     disable_add: false
