@@ -64,7 +64,8 @@ gallery:
   - image: ''
   - image: /uploads/s570-4h-tb-48.jpg
   - image: /uploads/s570-4h-tb-11.jpg
+  - image: /uploads/snip-concept.jpg
 video:
-  - url: ''
-    thumb: ''
+  - url: https://youtu.be/JUGUyr2xako
+    thumb: /uploads/snip-video-thumbnail.jpg
 ---
