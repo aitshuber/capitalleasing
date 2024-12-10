@@ -101,30 +101,6 @@ _inputs:
         - Other & Specality
     label: Trailer Type
     cascade: false
-  featured:
-    type: select
-    options:
-      allow_empty: true
-      values:
-        - 'yes'
-        - 'no'
-      picker_preview:
-        text:
-        subtext:
-        icon:
-        icon_color:
-        image:
-        metadata:
-        gallery:
-      view: text
-      picker_view: text
-    label: Featured
-    context:
-      title:
-      icon:
-      content:
-      open:
-    cascade: true
   condition:
     type: select
     options:
@@ -208,6 +184,10 @@ _inputs:
     options:
       allow_create: true
       empty_type: array
+    cascade: true
+  featured:
+    type: switch
+    label: Feature on Home Page
     cascade: true
 _select_data:
   social:
