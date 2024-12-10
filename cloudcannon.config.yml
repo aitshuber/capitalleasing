@@ -12,8 +12,9 @@ paths:
 collections_config:
   data:
     path: _data
-    icon: notes
+    icon: data_usage
     output: true
+    _enabled_editors:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
