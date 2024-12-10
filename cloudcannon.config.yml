@@ -107,7 +107,7 @@ _inputs:
       allow_empty: true
       values:
         - 'yes'
-        - 'No'
+        - 'no'
     label: Featured
     cascade: false
   condition:
