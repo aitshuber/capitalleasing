@@ -44,6 +44,35 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: true
         icon: notes
+  Trailer Types:
+    path: trailer_type
+    glob:
+    name:
+    singular_name:
+    icon: notes
+    output: false
+    url:
+    filter:
+    parse_branch_index:
+    documentation:
+    description: ''
+    preview:
+    sort:
+    sort_options:
+    singular_key:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
 collections_config_override: true
 _inputs:
   layout:
@@ -74,8 +103,8 @@ _inputs:
     options:
       allow_empty: true
       values:
-        - yes
-        - No
+        - 'yes'
+        - 'No'
     label: Featured
     cascade: false
   condition:
