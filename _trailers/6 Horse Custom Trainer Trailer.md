@@ -9,7 +9,7 @@ seo:
 trailer_title: 6 Horse Custom Trainer Trailer
 trailer_type: Non-Living Quarters
 description: >
-  "Trainer Trailer, 8K Tandom Axles, 19.5\" Alum Wheels, 16 Ply Tires, White
+  "Trainer Trailer, 8K Tandom Axles, 19.5" Alum Wheels, 16 Ply Tires, White
   Skin, Rubber Mats Full Length (6) Custom Face Cages (12) Window Screens (9)
   Saddle Racks (24) Tie Hooks (40) Bridle Hooks (10) Manger Hooks Line &
   Insulate Walls Full Length Line & Insulate Ceiling Full Length Finish All
