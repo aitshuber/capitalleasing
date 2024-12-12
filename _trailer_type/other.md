@@ -1,5 +1,5 @@
 ---
 layout: trailer_type
 type: Cargo and Specialty
-image: /uploads/brent-cargo-medium.jpg
+image: /uploads/brent-cargo-medium-2.jpg
 ---
