@@ -1,5 +1,5 @@
 ---
 layout: trailer_type
-type: Other and Speciality
-image:  assets/img/trailers/custom.jpg
+type: Cargo and Specialty
+image: /uploads/brent-cargo-medium.jpg
 ---
