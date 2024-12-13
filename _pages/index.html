@@ -84,10 +84,12 @@ permalink: /
 
         <!-- Listings grid -->
         <div class="row">
-          {% for item in site.trailers limit: 3 %}
-            {% if item.featured == true %}
-            {% if forloop.first %}
+
+
             <div class="col-lg-5 mb-4 mb-lg-0">
+              {% for item in site.trailers limit: 1 %}
+              {% if item.featured == true %}
+
               <!-- First Featured Item -->
               <article class="card h-100 hover-effect-scale overflow-hidden">
                 <div class="row flex-lg-column h-100 g-0">
@@ -123,9 +125,14 @@ permalink: /
                   </div>
                 </div>
               </article>
+
+              {% endif %}
+              {% endfor %}
             </div>
-            {% else %}
+
           <div class="col-lg-7 d-flex flex-column gap-4">
+            {% for item in site.trailers offset: continue %}
+            {% if item.featured == true %}
             <!-- Remaining Featured Items -->
             <article class="card hover-effect-scale overflow-hidden">
               <div class="row g-0">
@@ -157,11 +164,11 @@ permalink: /
                 </div>
               </div>
             </article>
-          </div>
-          {% endif %}
+
             {% endif %}
             {% endfor %}
           </div>
+        </div>
       </section>
       <!-- Platform features -->
       <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
