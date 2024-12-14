@@ -1,5 +1,5 @@
 ---
 layout: trailer_type
 type: Non-Living Quarters
-image: /assets/img/trailers/equipment.jpg
+image: /assets/img/trailers/trailer.jpg
 ---
