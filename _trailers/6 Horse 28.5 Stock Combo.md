@@ -25,8 +25,8 @@ specifications:
 additional_specs:
   - spec_title: ''
     spec: ''
-condition: ''
-hitch_type: ''
+condition: New
+hitch_type: Gooseneck
 highlighted_features:
   -
   -
@@ -78,6 +78,6 @@ gallery:
   - image: /uploads/s549-pic-8.jpg
   - image: /uploads/s549-pic-9.jpg
 video:
-  - url: ''
-    thumb: ''
+  - url: https://youtu.be/AWnOLpQlPV8
+    thumb: /uploads/thumb1.jpg
 ---
