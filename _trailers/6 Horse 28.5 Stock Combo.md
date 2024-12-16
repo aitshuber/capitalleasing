@@ -80,4 +80,8 @@ gallery:
 video:
   - url: https://youtu.be/AWnOLpQlPV8
     thumb: /uploads/thumb1.jpg
+  - url: https://youtu.be/kqhYQS15NjI
+    thumb: /uploads/thumb2.jpg
+  - url: https://youtu.be/5Gj7rERDXgE
+    thumb: /uploads/thumb3.jpg
 ---
