@@ -3,7 +3,7 @@ _schema: default
 layout: trailers
 seo:
   title: 6 Horse Custom Trainer Trailer
-  description: ' seo description'
+  description:
   keywords: ''
   image: /uploads/10-6h-trainer-trailer-web.jpg
 trailer_title: 6 Horse Custom Trainer Trailer
