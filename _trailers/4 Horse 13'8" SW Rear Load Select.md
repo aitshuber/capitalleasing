@@ -6,13 +6,13 @@ seo:
   description: 4 Horse 13'8" SW Rear Load Select horsetrailer with Living Quarters
   keywords: ''
   image: /uploads/r573-concept-web.jpg
-trailer_title: 4 Horse 13'8" SW Rear Load Select for Lease
+trailer_title: '4 Horse 13''8" SW Rear Load Select for Lease '
 trailer_type: ''
 description:
 featured:
 price: >-
-  Lease this 4 Horse 13'8" SW Rear Load Select today for 2456.94 per month for
-  36 months! 
+  Lease this 4 Horse 13'8" SW Rear Load Select today for $2,947 per month for 36
+  months! 
 specifications:
   year: '2024'
   make: 'Twister '
