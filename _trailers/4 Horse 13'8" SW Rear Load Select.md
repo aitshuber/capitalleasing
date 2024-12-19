@@ -7,7 +7,7 @@ seo:
   keywords: ''
   image: /uploads/r573-concept-web.jpg
 trailer_title: '4 Horse 13''8" SW Rear Load Select for Lease '
-trailer_type: ''
+trailer_type: Living Quarters
 description:
 featured:
 price: >-
