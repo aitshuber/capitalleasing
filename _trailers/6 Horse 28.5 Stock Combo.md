@@ -6,7 +6,7 @@ seo:
   description: 'S549 '
   keywords: ''
   image: /uploads/s549-title-pic.jpg
-trailer_title: 6H 28'5" Stock Combo
+trailer_title: Twister 6H 28'5" Stock Combo
 trailer_type: Non-Living Quarters
 description:
 featured: true
