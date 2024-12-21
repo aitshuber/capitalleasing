@@ -14,7 +14,9 @@ description: >-
   This trailer is a 4 Horse 15'6" SW Side Load Custom Trail Boss LQ with an 7'
   Electric slideout. 
 featured: true
-price: Lease this Twister trailer for  $3,448.89 a month for 36 months!
+price: >-
+  Lease this Twister trailer for  $3,448 per month for 36 months, or 2,867 per
+  month with $10,000 down!
 specifications:
   year: '2024'
   make: Twister
