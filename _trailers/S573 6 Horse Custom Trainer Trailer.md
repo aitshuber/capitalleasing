@@ -19,7 +19,9 @@ description: >
   Boot Box Spare Tire Clothes Rod 2- Pinned 4 tier blanket Racks Single
   electric/Hydraulic Jack Quick Coupler"
 featured: true
-price: Lease this trailer for 36 months at just $1,960.97  a Month!
+price: >-
+  Lease this trailer for 36 months at $1,960.97  a month, or just $1,394 a month
+  with $10,000 down!
 specifications:
   year: '2024'
   make: Twister
