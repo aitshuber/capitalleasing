@@ -8,7 +8,7 @@ seo:
     Quarters
   keywords: twister horse trailer trail boss living quarters
   image: /uploads/s570-4h-tb-104.jpg
-trailer_title: 4 Horse 15'6" SW Side Load Custom - Trail Boss LQ
+trailer_title: Twister 4 Horse 15'6" SW Side Load Custom - Trail Boss LQ
 trailer_type: Living Quarters
 description: >-
   This trailer is a 4 Horse 15'6" SW Side Load Custom Trail Boss LQ with an 7'
