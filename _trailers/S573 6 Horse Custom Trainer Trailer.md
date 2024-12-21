@@ -20,8 +20,8 @@ description: >
   electric/Hydraulic Jack Quick Coupler"
 featured: true
 price: >-
-  Lease this trailer for 36 months at $1,960.97  a month, or just $1,394 a month
-  with $10,000 down!
+  Lease this trailer for 36 months at $1,960.97  per month, or just $1,394 a
+  month with $10,000 down!
 specifications:
   year: '2024'
   make: Twister

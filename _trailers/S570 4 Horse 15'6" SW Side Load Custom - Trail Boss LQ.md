@@ -15,8 +15,8 @@ description: >-
   Electric slideout. 
 featured: true
 price: >-
-  Lease this Twister trailer for  $3,448 per month for 36 months, or 2,867 per
-  month with $10,000 down!
+  Lease this trailer for  $3,448 per month for 36 months, or $2,867 a month with
+  $10,000 down!
 specifications:
   year: '2024'
   make: Twister
