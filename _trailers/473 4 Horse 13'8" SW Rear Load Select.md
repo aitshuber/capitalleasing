@@ -30,9 +30,29 @@ additional_specs:
 condition: New
 hitch_type: Gooseneck
 highlighted_features:
-  - 'Features and pictures to come. Please view video. '
+  - Legend Series Living Quarters Conversion
+  - 13ft 8in Short Wall
+  - 10,000# STI CargoMax Air Ride Axles
+  - 17.5" Alcoa Wheels
+  - 18 Ply Michelin Tires
+  - Select Hay Pod
 trailer:
-  - ''
+  - Big Dual Electric/ Hydraulic Jacks
+  - (4) Select Face Cages
+  - (12) Bridle Hooks
+  - (5) Manger Hooks
+  - (16) Tie Hooks
+  - '(1) Feed Bag at Escape Door '
+  - Line & Insulate Ceiling in Horse Area
+  - Rumber/Kick Plate in Horse Area
+  - Rubber Mats in Horse Area & Tack
+  - Carpet Rear Tack & Manger Doors
+  - Polished Extrusions
+  - Splint Boot Holders (6 Tier)
+  - 4 Tier Pinned Blanket Rack
+  - Stud Divider
+  - High Top Air Flow Divider
+  - Brush Tray
 living_quarters:
   - ''
 gallery:
