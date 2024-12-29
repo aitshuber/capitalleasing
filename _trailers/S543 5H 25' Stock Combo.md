@@ -66,7 +66,7 @@ video:
   - url: https://youtu.be/GxB8dnUJbyY
     thumb: /uploads/s543-dividers-open.jpg
   - url: https://youtu.be/X40jU23NsWk
-    thumb: ''
+    thumb: /uploads/s543-dividers-closed.jpg
   - url: https://youtu.be/28sHd_JGrKI
     thumb: /uploads/s543-change-1.jpg
   - url: https://youtu.be/Vz-bZ4WCCOU
