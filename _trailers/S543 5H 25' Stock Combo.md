@@ -63,6 +63,12 @@ gallery:
   - image: /uploads/img-8460.jpg
   - image: /uploads/img-8486.jpg
 video:
-  - url:
-    thumb:
+  - url: https://youtu.be/GxB8dnUJbyY
+    thumb: /uploads/s543-dividers-open.jpg
+  - url: https://youtu.be/X40jU23NsWk
+    thumb: ''
+  - url: https://youtu.be/28sHd_JGrKI
+    thumb: /uploads/s543-change-1.jpg
+  - url: https://youtu.be/Vz-bZ4WCCOU
+    thumb: /uploads/s543-change-2.jpg
 ---
