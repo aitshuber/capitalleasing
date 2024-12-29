@@ -63,14 +63,6 @@ gallery:
   - image: /uploads/img-8460.jpg
   - image: /uploads/img-8486.jpg
 video:
-  - url: https://youtu.be/SloZ23S4cuY
-    thumb: /uploads/r466-twister-4h.jpg
-  - url: https://youtu.be/gCqY-XhtFBo
-    thumb: /uploads/r466-twister-4h-vid-2.jpg
-  - url: https://youtu.be/JEbqZ85-JX0
-    thumb: /uploads/r466-twister-4h-vid-3.jpg
-  - url: https://youtu.be/tZ4zxOvVWMk
-    thumb: /uploads/r466-twister-4h-vid-4.jpg
-  - url: https://youtu.be/vYFdkoOPNPY
-    thumb: /uploads/r466-twister-4h-vid-5.jpg
+  - url:
+    thumb:
 ---
