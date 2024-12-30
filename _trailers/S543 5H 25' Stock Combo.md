@@ -8,54 +8,18 @@ seo:
   image: /uploads/img-0548.jpg
 trailer_title: Twister 5 Horse 25' Stock Combo
 trailer_type: Non-Living Quarters
-description: |
-  Amber and red clearance lights
-  Small hydraulic jack
-  7000axles with electric brakes
-  17.5 cast aluminum silver wheels with 16 ply tires
-  Carpeted walls in the rear tack room
-  20 tie hooks (4 SS, 6 CS, 10 horse head area)
-  Lexan holder
-  Optibrite light bar
-  Rubber mats full length
-  Split clearance lights
-  Red tail lights
-  Saddle boss racks
-  Rumber/kick plate in horse area
-  Manger hooks
-  Running board
-  Interior and manger lights
-  Hay rack
-
-  Additional Features
-
-  Stud divider
-  Feed bag at escape door
-  Raised nose
-  Dividers
-  High shelf
-  Vent (not wall with door)
-  No line or insulate
-  Brush tray
-  Blanket rack (4 tier)
-  Code lock
-  Standard ladder
-  White skin high top
-  Air flow divider
-  Boot box
-  Clothes rack
-  Quick coupler
-  Bridle hooks
-  Auxiliary manger lights
-  Interior and exterior lights
-  Grote load light
-  Optibrite interior lights
-  Vertical lights
-  Finished front tack room and DR
-  Line insulate carpet and mats
-  Custom face cages
-  Spare tire
-  Battery box
+description: |-
+  7000axles with electric brakes,
+  17.5 cast aluminum silver wheels with 16 ply tires,
+  Carpeted walls in the rear tack room,
+  Rumber/kick plate in horse area,
+  Hay rack,
+  Stud divider,
+  Dividers,
+  Air flow divider,
+  Finished front tack room and DR,
+  Line insulate carpet and mats,
+  Custom face cages,
 featured: false
 price: >-
   Lease this Twister 5 Horse 25' Stock Combo today for $1,055 per month for 36
