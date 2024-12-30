@@ -72,6 +72,7 @@ gallery:
   - image: /uploads/23img-8429.jpg
   - image: /uploads/img-8460.jpg
   - image: /uploads/img-8486.jpg
+  - image: /uploads/s543-final-build-concept-v4.jpf
 video:
   - url: https://youtu.be/GxB8dnUJbyY
     thumb: /uploads/s543-dividers-open.jpg
