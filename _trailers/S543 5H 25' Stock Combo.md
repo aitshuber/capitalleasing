@@ -47,7 +47,6 @@ trailer:
 living_quarters:
   - ''
 gallery:
-  - image: /uploads/s543-final-build-concept-v4.jpf
   - image: /uploads/1-img-8501.jpg
   - image: /uploads/2img-8497.jpg
   - image: /uploads/3img-8498.jpg
@@ -73,6 +72,7 @@ gallery:
   - image: /uploads/23img-8429.jpg
   - image: /uploads/img-8460.jpg
   - image: /uploads/img-8486.jpg
+  - image: /uploads/s543-final-build-concept-v4.jpg
 video:
   - url: https://youtu.be/GxB8dnUJbyY
     thumb: /uploads/s543-dividers-open.jpg
