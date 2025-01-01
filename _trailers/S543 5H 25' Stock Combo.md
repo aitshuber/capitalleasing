@@ -19,7 +19,7 @@ description: |-
   Air flow divider,
   Finished front tack room and DR,
   Line insulate carpet and mats,
-  Custom face cages,
+  Custom face cages
 featured: false
 price: >-
   Lease this Twister 5 Horse 25' Stock Combo today for $1,055 per month for 36
