@@ -58,7 +58,7 @@ trailer:
 living_quarters:
   - ''
 gallery:
-  - image: /uploads/r-s499-4h-select-outback-3.jpg
+  - image: /uploads/r-s499-4h-select-outback-mini-3.jpg
   - image: /uploads/r-s499-4h-select-outback-mini-2.jpg
   - image: /uploads/r-s499-4h-select-outback-mini-4.jpg
   - image: /uploads/r-s499-4h-select-outback-mini-1.jpg
