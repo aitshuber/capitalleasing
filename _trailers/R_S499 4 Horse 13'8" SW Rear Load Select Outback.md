@@ -85,6 +85,4 @@ video:
     thumb: /uploads/capture-lq2.jpg
   - url: https://youtu.be/c_gmUq_f3rU
     thumb: /uploads/capture-lq3.jpg
-  - url: https://youtu.be/TOkdcTZLWRA
-    thumb: /uploads/capture-lq4.jpg
 ---
