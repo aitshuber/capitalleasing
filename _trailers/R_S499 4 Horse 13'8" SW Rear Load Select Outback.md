@@ -58,12 +58,10 @@ trailer:
 living_quarters:
   - ''
 gallery:
-  - image: /uploads/r-s499-4h-select-outback-mini-32.jpg
-  - image: /uploads/r-s499-4h-select-outback-mini-33-1.jpg
-  - image: /uploads/r-s499-4h-select-outback-mini-34.jpg
-  - image: /uploads/r-s499-4h-select-outback-mini-35.jpg
-  - image: /uploads/r-s499-4h-select-outback-mini-36.jpg
-  - image: /uploads/r-s499-4h-select-outback-mini-37.jpg
+  - image: /uploads/r-s499-4h-select-outback-3.jpg
+  - image: /uploads/r-s499-4h-select-outback-mini-2.jpg
+  - image: /uploads/r-s499-4h-select-outback-mini-4.jpg
+  - image: /uploads/r-s499-4h-select-outback-mini-1.jpg
   - image: /uploads/r-s499-4h-select-outback-mini-20.jpg
   - image: /uploads/r-s499-4h-select-outback-mini-21.jpg
   - image: /uploads/r-s499-4h-select-outback-mini-22.jpg
