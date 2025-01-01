@@ -58,26 +58,6 @@ living_quarters:
 gallery:
   - image: /uploads/r473-concept-web.jpg
   - image: /uploads/r473-concept-lq.jpg
-  - image: /uploads/img-1645.jpg
-  - image: /uploads/img-1640.jpg
-  - image: /uploads/img-1606.jpg
-  - image: /uploads/img-1607.jpg
-  - image: /uploads/img-1609.jpg
-  - image: /uploads/img-1610.jpg
-  - image: /uploads/img-1611.jpg
-  - image: /uploads/img-1612.jpg
-  - image: /uploads/img-1613.jpg
-  - image: /uploads/img-1619.jpg
-  - image: /uploads/img-1620.jpg
-  - image: /uploads/img-1621.jpg
-  - image: /uploads/img-1622.jpg
-  - image: /uploads/img-1623.jpg
-  - image: /uploads/img-1634.jpg
-  - image: /uploads/img-1635.jpg
-  - image: /uploads/img-1636.jpg
-  - image: /uploads/img-1638.jpg
-  - image: /uploads/img-1650.jpg
-  - image: /uploads/img-1653.jpg
 video:
   - url: ''
     thumb: ''
