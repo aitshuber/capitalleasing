@@ -11,10 +11,10 @@ seo:
 trailer_title: 'Twister 4 Horse 13''8" SW Rear Load Select for Lease '
 trailer_type: Living Quarters
 description:
-featured:
+featured: false
 price: >-
   Lease this Twister 4 Horse 13'8" SW Rear Load Select today for $3,207 per
-  month for 36 months, or just $2,627 per month with $10,000 down! 
+  month for 36 months, or just $2,627 per month with $10,000 down!
 specifications:
   year: '2024'
   make: 'Twister '

@@ -81,94 +81,85 @@ permalink: /
             </a>
           </div>
         </div>
-
-        <!-- Listings grid -->
-        <div class="row">
-
-
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              {% for item in site.trailers limit: 1 %}
-              {% if item.featured == true %}
-
-              <!-- First Featured Item -->
-              <article class="card h-100 hover-effect-scale overflow-hidden">
-                <div class="row flex-lg-column h-100 g-0">
-                  <div class="col-sm-5 col-lg-12 position-relative bg-body-tertiary overflow-hidden">
-                    <div class="d-lg-none" style="min-height: 220px"></div>
-                    <div class="d-none d-lg-block" style="min-height: 260px"></div>
-                    <a class="text-decoration-none me-1" href="{{ item.url }}">
-                      <img src="{{ item.gallery[0].image }}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" />
-                    </a>
-                  </div>
-                  <div class="col-sm-7 col-lg-12 d-lg-flex flex-column flex-fill py-md-2">
-                    <div class="card-body pb-3 pb-md-4">
-                      <a class="text-decoration-none me-1" href="{{ item.url }}">
-                        <h3 class="h5 mb-2">
-                          {% if item.trailer_title %}{{ item.trailer_title }}{% else %}{{ page.seo.title }}{% endif %}
-                        </h3>
-                      </a>
-                      <small>{{ item.trailer_type }}</small>
-                      <div class="h6 mt-4 mb-0">{{ item.price }}</div>
-                    </div>
-                    {% if item.features %}
-                    <div class="card-footer bg-transparent border-0 pt-0 pb-4">
-                      <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
-                        {% for list in item.features limit: 3 %}
-                        <div class="d-flex align-items-center gap-2">
-                          <i class="fal fa-chevron-right icon-size"></i>
-                          {{ list.item }}
-                        </div>
-                        {% endfor %}
-                      </div>
-                    </div>
-                    {% endif %}
-                  </div>
-                </div>
-              </article>
-
-              {% endif %}
-              {% endfor %}
-            </div>
-
-          <div class="col-lg-7 d-flex flex-column gap-4">
-            {% for item in site.trailers offset: continue %}
-            {% if item.featured == true %}
-            <!-- Remaining Featured Items -->
-            <article class="card hover-effect-scale overflow-hidden">
-              <div class="row g-0">
-                <div class="col-sm-5 position-relative bg-body-tertiary overflow-hidden" style="min-height: 220px">
-                  <a class="text-decoration-none me-1" href="{{ item.url }}">
-                    <img src="{{ item.gallery[0].image }}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" />
-                  </a>
-                </div>
-                <div class="col-sm-7 py-md-2">
-                  <div class="card-body pb-3 pb-md-4">
-                    <a class="text-decoration-none me-1" href="{{ item.url }}">
-                      <h3 class="h5 mb-2">
-                        {% if item.trailer_title %}{{ item.trailer_title }}{% else %}{{ item.seo.title }}{% endif %}
-                      </h3>
-                    </a>
-                    <small>{{ item.trailer_type }}</small>
-                    <div class="h6 mt-4 mb-0">{{ item.price }}</div>
-                  </div>
-                  <div class="card-footer bg-transparent border-0 pt-0 pb-4">
-                    <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
-                      {% for list in item.features limit: 3 %}
-                      <div class="d-flex align-items-center justify-content-between gap-2">
-                        <i class="fal fa-chevron-right icon-size"></i>
-                        {{ list.item }}
-                      </div>
-                      {% endfor %}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            {% endif %}
-            {% endfor %}
-          </div>
-        </div>
+       <div class="row">
+         <!-- Left Column: First Featured Item -->
+         <div class="col-lg-5 mb-4 mb-lg-0">
+           {% assign featured_items = site.trailers | where: "featured", true %}
+           {% for item in featured_items limit: 1 %}
+             <!-- First Featured Item -->
+             <article class="card h-100 hover-effect-scale overflow-hidden">
+               <div class="row flex-lg-column h-100 g-0">
+                 <div class="col-sm-5 col-lg-12 position-relative bg-body-tertiary overflow-hidden">
+                   <div class="d-lg-none" style="min-height: 220px"></div>
+                   <div class="d-none d-lg-block" style="min-height: 260px"></div>
+                   <a class="text-decoration-none me-1" href="{{ item.url }}">
+                     <img src="{{ item.gallery[0].image }}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" />
+                   </a>
+                 </div>
+                 <div class="col-sm-7 col-lg-12 d-lg-flex flex-column flex-fill py-md-2">
+                   <div class="card-body pb-3 pb-md-4">
+                     <a class="text-decoration-none me-1" href="{{ item.url }}">
+                       <h3 class="h5 mb-2">
+                         {% if item.trailer_title %}{{ item.trailer_title }}{% else %}{{ page.seo.title }}{% endif %}
+                       </h3>
+                     </a>
+                     <small>{{ item.trailer_type }}</small>
+                     <div class="h6 mt-4 mb-0">{{ item.price }}</div>
+                   </div>
+                   {% if item.features %}
+                     <div class="card-footer bg-transparent border-0 pt-0 pb-4">
+                       <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
+                         {% for list in item.features limit: 3 %}
+                           <div class="d-flex align-items-center gap-2">
+                             <i class="fal fa-chevron-right icon-size"></i>
+                             {{ list.item }}
+                           </div>
+                         {% endfor %}
+                       </div>
+                     </div>
+                   {% endif %}
+                 </div>
+               </div>
+             </article>
+           {% endfor %}
+         </div>
+         <!-- Right Column: Remaining Featured Items (Limit to 4 and Skip First Item) -->
+         <div class="col-lg-7 d-flex flex-column gap-4">
+           {% for item in featured_items offset: continue | limit: 4 %}
+               <!-- Remaining Featured Items -->
+               <article class="card hover-effect-scale overflow-hidden">
+                 <div class="row g-0">
+                   <div class="col-sm-5 position-relative bg-body-tertiary overflow-hidden" style="min-height: 220px">
+                     <a class="text-decoration-none me-1" href="{{ item.url }}">
+                       <img src="{{ item.gallery[0].image }}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image" />
+                     </a>
+                   </div>
+                   <div class="col-sm-7 py-md-2">
+                     <div class="card-body pb-3 pb-md-4">
+                       <a class="text-decoration-none me-1" href="{{ item.url }}">
+                         <h3 class="h5 mb-2">
+                           {% if item.trailer_title %}{{ item.trailer_title }}{% else %}{{ item.seo.title }}{% endif %}
+                         </h3>
+                       </a>
+                       <small>{{ item.trailer_type }}</small>
+                       <div class="h6 mt-4 mb-0">{{ item.price }}</div>
+                     </div>
+                     <div class="card-footer bg-transparent border-0 pt-0 pb-4">
+                       <div class="d-flex flex-wrap justify-content-between gap-3 border-top fs-sm text-nowrap pt-3 pt-md-4">
+                         {% for list in item.features limit: 3 %}
+                           <div class="d-flex align-items-center justify-content-between gap-2">
+                             <i class="fal fa-chevron-right icon-size"></i>
+                             {{ list.item }}
+                           </div>
+                         {% endfor %}
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </article>
+           {% endfor %}
+         </div>
+       </div>
       </section>
       <!-- Platform features -->
       <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
