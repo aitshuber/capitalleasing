@@ -13,7 +13,11 @@ trailer_title: >-
   sale
 trailer_type: Other & Specality
 description: |-
-  8,000# axles,
+  42' Long
+  8' Wide
+  8' Tall
+  3 - 8,000# axles, Oil Bath, 
+  Hydraulic Brakes
   17.5" cast aluminum silver wheels,
   White skin,
   16-ply Westlake tires (235/75R),
@@ -35,21 +39,21 @@ description: |-
 featured:
 price: ''
 specifications:
-  year: ''
-  make: ''
-  model: ''
-  vin: ''
-  color: ''
-  length: ''
-  width: ''
-  height: ''
+  year: '2020'
+  make: Twister
+  model: Cargo with LQ
+  vin: M216
+  color: White
+  length: 42'
+  width: 8'
+  height: 8'
   number_of_horses: ''
   load_type: ''
 additional_specs:
   - spec_title: ''
     spec: ''
-condition: ''
-hitch_type: ''
+condition: Used
+hitch_type: Gooseneck
 highlighted_features:
   - ''
 trailer:
