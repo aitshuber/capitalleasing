@@ -2,14 +2,17 @@
 _schema: default
 layout: trailers
 seo:
-  title: Twister 42' Toy\Car Hauler with 22’ Outlaw Living Quarters for lease or sale
+  title: >-
+    2020 Twister 42' Toy\Car Hauler with 22’ Outlaw Living Quarters for lease or
+    sale
   description: ''
   keywords: ''
   image: ''
-trailer_title: ''
-trailer_type: ''
-description: |
-  "Patriot trailer specs
+trailer_title: >-
+  2020 Twister 42' Toy\Car Hauler with 22’ Outlaw Living Quarters for lease or
+  sale
+trailer_type: Other & Specality
+description: |-
   8,000# axles,
   17.5" cast aluminum silver wheels,
   White skin,
@@ -19,8 +22,16 @@ description: |
   Lippert generator cover enclosed/extended,
   Big dual electric/hydraulic jacks,
   Rumber kick plate in cargo area, 
-  Lined and insulated walls and ceiling in cargo area, 
-  "
+  Lined and insulated walls and ceiling in cargo area,
+  22 x 48 78" I.D.  slide out,
+  Bar load light, 
+  14 x 21 cargo\storage rack, 
+  10' bench, 
+  Quick coupler,
+  Optibrite lights,
+  Ramp extension,
+  12 L189 lights, 
+  Spare tire
 featured:
 price: ''
 specifications:
@@ -46,7 +57,16 @@ trailer:
 living_quarters:
   - ''
 gallery:
-  - image: ''
+  - image: /uploads/dscn1081.jpg
+  - image: /uploads/l216-patriot-22-lq-2.jpg
+  - image: /uploads/l216-patriot-22-lq-3.jpg
+  - image: /uploads/l216-patriot-22-lq-4.jpg
+  - image: /uploads/l216-patriot-22-lq-5.jpg
+  - image: /uploads/l216-patriot-22-lq-6.jpg
+  - image: /uploads/l216-patriot-22-lq-7.jpg
+  - image: /uploads/l216-patriot-22-lq-8.jpg
+  - image: /uploads/l216-patriot-22-lq-9.jpg
+  - image: /uploads/l216-patriot-22-lq-10.jpg
 video:
   - url: ''
     thumb: ''
