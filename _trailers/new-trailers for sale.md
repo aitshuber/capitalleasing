@@ -68,6 +68,14 @@ gallery:
   - image: /uploads/l216-patriot-22-lq-9.jpg
   - image: /uploads/l216-patriot-22-lq-10.jpg
 video:
-  - url: ''
-    thumb: ''
+  - url: https://youtu.be/83DuL4zdzt4
+    thumb: /uploads/capture-1-1.jpg
+  - url: https://youtu.be/IjxmfiSJej0
+    thumb: /uploads/capture-2-1.jpg
+  - url: https://youtu.be/p_Gd01meNwA
+    thumb: /uploads/capture-3.jpg
+  - url: https://youtu.be/axWmOG9y-zk
+    thumb: /uploads/capture-4.jpg
+  - url: https://youtu.be/W7f-oSlegYk
+    thumb: /uploads/capture-5.jpg
 ---
