@@ -36,8 +36,8 @@ description: |-
   Ramp extension,
   12 L189 lights, 
   Spare tire
-featured:
-price: ''
+featured: true
+price: MSRP new $181,000. Buy it now for $142,000 or Lease it for $2032 a month!
 specifications:
   year: '2020'
   make: Twister
