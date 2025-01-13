@@ -46,7 +46,7 @@
 				<div class="h2 mb-0">{{page.price}}</div>
 
 			  </div>
-			  {% if page.highlighted_features %}
+			  {% if page.highlighted_features and page.highlighted_features.size > 0 %}
 			  <div class="d-flex flex-wrap gap-2 gap-sm-3 fs-sm text-nowrap">
 				  {% for item in page.highlighted_features %}
 				<div class="d-flex align-items-center gap-2 me-2">
