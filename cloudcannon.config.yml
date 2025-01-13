@@ -102,7 +102,7 @@ _inputs:
       values:
         - Living Quarters
         - Non-Living Quarters
-        - Other & Specality
+        - Cargo and Specialty
     label: Trailer Type
     cascade: false
   condition:

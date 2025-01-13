@@ -32,19 +32,17 @@
  <!-- Page content -->
 	<main class="content-wrapper">
 		<div class="container pt-4 pb-5 mb-xxl-3">
-
 			<!-- Filter sidebar + Listings list view -->
-			<div class="row pt-md-2 pt-lg-3 pb-2 pb-sm-3 pb-md-4 pb-lg-5">
+			<div class="row">
 			  <!-- Listings list view -->
 			  <div class="col-lg-9 mx-auto">
 				<!-- Grid of items -->
-				<div class="vstack gap-4 align-content-center vh-50 d-block">
 				  {% assign matching_trailers = site.trailers | where: "trailer_type", page.type %}
 
 				  {% if matching_trailers.size > 0 %}
 					{% for item in matching_trailers %}
 					  <!-- Listing -->
-					  <article class="card hover-effect-scale bg-body-tertiary border-0 overflow-hidden">
+					  <article class="card hover-effect-scale bg-body-tertiary border-0 overflow-hidden mb-3">
 						<div class="row g-0">
 						  <div class="col-sm-5 position-relative bg-body-secondary overflow-hidden" style="min-height: 220px">
 							<img src="{{ item.gallery[0].image }}" class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
@@ -81,11 +79,8 @@
 					</div>
 				  {% endif %}
 				</div>
-
 			  </div>
 			</div>
-		  </div>
-
 		{{ content }}
 	</main>
 	{% include footer.html %}

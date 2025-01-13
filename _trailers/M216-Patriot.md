@@ -11,12 +11,12 @@ seo:
 trailer_title: >-
   2020 Twister 42' Toy\Car Hauler with 22’ Outlaw Living Quarters for lease or
   sale
-trailer_type: Other & Specality
+trailer_type: Cargo and Specialty
 description: |-
   42' Long
   8' Wide
   8' Tall
-  3 - 8,000# axles, Oil Bath, 
+  3 - 8,000# axles, Oil Bath,
   Hydraulic Brakes
   17.5" cast aluminum silver wheels,
   White skin,
@@ -25,16 +25,16 @@ description: |-
   Full ramp door with cable assist,
   Lippert generator cover enclosed/extended,
   Big dual electric/hydraulic jacks,
-  Rumber kick plate in cargo area, 
+  Rumber kick plate in cargo area,
   Lined and insulated walls and ceiling in cargo area,
   22 x 48 78" I.D.  slide out,
-  Bar load light, 
-  14 x 21 cargo\storage rack, 
-  10' bench, 
+  Bar load light,
+  14 x 21 cargo\storage rack,
+  10' bench,
   Quick coupler,
   Optibrite lights,
   Ramp extension,
-  12 L189 lights, 
+  12 L189 lights,
   Spare tire
 featured: true
 price: MSRP new $181,000. Buy it now for $142,000 or Lease it for $2032 a month!
