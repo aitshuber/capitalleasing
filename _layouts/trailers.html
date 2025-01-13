@@ -30,7 +30,7 @@
 		{{ content }}
 		<section class="container pt-4 pb-5 mb-xxl-3">
 			<!-- Title + Share button -->
-			<div class="d-flex justify-content-between gap-3 position-relative z-2 mb-3 mb-lg-4">
+			<div class="d-flex justify-content-between w-100">
 			  <h1 class="mb-0">{{page.trailer_title}}</h1>
 			  <div class="d-flex gap-2">
 				<div class="sharethis-inline-share-buttons"></div>
@@ -314,14 +314,18 @@
 				  <!-- Listing meta visible on screens > 991px (lg breakpoint) -->
 				  <div class="d-none d-lg-block">
 					<div class="h2 pb-1 mb-2">{{page.price}}</div>
+					{% if page.highlighted_features and page.highlighted_features.size > 0 %}
 					<div class="d-flex flex-wrap justify-content-lg-start gap-2 fs-sm text-nowrap mb-4">
 					{% for item in page.highlighted_features %}
+					{% if item != '' %}
 						<div class="d-flex align-items-center gap-2">
 						  <i class="fal fa-chevron-right icon-size"></i>
 						 {{item}}
 						</div>
+						{% endif %}
 						{% endfor %}
 					</div>
+					{% endif %}
 				  </div>
 				  <!-- Seller info card -->
 				  <div class="card bg-body-tertiary border-0 p-sm-2 p-lg-0 p-xl-2 mb-4">
