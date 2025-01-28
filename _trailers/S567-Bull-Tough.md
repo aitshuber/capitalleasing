@@ -2,16 +2,20 @@
 _schema: default
 layout: trailers
 seo:
-  title: Twister Bull Tough Stock Trailer
-  description: ''
+  title: Twister 28' Bull Tough Stock Trailer
+  description: >-
+    28' Stock Trailer built with the slats welded on the inside of the trailer
+    for additional strength, which is why we call it our "Bull Tough" trailer. 
   keywords: Aluminum stock trailer
   image: /uploads/pic-1.jpg
 trailer_title: Twister 25' Bull Tough Stock Trailer
 trailer_type: Non-Living Quarters
 description: |+
 
-featured:
-price: ''
+featured: true
+price: >-
+  Lease this Twister Bull Tough trailer today for $990 per month for 36 months,
+  or just $699 a month with $5,000 down!
 specifications:
   year: '2025'
   make: 'Twister '
