@@ -41,11 +41,10 @@ trailer:
 living_quarters:
   - ''
 gallery:
-  - image: /uploads/pic-1.jpg
-  - image: /uploads/pic-2.jpg
-  - image: /uploads/pic-3.jpg
-  - image: /uploads/pic-4.jpg
-  - image: ''
+  - image: /uploads/s567-replacement-7.jpg
+  - image: /uploads/s567-replacement-3.jpg
+  - image: /uploads/s567-replacement-6.jpg
+  - image: /uploads/s567-replacement-2.jpg
   - image: /uploads/pic-6.jpg
   - image: /uploads/pic-7.jpg
   - image: /uploads/s567-pic-1.jpg
