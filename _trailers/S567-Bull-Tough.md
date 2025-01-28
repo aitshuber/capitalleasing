@@ -10,10 +10,7 @@ seo:
   image: /uploads/pic-1.jpg
 trailer_title: Twister 25' Bull Tough Stock Trailer
 trailer_type: Non-Living Quarters
-description: |
-  Double wall slat assures no damage to inside shows on the outside 
-  Making smoother interior
-  Adding strength to the walls with the post to the outside of wall
+description: "Double wall slat assures no damage to inside shows on the outside \nMaking smoother interior\nAdding strength to the walls with the post to the outside of wall\n\no\tLength: 24' 2\"\no\tHeight: 7' 6\"\no\tWidth: 8' 0\"\no\tAxles: 7,000# Electric EZ Axles\no\tWheels: 16” Steel Wheels with 14 Ply Tires\n\nStructural Adjustments:\no\tRaised nose by 5\"\no\tLowered trailer by 2\"\n\t\nStorage & Tie Points:\no\tBridle Hooks: 16\no\tTie Rings Inside: 6\no\tTie Hooks Outside (Each Side): 5\no\tAdjustable custom saddle racks\no\tFront DR & Tack finished with insulation, carpet, and mats\n\nLighting System:\nExterior:\no\t9 amber clearance lights\no\t4 red clearance lights\no\t2 split clearance lights\no\t3 exterior LED bar load lights\no\t1 exterior gate load light\no\t2 six-inch red tail lights\no\t1 three-light red tail light\n\nInterior:\no\t4 twelve-inch Peterson lights\n\nOther Features:\no\tFlooring: Full-length rubber mats\no\tDoors & Gates: Includes a sliding rear gate\no\tEquipment: Small hydraulic jack\no\tCustomizations: White skin, removed Rumber/Kick Plate"
 featured: true
 price: >-
   Lease this Twister Bull Tough trailer today for $990 per month for 36 months,
