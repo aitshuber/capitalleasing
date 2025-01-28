@@ -11,6 +11,7 @@ seo:
 trailer_title: Twister 25' Bull Tough Stock Trailer
 trailer_type: Non-Living Quarters
 description: |
+  Double wall slat assures no damage to inside shows on the outside 
   Making smoother interior
   Adding strength to the walls with the post to the outside of wall
 featured: true
