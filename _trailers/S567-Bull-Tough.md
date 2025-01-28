@@ -10,8 +10,9 @@ seo:
   image: /uploads/pic-1.jpg
 trailer_title: Twister 25' Bull Tough Stock Trailer
 trailer_type: Non-Living Quarters
-description: |+
-
+description: |
+  Making smoother interior
+  Adding strength to the walls with the post to the outside of wall
 featured: true
 price: >-
   Lease this Twister Bull Tough trailer today for $990 per month for 36 months,
