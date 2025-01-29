@@ -89,6 +89,14 @@ gallery:
   - image: /uploads/s567-pic-43.jpg
   - image: /uploads/s567-pic-44.jpg
 video:
-  - url: ''
-    thumb: ''
+  - url: https://youtu.be/6xJW_yEDyHM
+    thumb: /uploads/capture-5-1.jpg
+  - url: https://youtu.be/k8BFFtrLDcs
+    thumb: /uploads/capture-1-3.jpg
+  - url: https://youtu.be/kSEPY6RY6rk
+    thumb: /uploads/capture-2-2.jpg
+  - url: https://youtu.be/tIpQsyAnxe0
+    thumb: /uploads/capture-3-2.jpg
+  - url: https://youtu.be/mKHu4RJ1lsU
+    thumb: /uploads/capture-4-1.jpg
 ---
