@@ -54,8 +54,8 @@ gallery:
   - image: /uploads/img-7505.jpg
   - image: /uploads/img-7465.jpg
   - image: /uploads/img-7520.jpg
-  - image: /uploads/p423-final-build-concept-v6.jpg
-  - image: /uploads/p423-17-ft-nrs-brazile-12apr19.jpg
+  - image: /uploads/p423-final-build-concept-v6-1.jpg
+  - image: /uploads/p423-17-ft-nrs-brazile-12apr19-1.jpg
 video:
   - url: ''
     thumb: ''
