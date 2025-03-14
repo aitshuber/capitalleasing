@@ -2,10 +2,10 @@
 _schema: default
 layout: trailers
 seo:
-  title: '2025 4H 15''6"SW Side Load '
+  title: 2025 4H 15'6" SW Side Load S548
   description: ''
   keywords: ''
-  image: /uploads/img-9111.jpg
+  image: /uploads/img-9111-1.jpg
 trailer_title: 2025 4H 15'6" SW Side Load S548
 trailer_type: Living Quarters
 description: '"'
