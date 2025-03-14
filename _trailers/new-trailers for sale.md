@@ -6,7 +6,7 @@ seo:
   description: ''
   keywords: ''
   image: /uploads/img-9111.jpg
-trailer_title: '202'
+trailer_title: 2025 4H 15'6" SW Side Load
 trailer_type: Living Quarters
 description: |
   ""
