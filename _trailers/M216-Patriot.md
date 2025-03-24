@@ -37,7 +37,7 @@ description: |-
   12 L189 lights,
   Spare tire
 featured: true
-price: MSRP new $181,000. Buy it now for $142,000 or Lease it for $2032 a month!
+price: MSRP new $222,994. Buy it now for $124,000 or Lease it for $1409 a month!
 specifications:
   year: '2020'
   make: Twister
@@ -55,11 +55,11 @@ additional_specs:
 condition: Used
 hitch_type: Gooseneck
 highlighted_features:
-  - ""
+  - ''
 trailer:
-  - ""
+  - ''
 living_quarters:
-  - ""
+  - ''
 gallery:
   - image: /uploads/dscn1081.jpg
   - image: /uploads/l216-patriot-22-lq-2.jpg
