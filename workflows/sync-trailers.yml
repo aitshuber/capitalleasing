@@ -1,0 +1,31 @@
+name: Sync Trailers to Site B
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "_trailers/**"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout Site A
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: 🤝 Clone Site B
+        run: |
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+
+          git clone https://x-access-token:${{ secrets.GH_PAT }}github.com/aitshuber/twistedtrailers.git site_b
+          rsync -av --delete _trailers/ site_b/_trailers/
+
+          cd site_b
+          git add _trailers
+          git commit -m "🔄 Auto-sync _trailers from capitalleasing" || echo "No changes to commit"
+          git push origin main
