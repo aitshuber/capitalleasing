@@ -1,4 +1,4 @@
-name: Sync Trailers to Site B
+name: Sync Trailers and Images to Site B
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "_trailers/**"
+      - "uploads/**"
 
 jobs:
   sync:
@@ -24,8 +25,10 @@ jobs:
 
           git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aitshuber/twistedtrailers.git site_b
           rsync -av --delete _trailers/ site_b/_trailers/
+          
+          rsync -av --delete uploads/ site_b/uploads/
 
           cd site_b
-          git add _trailers
+          git add -A
           git commit -m "🔄 Auto-sync _trailers from capitalleasing" || echo "No changes to commit"
           git push origin main
