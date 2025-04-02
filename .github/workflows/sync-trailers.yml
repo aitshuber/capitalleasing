@@ -22,7 +22,7 @@ jobs:
           git config --global user.email "github-actions@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
 
-          git clone https://x-access-token:${{ secrets.GH_PAT }}github.com/aitshuber/twistedtrailers.git site_b
+          git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aitshuber/twistedtrailers.git site_b
           rsync -av --delete _trailers/ site_b/_trailers/
 
           cd site_b
