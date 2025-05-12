@@ -27,7 +27,7 @@ description: |
   (2) Code Locks
   Adjustable Custom 4-Tier Saddle Rack
 featured:
-price: MSRP new $285,401  Buy it now for $225,000 or Lease it for $ 3,849 a month!
+price: MSRP new $260,618  Buy it now for $225,000 or Lease it for $ 3,849 a month!
 specifications:
   year: '2022'
   make: Twister
