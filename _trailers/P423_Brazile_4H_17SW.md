@@ -2,11 +2,11 @@
 _schema: default
 layout: trailers
 seo:
-  title: Coming Soon! Trevor Brazile's 2022 4H 17'SW Side Load Custom
+  title: Trevor Brazile's 2022 4H 17'SW Side Load Custom
   description:
   keywords: 4 horse 17' short wall Ooutlaw living quarters
   image: /uploads/img-7505-1.jpg
-trailer_title: Coming Soon! Trevor Brazile's 2022 4H 17'SW Side Load Custom
+trailer_title: UNDER CONTRACT Trevor Brazile's 2022 4H 17'SW Side Load Custom
 trailer_type: Living Quarters
 description: |
   Tripple 7K Dexter Axles w/ Air Ride
