@@ -2,16 +2,14 @@
 _schema: default
 layout: trailers
 seo:
-  title: >-
-    2020 Twister 42' Toy\Car Hauler with 22’ Outlaw Living Quarters for lease or
-    sale
+  title: 2020 Twister 4 Horse with 22’ Outlaw Living Quarters for lease or sale
   description: ''
   keywords: ''
   image: ''
 trailer_title: >-
   2020 Twister 42' Toy\Car Hauler with 22’ Outlaw Living Quarters for lease or
   sale
-trailer_type: Cargo and Specialty
+trailer_type: Living Quarters
 description: |-
   42' Long
   8' Wide
@@ -37,7 +35,7 @@ description: |-
   12 L189 lights,
   Spare tire
 featured: true
-price: MSRP new $222,994. Buy it now for $124,000 or Lease it for $1409 a month!
+price: 'MSRP new $280,908. '
 specifications:
   year: '2020'
   make: Twister
