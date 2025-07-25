@@ -8,7 +8,7 @@ seo:
     Quarters
   keywords: ''
   image: /uploads/r-s499-4h-select-outback-mini-33.jpg
-trailer_title: Twister 4 Horse 13'8" SW Rear Load Select Trail Boss LQ
+trailer_title: Twister 4 Horse 13'8" SW Rear Load Select Trail Boss LQ S499
 trailer_type: Living Quarters
 description:
 featured: false
