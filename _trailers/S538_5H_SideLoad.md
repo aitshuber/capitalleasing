@@ -2,10 +2,10 @@
 _schema: default
 layout: trailers
 seo:
-  title: 2025 Custom 5H Side Load 12.8 LQ
+  title: 2025 Custom 5H Side Load 12.8 LQ S538
   description: ''
   keywords: ''
-  image: ''
+  image: /uploads/img-7772-1.jpg
 trailer_title: 2025 Twister 5 Horse 12'8" SW Trail Boss LQ Side Load Custom S538
 trailer_type: Living Quarters
 description: |
