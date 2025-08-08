@@ -18,6 +18,7 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+
   pages:
     path: ''
     icon: notes
@@ -26,23 +27,7 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  Trailer Types:
-    path: _trailer_type
-    name: Trailer Types
-    icon: category
-    output: false
-    _enabled_editors:
-      - data
-    _structures:
-      featured:
-        - label: Featured on the home page
-          _inputs:
-            type:
-              type: auto
-              cascade: true
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
+
   trailers:
     path: _trailers
     name: Trailers For Sale
@@ -70,18 +55,6 @@ _inputs:
     hidden: true
     cascade: true
 
-  height:
-    type: text
-    cascade: true
-
-  width:
-    type: text
-    cascade: true
-
-  length:
-    type: text
-    cascade: true
-
   trailer_type:
     type: select
     options:
@@ -91,7 +64,6 @@ _inputs:
         - Non-Living Quarters
         - Cargo and Specialty
     label: Trailer Type
-    cascade: false
 
   condition:
     type: select
@@ -100,7 +72,6 @@ _inputs:
       values:
         - New
         - Used
-    cascade: true
 
   hitch_type:
     type: select
@@ -110,16 +81,6 @@ _inputs:
         - Gooseneck
         - Bumper pull
     label: Hitch Type
-    cascade: true
-
-  categories:
-    type: multiselect
-    options:
-      allow_create: true
-      empty_type: array
-    cascade: true
-
-  # ===== FIXED ARRAY + STRUCTURE FIELDS =====
 
   additional_specs:
     type: array
@@ -128,8 +89,6 @@ _inputs:
       add_button_label: Add specification
       structures:
         - label: Specification
-          preview:
-            text: "{{ spec_title | default: 'Untitled Specification' }}"
           values:
             spec_title:
               type: text
@@ -169,9 +128,6 @@ _inputs:
       add_button_label: Add image
       structures:
         - label: Image
-          preview:
-            text: "{{ image | split: '/' | last }}"
-            subtext: Image
           values:
             image:
               type: image
@@ -184,9 +140,6 @@ _inputs:
       add_button_label: Add video
       structures:
         - label: Video
-          preview:
-            text: "{{ url }}"
-            subtext: "{{ thumb | split: '/' | last }}"
           values:
             url:
               type: url
@@ -197,40 +150,24 @@ _inputs:
 
   vin:
     type: text
-    options:
-      empty_type: string
     label: VIN Number
-    cascade: true
-
   color:
     type: text
     label: Trailer Color
-    cascade: true
-
   thumb:
     type: image
-    cascade: true
-
   tags:
     type: multiselect
     options:
       allow_create: true
       empty_type: array
-    cascade: true
-
   featured:
     type: switch
     label: Feature on Home Page
-    cascade: true
-
   Image:
     type: image
-    cascade: true
 
 _select_data:
-  social:
-    name: Capital Leasing
-    links: []
   jekyll-archives:
     layout: archive
     enabled: []
@@ -240,7 +177,6 @@ _select_data:
       day: /:year/:month/:day/
       tag: /tag/:name/
       category: /category/:name/
-  archives: []
 
 source_editor:
   tab_size: 2
