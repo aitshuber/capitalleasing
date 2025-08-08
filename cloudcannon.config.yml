@@ -50,11 +50,13 @@ collections_config:
 collections_config_override: true
 
 _inputs:
+  # Hidden/system
   layout:
     type: auto
     hidden: true
     cascade: true
 
+  # Common selects
   trailer_type:
     type: select
     options:
@@ -82,6 +84,7 @@ _inputs:
         - Bumper pull
     label: Hitch Type
 
+  # Arrays / structures (global defaults)
   additional_specs:
     type: array
     label: Additional Specifications
@@ -103,7 +106,6 @@ _inputs:
     options:
       add_button_label: Add feature
       type: text
-      placeholder: e.g. 13ft 8in Short Wall
 
   trailer:
     type: array
@@ -111,7 +113,6 @@ _inputs:
     options:
       add_button_label: Add feature
       type: text
-      placeholder: e.g. Stud Divider
 
   living_quarters:
     type: array
@@ -119,35 +120,8 @@ _inputs:
     options:
       add_button_label: Add feature
       type: text
-      placeholder: e.g. Leather Sofa
 
-  gallery:
-    type: array
-    label: Images
-    options:
-      add_button_label: Add image
-      structures:
-        - label: Image
-          values:
-            image:
-              type: image
-              label: Image
-
-  video:
-    type: array
-    label: Video
-    options:
-      add_button_label: Add video
-      structures:
-        - label: Video
-          values:
-            url:
-              type: url
-              label: Video URL
-            thumb:
-              type: image
-              label: Thumbnail
-
+  # Misc inputs
   vin:
     type: text
     label: VIN Number
@@ -164,8 +138,6 @@ _inputs:
   featured:
     type: switch
     label: Feature on Home Page
-  Image:
-    type: image
 
 _select_data:
   jekyll-archives:
