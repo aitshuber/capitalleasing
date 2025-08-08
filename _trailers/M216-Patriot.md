@@ -1,5 +1,5 @@
 ---
-_schema: default
+_schema: trailers
 layout: trailers
 seo:
   title: 2020 Twister 4 Horse with 22’ Outlaw Living Quarters for lease or sale
