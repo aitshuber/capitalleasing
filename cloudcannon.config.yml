@@ -139,7 +139,7 @@ _inputs:
               label: Specification
 
   highlighted_features:
-    type: text
+    type: array
     label: Highlighted Features
     options:
       add_button_label: Add feature
