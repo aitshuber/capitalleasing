@@ -9,6 +9,7 @@ paths:
   data: _data
   layouts: _layouts
   includes: _includes
+
 collections_config:
   data:
     path: _data
@@ -60,21 +61,27 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: true
         icon: notes
+
 collections_config_override: true
+
 _inputs:
   layout:
     type: auto
     hidden: true
     cascade: true
+
   height:
     type: text
     cascade: true
+
   width:
     type: text
     cascade: true
+
   length:
     type: text
     cascade: true
+
   trailer_type:
     type: select
     options:
@@ -85,6 +92,7 @@ _inputs:
         - Cargo and Specialty
     label: Trailer Type
     cascade: false
+
   condition:
     type: select
     options:
@@ -93,6 +101,7 @@ _inputs:
         - New
         - Used
     cascade: true
+
   hitch_type:
     type: select
     options:
@@ -102,6 +111,7 @@ _inputs:
         - Bumper pull
     label: Hitch Type
     cascade: true
+
   categories:
     type: multiselect
     options:
@@ -109,57 +119,81 @@ _inputs:
       empty_type: array
     cascade: true
 
-  # Fixed inputs
+  # ===== FIXED ARRAY + STRUCTURE FIELDS =====
+
   additional_specs:
     type: array
     label: Additional Specifications
     options:
+      add_button_label: Add specification
       structures:
-        - spec_title:
-            type: text
-            label: Specification Title
-          spec:
-            type: text
-            label: Specification
+        - label: Specification
+          preview:
+            text: "{{ spec_title | default: 'Untitled Specification' }}"
+          values:
+            spec_title:
+              type: text
+              label: Specification Title
+            spec:
+              type: text
+              label: Specification
 
   highlighted_features:
     type: array
     label: Highlighted Features
     options:
+      add_button_label: Add feature
       type: text
+      placeholder: e.g. 13ft 8in Short Wall
 
   trailer:
     type: array
     label: Trailer Features
     options:
+      add_button_label: Add feature
       type: text
+      placeholder: e.g. Stud Divider
 
   living_quarters:
     type: array
     label: Living Quarter Features
     options:
+      add_button_label: Add feature
       type: text
+      placeholder: e.g. Leather Sofa
 
   gallery:
     type: array
     label: Images
     options:
+      add_button_label: Add image
       structures:
-        - image:
-            type: image
-            label: Image
+        - label: Image
+          preview:
+            text: "{{ image | split: '/' | last }}"
+            subtext: Image
+          values:
+            image:
+              type: image
+              label: Image
 
   video:
     type: array
     label: Video
     options:
+      add_button_label: Add video
       structures:
-        - url:
-            type: url
-            label: Video URL
-          thumb:
-            type: image
-            label: Thumbnail
+        - label: Video
+          preview:
+            text: "{{ url }}"
+            subtext: "{{ thumb | split: '/' | last }}"
+          values:
+            url:
+              type: url
+              label: Video URL
+            thumb:
+              type: image
+              label: Thumbnail
 
   vin:
     type: text
@@ -167,26 +201,32 @@ _inputs:
       empty_type: string
     label: VIN Number
     cascade: true
+
   color:
     type: text
     label: Trailer Color
     cascade: true
+
   thumb:
     type: image
     cascade: true
+
   tags:
     type: multiselect
     options:
       allow_create: true
       empty_type: array
     cascade: true
+
   featured:
     type: switch
     label: Feature on Home Page
     cascade: true
+
   Image:
     type: image
     cascade: true
+
 _select_data:
   social:
     name: Capital Leasing
@@ -201,8 +241,10 @@ _select_data:
       tag: /tag/:name/
       category: /category/:name/
   archives: []
+
 source_editor:
   tab_size: 2
   theme: monokai
   show_gutter: true
+
 timezone: America/Chicago
