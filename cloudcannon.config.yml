@@ -56,7 +56,33 @@ _inputs:
     hidden: true
     cascade: true
 
-  # Common selects
+  # Simple arrays (strings) — use entry type keys
+  highlighted_features:
+    type: array
+    label: Highlighted Features
+  highlighted_features[*]:
+    type: text
+
+  trailer:
+    type: array
+    label: Trailer Features
+  trailer[*]:
+    type: text
+
+  living_quarters:
+    type: array
+    label: Living Quarter Features
+  living_quarters[*]:
+    type: text
+
+  # Structured array (objects)
+  additional_specs:
+    type: array
+    label: Additional Specifications
+    options:
+      structures: _structures.additional_spec
+
+  # Selects
   trailer_type:
     type: select
     options:
@@ -84,43 +110,6 @@ _inputs:
         - Bumper pull
     label: Hitch Type
 
-  # Arrays / structures (global defaults)
-  additional_specs:
-    type: array
-    label: Additional Specifications
-    options:
-      add_button_label: Add specification
-      structures:
-        - label: Specification
-          values:
-            spec_title:
-              type: text
-              label: Specification Title
-            spec:
-              type: text
-              label: Specification
-
-  highlighted_features:
-    type: array
-    label: Highlighted Features
-    options:
-      add_button_label: Add feature
-      type: text
-
-  trailer:
-    type: array
-    label: Trailer Features
-    options:
-      add_button_label: Add feature
-      type: text
-
-  living_quarters:
-    type: array
-    label: Living Quarter Features
-    options:
-      add_button_label: Add feature
-      type: text
-
   # Misc inputs
   vin:
     type: text
@@ -138,6 +127,14 @@ _inputs:
   featured:
     type: switch
     label: Feature on Home Page
+
+# Define structures used by arrays above
+_structures:
+  additional_spec:
+    values:
+      - value:
+          spec_title:
+          spec:
 
 _select_data:
   jekyll-archives:

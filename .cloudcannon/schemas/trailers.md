@@ -56,21 +56,6 @@ specifications:
   load_type:
     type: text
 
-additional_specs:
-  type: array
-  label: Additional Specifications
-  options:
-    add_button_label: Add specification
-    structures:
-      - label: Specification
-        values:
-          spec_title:
-            type: text
-            label: Specification Title
-          spec:
-            type: text
-            label: Specification
-
 condition:
   type: select
   options:
@@ -87,27 +72,7 @@ hitch_type:
       - Gooseneck
       - Bumper pull
 
-highlighted_features:
-  type: array
-  label: Highlighted Features
-  options:
-    type: text
-    add_button_label: Add feature
-
-trailer:
-  type: array
-  label: Trailer Features
-  options:
-    type: text
-    add_button_label: Add feature
-
-living_quarters:
-  type: array
-  label: Living Quarter Features
-  options:
-    type: text
-    add_button_label: Add feature
-
+# Object-based arrays (kept here - images/video were previously fixed)
 gallery:
   type: array
   label: Images
