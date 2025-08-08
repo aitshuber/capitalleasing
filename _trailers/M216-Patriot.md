@@ -45,15 +45,15 @@ specifications:
   length: "42'"
   width: "8'"
   height: "8'"
-  number_of_horses: ''
-  load_type: ''
+  number_of_horses: []
+  load_type: []
 additional_specs:
-  - spec_title: ''
-    spec: ''
+  - spec_title: []
+    spec: []
 condition: Used
 hitch_type: Gooseneck
-highlighted_features:
-trailer:
+highlighted_features: []
+trailer: []
 living_quarters:
 gallery:
   - image: /uploads/dscn1081.jpg
