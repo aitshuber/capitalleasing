@@ -54,8 +54,10 @@ condition: Used
 hitch_type: Gooseneck
 highlighted_features:
   - 
-trailer: 
+trailer:
+  -
 living_quarters:
+  -
 gallery:
   - image: /uploads/dscn1081.jpg
   - image: /uploads/l216-patriot-22-lq-2.jpg
