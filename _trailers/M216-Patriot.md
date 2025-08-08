@@ -10,7 +10,7 @@ trailer_title: >-
   2020 Twister 42' Toy\Car Hauler with 22’ Outlaw Living Quarters for lease or
   sale
 trailer_type: Living Quarters
-description: |-
+description: >-
   42' Long
   8' Wide
   8' Tall
@@ -38,13 +38,13 @@ featured: true
 price: 'MSRP new $280,908. '
 specifications:
   year: '2020'
-  make: Twister
-  model: Cargo with LQ
-  vin: M216
-  color: White
-  length: 42'
-  width: 8'
-  height: 8'
+  make: "Twister"
+  model: "Cargo with LQ"
+  vin: "M216"
+  color: "White"
+  length: "42'"
+  width: "8'"
+  height: "8'"
   number_of_horses: ''
   load_type: ''
 additional_specs:
