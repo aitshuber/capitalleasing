@@ -52,7 +52,7 @@ additional_specs:
     spec: []
 condition: Used
 hitch_type: Gooseneck
-highlighted_features: []
+highlighted_features:
 trailer: []
 living_quarters:
 gallery:
