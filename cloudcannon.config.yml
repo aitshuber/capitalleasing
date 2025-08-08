@@ -52,7 +52,9 @@ collections_config:
       featured:
         - label: Featured on the home page
           _inputs:
-            type: switch
+            type:
+              type: auto
+              cascade: true
     add_options:
     create:
     disable_add: false
@@ -192,6 +194,9 @@ _inputs:
   featured:
     type: switch
     label: Feature on Home Page
+    cascade: true
+  Image:
+    type: image
     cascade: true
 _select_data:
   social:
