@@ -48,8 +48,8 @@ specifications:
   number_of_horses: []
   load_type: []
 additional_specs:
-  - spec_title: []
-    spec: []
+  - spec_title:
+    spec: 
 condition: Used
 hitch_type: Gooseneck
 highlighted_features:
