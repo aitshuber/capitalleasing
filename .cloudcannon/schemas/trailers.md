@@ -1,101 +1,41 @@
 ---
-layout:
-  type: auto
+layout: "trailers"
 seo:
-  title:
-    type: text
-  description:
-    type: textarea
-  keywords:
-    type: text
-  image:
-    type: image
-
-trailer_title:
-  type: text
-
-trailer_type:
-  type: select
-  options:
-    allow_empty: true
-    values:
-      - Living Quarters
-      - Non-Living Quarters
-      - Cargo and Specialty
-
-description:
-  type: textarea
-
+  title: ""
+  description: ""
+  keywords: ""
+  image: ""
+trailer_title: ""
+trailer_type: ""
+description: >
+  ""
 featured:
-  type: switch
-  label: Feature on Home Page
-
-price:
-  type: text
-
+price: ""
 specifications:
-  year:
-    type: text
-  make:
-    type: text
-  model:
-    type: text
-  vin:
-    type: text
-  color:
-    type: text
-  length:
-    type: text
-  width:
-    type: text
-  height:
-    type: text
-  number_of_horses:
-    type: text
-  load_type:
-    type: text
-
-condition:
-  type: select
-  options:
-    allow_empty: true
-    values:
-      - New
-      - Used
-
-hitch_type:
-  type: select
-  options:
-    allow_empty: true
-    values:
-      - Gooseneck
-      - Bumper pull
-
-# Object-based arrays (kept here - images/video were previously fixed)
+  year: ""
+  make: ""
+  model: ""
+  vin: ""
+  color: ""
+  length: ""
+  width: ""
+  height: ""
+  number_of_horses: ""
+  load_type: ""
+additional_specs:
+  - spec_title: ""
+    spec: ""
+condition: ""
+hitch_type: ""
+highlighted_features:
+  - ""
+trailer:
+  - ""
+living_quarters:
+  - ""
 gallery:
-  type: array
-  label: Images
-  options:
-    add_button_label: Add image
-    structures:
-      - label: Image
-        values:
-          image:
-            type: image
-            label: Image
-
+  - image: ""
 video:
-  type: array
-  label: Video
-  options:
-    add_button_label: Add video
-    structures:
-      - label: Video
-        values:
-          url:
-            type: url
-            label: Video URL
-          thumb:
-            type: image
-            label: Thumbnail
+  - url: ""
+    thumb: ""
 ---
