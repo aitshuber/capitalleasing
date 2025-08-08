@@ -1,7 +1,6 @@
 ---
 layout:
   type: auto
-
 seo:
   title:
     type: text
@@ -80,8 +79,6 @@ gallery:
     add_button_label: Add image
     structures:
       - label: Image
-        preview:
-          text: "{{ image | split: '/' | last }}"
         values:
           image:
             type: image
@@ -94,9 +91,6 @@ video:
     add_button_label: Add video
     structures:
       - label: Video
-        preview:
-          text: "{{ url }}"
-          subtext: "{{ thumb | split: '/' | last }}"
         values:
           url:
             type: url

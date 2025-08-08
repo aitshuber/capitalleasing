@@ -50,39 +50,11 @@ collections_config:
 collections_config_override: true
 
 _inputs:
-  # Hidden/system
   layout:
     type: auto
     hidden: true
     cascade: true
 
-  # Simple arrays (strings) — use entry type keys
-  highlighted_features:
-    type: array
-    label: Highlighted Features
-  highlighted_features[*]:
-    type: text
-
-  trailer:
-    type: array
-    label: Trailer Features
-  trailer[*]:
-    type: text
-
-  living_quarters:
-    type: array
-    label: Living Quarter Features
-  living_quarters[*]:
-    type: text
-
-  # Structured array (objects)
-  additional_specs:
-    type: array
-    label: Additional Specifications
-    options:
-      structures: _structures.additional_spec
-
-  # Selects
   trailer_type:
     type: select
     options:
@@ -110,7 +82,72 @@ _inputs:
         - Bumper pull
     label: Hitch Type
 
-  # Misc inputs
+  additional_specs:
+    type: array
+    label: Additional Specifications
+    options:
+      add_button_label: Add specification
+      structures:
+        - label: Specification
+          values:
+            spec_title:
+              type: text
+              label: Specification Title
+            spec:
+              type: text
+              label: Specification
+
+  highlighted_features:
+    type: array
+    label: Highlighted Features
+    options:
+      add_button_label: Add feature
+      type: text
+      placeholder: e.g. 13ft 8in Short Wall
+
+  trailer:
+    type: array
+    label: Trailer Features
+    options:
+      add_button_label: Add feature
+      type: text
+      placeholder: e.g. Stud Divider
+
+  living_quarters:
+    type: array
+    label: Living Quarter Features
+    options:
+      add_button_label: Add feature
+      type: text
+      placeholder: e.g. Leather Sofa
+
+  gallery:
+    type: array
+    label: Images
+    options:
+      add_button_label: Add image
+      structures:
+        - label: Image
+          values:
+            image:
+              type: image
+              label: Image
+
+  video:
+    type: array
+    label: Video
+    options:
+      add_button_label: Add video
+      structures:
+        - label: Video
+          values:
+            url:
+              type: url
+              label: Video URL
+            thumb:
+              type: image
+              label: Thumbnail
+
   vin:
     type: text
     label: VIN Number
@@ -127,6 +164,8 @@ _inputs:
   featured:
     type: switch
     label: Feature on Home Page
+  Image:
+    type: image
 
 # Define structures used by arrays above
 _structures:
