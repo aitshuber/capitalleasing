@@ -21,9 +21,7 @@ description: |-
   Line insulate carpet and mats,
   Custom face cages
 featured: false
-price: >-
-  Lease this Twister 5 Horse 25' Stock Combo today for $1,055 per month for 36
-  months, or just $781 per month with $5,000 down! 
+price: 'Lease this Twister 5 Horse 25'' Stock Combo today '
 specifications:
   year: '2024'
   make: Twister
