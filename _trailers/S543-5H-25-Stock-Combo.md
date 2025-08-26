@@ -21,7 +21,7 @@ description: |-
   Line insulate carpet and mats,
   Custom face cages
 featured: false
-price: 'Lease this Twister 5 Horse 25'' Stock Combo today '
+price: Lease this Twister 5 Horse 25' Stock Combo today!
 specifications:
   year: '2024'
   make: Twister
