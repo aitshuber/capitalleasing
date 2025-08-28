@@ -50,6 +50,4 @@ video:
     thumb: /uploads/lq3.png
   - url: https://youtu.be/sKBPjQdIjIk
     thumb: /uploads/lq2-1.png
-  - url: https://youtu.be/SwjEpFWJ6yA
-    thumb: /uploads/lq4.png
 ---
