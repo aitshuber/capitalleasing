@@ -11,49 +11,33 @@ trailer_title: >-
   sale
 trailer_type: Living Quarters
 description: >-
-  42' Long
-  8' Wide
-  8' Tall
-  3 - 8,000# axles, Oil Bath,
-  Hydraulic Brakes
-  17.5" cast aluminum silver wheels,
-  White skin,
-  16-ply Westlake tires (235/75R),
-  Floor mats,
-  Full ramp door with cable assist,
-  Lippert generator cover enclosed/extended,
-  Big dual electric/hydraulic jacks,
-  Rumber kick plate in cargo area,
-  Lined and insulated walls and ceiling in cargo area,
-  22 x 48 78" I.D.  slide out,
-  Bar load light,
-  14 x 21 cargo\storage rack,
-  10' bench,
-  Quick coupler,
-  Optibrite lights,
-  Ramp extension,
-  12 L189 lights,
-  Spare tire
-featured: true
+  42' Long 8' Wide 8' Tall 3 - 8,000# axles, Oil Bath, Hydraulic Brakes 17.5"
+  cast aluminum silver wheels, White skin, 16-ply Westlake tires (235/75R),
+  Floor mats, Full ramp door with cable assist, Lippert generator cover
+  enclosed/extended, Big dual electric/hydraulic jacks, Rumber kick plate in
+  cargo area, Lined and insulated walls and ceiling in cargo area, 22 x 48 78"
+  I.D.  slide out, Bar load light, 14 x 21 cargo\storage rack, 10' bench, Quick
+  coupler, Optibrite lights, Ramp extension, 12 L189 lights, Spare tire
+featured: false
 price: 'MSRP new $280,908. '
 specifications:
   year: '2020'
-  make: "Twister"
-  model: "Cargo with LQ"
-  vin: "M216"
-  color: "White"
-  length: "42'"
-  width: "8'"
-  height: "8'"
-  number_of_horses: 
-  load_type: 
+  make: Twister
+  model: Cargo with LQ
+  vin: M216
+  color: White
+  length: 42'
+  width: 8'
+  height: 8'
+  number_of_horses:
+  load_type:
 additional_specs:
   - spec_title:
-    spec: 
+    spec:
 condition: Used
 hitch_type: Gooseneck
 highlighted_features:
-  - 
+  -
 trailer:
   -
 living_quarters:
