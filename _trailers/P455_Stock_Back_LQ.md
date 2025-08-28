@@ -6,7 +6,7 @@ seo:
   description: ''
   keywords: ''
   image: /uploads/img-9592.jpg
-trailer_title: Lease or Purchase this Twister Stock Back Trailer with 12.8 LQ P455
+trailer_title: Lease this Twister Stock Back Trailer with 12.8 LQ P455 for 2508.79 per month
 trailer_type: Living Quarters
 description: |
   ""
