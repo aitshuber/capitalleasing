@@ -10,7 +10,7 @@ trailer_title: 2025 Twister 4 Horse 17' Shortwall Side Load Loft Trailer With Ou
 trailer_type: Living Quarters
 description: |
   ""
-featured:
+featured: true
 price: MSRP $296,233
 specifications:
   year: '2025'
