@@ -52,13 +52,13 @@ video:
   - url: https://youtu.be/ENlVxQPOvQA
     thumb: /uploads/capture1-1.png
   - url: https://youtu.be/IXYKUV3UNHE
-    thumb: ''
+    thumb: /uploads/capture2.png
   - url: https://youtu.be/nwEuPZBpGqw
-    thumb: ''
+    thumb: /uploads/capture3.png
   - url: https://youtu.be/sXmZ9T_pb5I
-    thumb: ''
+    thumb: /uploads/capture4.png
   - url: https://youtu.be/ycp6p4Eqk5Q
-    thumb: ''
+    thumb: /uploads/capture5.png
   - url: https://youtu.be/JLR1Sxzettk
-    thumb: ''
+    thumb: /uploads/capture6.png
 ---
