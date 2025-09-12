@@ -6,7 +6,7 @@ seo:
   description: ''
   keywords: ''
   image: ''
-trailer_title: 4 Horse 17' Shortwall Side Load Loft Trailer With Outlaw LQ S540
+trailer_title: 2025 Twister 4 Horse 17' Shortwall Side Load Loft Trailer With Outlaw LQ S540
 trailer_type: Living Quarters
 description: |
   ""
