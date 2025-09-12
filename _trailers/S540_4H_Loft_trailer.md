@@ -40,7 +40,6 @@ gallery:
   - image: /uploads/img-8231-1.jpg
   - image: /uploads/img-8233.jpg
   - image: /uploads/img-8236.jpg
-  - image: /uploads/s540-final-concept-v9.jpg
   - image: /uploads/img-8226.jpg
   - image: /uploads/img-8227.jpg
   - image: /uploads/img-8173.jpg
@@ -48,6 +47,7 @@ gallery:
   - image: /uploads/img-8161.jpg
   - image: /uploads/img-8163.jpg
   - image: /uploads/img-8204.jpg
+  - image: /uploads/s540-final-concept-v9.jpg
 video:
   - url: https://youtu.be/ENlVxQPOvQA
     thumb: /uploads/capture1-1.png
