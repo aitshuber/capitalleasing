@@ -49,18 +49,16 @@ gallery:
   - image: /uploads/img-8163.jpg
   - image: /uploads/img-8204.jpg
 video:
-  - url: ''
+  - url: https://youtu.be/ENlVxQPOvQA
+    thumb: /uploads/capture1-1.png
+  - url: https://youtu.be/IXYKUV3UNHE
     thumb: ''
-  - url: ''
+  - url: https://youtu.be/nwEuPZBpGqw
     thumb: ''
-  - url: ''
+  - url: https://youtu.be/sXmZ9T_pb5I
     thumb: ''
-  - url: ''
+  - url: https://youtu.be/ycp6p4Eqk5Q
     thumb: ''
-  - url: ''
-    thumb: ''
-  - url: ''
-    thumb: ''
-  - url: ''
+  - url: https://youtu.be/JLR1Sxzettk
     thumb: ''
 ---
